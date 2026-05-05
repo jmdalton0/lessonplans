@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+
+    --white: #fff;
+    --text: #000;
+    --grey-1: rgb(174, 189, 196);
+    --grey-2: rgb(100, 116, 125);
+    --grey-3: rgb(67, 77, 83);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: var(--grey-1);
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: var(--grey-1);
+}
+
+main {
+    flex: 1;
+    padding: 1rem 2rem;
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+
+h2 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+h3 {
+    margin-bottom: 0.5rem;
+}
+
+h4 {
+    margin-bottom: 0.5rem;
+}
+
+h5 {
+    margin-bottom: 0.5rem;
+}
+
+h6 {
+    margin-bottom: 0.5rem;
+}
+
+a {
+    text-decoration: none;
+    color: var(--grey-3);
+}
+
+a:hover {
+    color: var(--grey-2);
+}
+
+li {
+    list-style-type: none;
+}
+
+#lessons a {
+    display: flex;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    color: var(--grey-3);
+    background-color: var(--grey-1);
+    border-radius: 10px;
+}
+
+#lessons a:hover {
+    color: var(--grey-1);
+    background-color: var(--grey-3);
+}

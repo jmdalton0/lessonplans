@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title layout:title-pattern="$CONTENT_TITLE - $LAYOUT_TITLE">CFI Lesson Plans</title>
+    <link rel="stylesheet" th:href="@{/css/styles.css}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>CFI Lesson Plans</h1>
+        <a href="/all">Choose a Lesson</a>
+    </header>
+
+    <main layout:fragment="content">content</main>
+
+    <footer>
+        <h6>Jesse Dalton</h6>
+        <h6>CFI Practice Lesson Plans</h6>
+        <h6>All content on this site is intended for use solely as practice material.</h6>
+        <h6>None of the content on this site is approved or endorsed by the FAA or any other aviation agency.</h6>
+    </footer>
+</body>
+
+</html>
