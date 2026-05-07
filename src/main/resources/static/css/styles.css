@@ -5,6 +5,7 @@
 }
 
 html {
+    font-family: "Roboto", sans-serif;
     font-size: 16px;
 
     --white: #fff;
@@ -53,6 +54,7 @@ h2 {
 }
 
 h3 {
+    font-size: 2rem;
     margin-bottom: 0.5rem;
 }
 
@@ -81,16 +83,27 @@ li {
     list-style-type: none;
 }
 
-#lessons a {
+.group {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    text-transform: uppercase;
+    background-color: var(--grey-3);
+    border-radius: 10px;
+    color: var(--grey-1);
+}
+
+.lesson {
     display: flex;
     margin-bottom: 1rem;
+    margin-left: 2rem;
     padding: 1rem;
+    text-transform: capitalize;
     color: var(--grey-3);
     background-color: var(--grey-1);
     border-radius: 10px;
 }
 
-#lessons a:hover {
+.lesson:hover {
     color: var(--grey-1);
-    background-color: var(--grey-3);
+    background-color: var(--grey-2);
 }
