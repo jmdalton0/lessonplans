@@ -16,18 +16,22 @@ public class AppService {
 
     private Path root = Paths.get("src/main/resources/templates/lessons/");
 
-    public Map<String, List<Lesson>> get() throws Exception {
+    public Map<String, List<Lesson>> get() {
         Map<String, List<Lesson>> data = new HashMap<>();
 
-        List<Path> groups = getGroups();
-        for (Path group : groups) {
+        try {
+            List<Path> groups = getGroups();
+            for (Path group : groups) {
 
             List<Lesson> lessons = getLessons(group)
-                .stream()
-                .map(path -> new Lesson(formatSlug(path), formatName(path)))
-                .collect(Collectors.toList());
+                    .stream()
+                    .map(path -> new Lesson(formatSlug(path), formatName(path)))
+                    .collect(Collectors.toList());
 
-            data.put(formatGroup(group), lessons);
+                data.put(formatGroup(group), lessons);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
         }
 
         return data;
@@ -36,18 +40,18 @@ public class AppService {
     private List<Path> getGroups() throws Exception {
         try (Stream<Path> paths = Files.walk(root)) {
             return paths
-                .skip(1)
-                .filter(Files::isDirectory)
-                .toList();
+                    .skip(1)
+                    .filter(Files::isDirectory)
+                    .toList();
         }
     }
 
     private List<Path> getLessons(Path group) throws Exception {
         try (Stream<Path> paths = Files.walk(group)) {
             return paths
-                .skip(1)
-                .filter(Files::isRegularFile)
-                .toList();
+                    .skip(1)
+                    .filter(Files::isRegularFile)
+                    .toList();
         }
     }
 
@@ -57,18 +61,18 @@ public class AppService {
 
     private String formatSlug(Path path) {
         return path
-            .getFileName()
-            .toString()
-            .replace(".html", "");
+                .getFileName()
+                .toString()
+                .replace(".html", "");
     }
 
     private String formatName(Path path) {
         return path
-            .getFileName()
-            .toString()
-            .substring(1)
-            .replace(".html", "")
-            .replace('-', ' ');
+                .getFileName()
+                .toString()
+                .substring(1)
+                .replace(".html", "")
+                .replace('-', ' ');
     }
 
 }

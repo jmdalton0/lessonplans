@@ -18,12 +18,7 @@ public class AppController {
 
     @GetMapping
     public String index(Model model) {
-        try {
-            model.addAttribute("data", service.get());
-        } catch (Exception e) {
-            System.out.println(e.getMessage());
-            //throw new AppException();
-        }
+        model.addAttribute("data", service.get());
         return "index";
     }
 
