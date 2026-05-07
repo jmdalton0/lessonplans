@@ -21,7 +21,8 @@ public class AppController {
         try {
             model.addAttribute("data", service.get());
         } catch (Exception e) {
-            throw new AppException();
+            System.out.println(e.getMessage());
+            //throw new AppException();
         }
         return "index";
     }
