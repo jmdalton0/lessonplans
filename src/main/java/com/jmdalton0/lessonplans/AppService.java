@@ -1,75 +1,67 @@
 package com.jmdalton0.lessonplans;
 
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
+import org.springframework.core.io.Resource;
+import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
 import org.springframework.stereotype.Service;
 
 @Service
 public class AppService {
 
-    private Path root = Paths.get("src/main/resources/templates/lessons/");
+    private static final String path = "classpath:/templates/lessons";
 
     public Map<String, List<Lesson>> get() {
         Map<String, List<Lesson>> data = new HashMap<>();
 
         try {
-            List<Path> groups = getGroups();
-            for (Path group : groups) {
+            List<String> groups = getGroups();
+            for (String group : groups) {
 
-            List<Lesson> lessons = getLessons(group)
+                List<Lesson> lessons = getLessons(group)
                     .stream()
-                    .map(path -> new Lesson(formatSlug(path), formatName(path)))
+                    .map(lesson -> new Lesson(formatSlug(lesson), formatName(lesson)))
                     .collect(Collectors.toList());
 
-                data.put(formatGroup(group), lessons);
+                data.put(group, lessons);
             }
         } catch (Exception e) {
-            e.printStackTrace();
+            throw new AppException();
         }
 
         return data;
     }
 
-    private List<Path> getGroups() throws Exception {
-        try (Stream<Path> paths = Files.walk(root)) {
-            return paths
-                    .skip(1)
-                    .filter(Files::isDirectory)
-                    .toList();
+    private List<String> getGroups() throws Exception {
+        PathMatchingResourcePatternResolver resolver = new PathMatchingResourcePatternResolver();
+        Resource[] resources = resolver.getResources(path + "/*");
+        List<String> groups = new ArrayList<>();
+        for (Resource resource : resources) {
+            groups.add(resource.getFilename().toString());
         }
+        return groups;
     }
 
-    private List<Path> getLessons(Path group) throws Exception {
-        try (Stream<Path> paths = Files.walk(group)) {
-            return paths
-                    .skip(1)
-                    .filter(Files::isRegularFile)
-                    .toList();
+    private List<String> getLessons(String group) throws Exception {
+        PathMatchingResourcePatternResolver resolver = new PathMatchingResourcePatternResolver();
+        Resource[] resources = resolver.getResources(path + "/" + group + "/*");
+        List<String> lessons = new ArrayList<>();
+        for (Resource resource : resources) {
+            lessons.add(resource.getFilename().toString());
         }
+        return lessons;
     }
 
-    private String formatGroup(Path path) {
-        return path.getFileName().toString();
+    private String formatSlug(String path) {
+        return path.replace(".html", "");
     }
 
-    private String formatSlug(Path path) {
+    private String formatName(String path) {
         return path
-                .getFileName()
-                .toString()
-                .replace(".html", "");
-    }
-
-    private String formatName(Path path) {
-        return path
-                .getFileName()
-                .toString()
                 .substring(1)
                 .replace(".html", "")
                 .replace('-', ' ');
