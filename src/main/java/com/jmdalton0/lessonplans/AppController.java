@@ -27,7 +27,7 @@ public class AppController {
         @PathVariable String group,
         @PathVariable String slug
     ) {
-        return "lessons/" + group + "/" + slug;
+        return "lessons/$" + group + "/" + slug;
     }
 
 }
