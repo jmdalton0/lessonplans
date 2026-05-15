@@ -19,8 +19,8 @@ function registerNextSlideClick() {
             slide.scrollIntoView();
         });
 
-        slide.addEventListener('touchend', () => {
-            slide.scrollIntoView();
-        })
+        //slide.addEventListener('touchend', () => {
+            //slide.scrollIntoView();
+        //})
     }
 }
