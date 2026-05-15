@@ -12,5 +12,10 @@ function registerBackToTopButton() {
 
 function registerNextSlideClick() {
     let slides = document.querySelectorAll('section');
-    console.log('slides');
+    for (let i = 2; i < slides.length; i++) {
+        let slide = slides.item(i);
+        slide.addEventListener('click', () => {
+            slide.scrollIntoView();
+        });
+    }
 }
