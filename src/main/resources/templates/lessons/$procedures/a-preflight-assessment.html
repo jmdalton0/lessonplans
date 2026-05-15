@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{layout}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title th:text="${title}"></title>
+</head>
+
+<body>
+    <main layout:fragment="content">
+
+        <section class="hero"
+            style="background-image: url('https://res.cloudinary.com/dscigc3ga/image/upload/q_auto/f_auto/v1778824912/preflight-2_pmdjpt.jpg');">
+            <h2 th:text="${title}"></h2>
+        </section>
+
+        <section>
+            <h3>Topics</h3>
+        </section>
+
+        <section id="general">
+        </section>
+
+        <section id="conclusion">
+            <h3>Conclusion</h3>
+            <h4>Always Conduct a Thorough Preflight</h4>
+        </section>
+    </main>
+</body>
+
+</html>

@@ -52,6 +52,8 @@ main {
 }
 
 section {
+    display: flex;
+    flex-direction: column;
     height: 100vh;
     padding: var(--gutter);
 }
@@ -62,36 +64,30 @@ h1 {
 
 h2 {
     font-size: 3rem;
-    margin-bottom: 0.5rem;
-    text-transform: capitalize;
 }
 
 h3 {
     font-size: 2rem;
-    margin-bottom: 1rem;
-    text-transform: capitalize;
 }
 
 h4 {
     font-size: 1.5rem;
-    margin-top: var(--gutter);
-    margin-bottom: 0.5rem;
+    margin-top: 1rem;
 }
 
 h5 {
     font-size: 1rem;
     margin-top: 1rem;
-    margin-bottom: 0.5rem;
 }
 
 h6 {
     font-size: 0.8rem;
-    margin-bottom: 0.5rem;
+    margin: 0.5rem 0;
 }
 
 p {
     font-size: 1rem;
-    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
 }
 
 a {
@@ -113,7 +109,7 @@ ul {
 }
 
 li {
-    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
 }
 
 table {
@@ -130,13 +126,27 @@ th {
     background-color: var(--grey-1);
 }
 
-img {
+.img {
     flex: 1;
-    max-width: 100%;
-    max-height: 100%;
-    margin: 1rem;
-    object-fit: contain;
-    overflow: hidden;
+    margin: 2rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.video {
+    width: fit-content;
+    padding: 0.5rem;
+    color: var(--grey-2);
+    background-color: var(--white);
+    border: 2px solid var(--grey-2);
+    border-radius: var(--border-radius);
+}
+
+.video:hover {
+    color: var(--white);
+    background-color: var(--grey-2);
+    border: 2px solid var(--grey-2);
 }
 
 #back-to-top {
@@ -159,15 +169,13 @@ img {
 .row {
     display: flex;
     flex-direction: row;
-    width: 100%;
-    height: 100%;
+    flex: 1;
 }
 
 .col {
     display: flex;
-    flex: 1;
     flex-direction: column;
-    height: 100%;
+    flex: 1;
     margin-right: var(--gutter);
 }
 
@@ -175,13 +183,13 @@ img {
     margin-right: 0;
 }
 
-.gutter {
-    padding: var(--gutter);
+.mt {
+    margin-top: var(--gutter);
 }
 
 .group {
     list-style-type: none;
-    margin-bottom: 1rem;
+    margin-top: 1rem;
     padding: 0 var(--gutter);
 }
 
@@ -195,7 +203,7 @@ img {
 
 .lesson {
     list-style-type: none;
-    margin-bottom: 1rem;
+    margin-top: 1rem;
     margin-left: var(--gutter);
 }
 
@@ -236,6 +244,7 @@ img {
 }
 
 .flashcard {
+    margin-top: 1rem;
     margin-bottom: 1rem;
     border: 2px solid var(--grey-3);
     border-radius: var(--border-radius);
@@ -254,8 +263,11 @@ img {
 }
 
 .bg {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     padding: 0.5rem 1rem;
     border-radius: var(--border-radius);
+    overflow: hidden;
 }
 
 .bg-1 {
