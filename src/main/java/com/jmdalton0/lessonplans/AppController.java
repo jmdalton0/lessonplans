@@ -25,8 +25,10 @@ public class AppController {
     @GetMapping("/lessons/{group}/{slug}")
     public String showLesson(
         @PathVariable String group,
-        @PathVariable String slug
+        @PathVariable String slug,
+        Model model
     ) {
+        model.addAttribute("title", service.formatTitle(slug));
         return "lessons/$" + group + "/" + slug;
     }
 

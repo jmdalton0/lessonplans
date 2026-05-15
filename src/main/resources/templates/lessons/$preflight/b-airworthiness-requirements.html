@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{layout}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title th:text="${title}"></title>
+</head>
+
+<body>
+    <main layout:fragment="content">
+
+        <section class="hero"
+            style="background-image: url('https://res.cloudinary.com/dscigc3ga/image/upload/q_auto/f_auto/v1778797249/airplane-maintenance_qdhq7b.jpg');">
+            <h2 th:text="${title}"></h2>
+        </section>
+
+        <section>
+            <h3>Topics</h3>
+            <h5><a href="#1">General airworthiness</a></h5>
+            <h5><a href="#2">Pilot performed preventative maintenenace</a></h5>
+            <h5><a href="#2">Equipment requirements</a></h5>
+            <h5><a href="#2">Special airworthiness certificates</a></h5>
+        </section>
+
+        <section>
+            <div class="row">
+                <div class="col">
+
+                    <h3>Airplane Airworthiness</h3>
+                    <div class="flashcard">
+                        <p class="question">How do you as a pilot determine that an aircraft can be flown?</p>
+                    </div>
+                    <p>Airworthiness is an assessment of the condition of an aircraft, ensuring that it is suitable to
+                        be flown.
+                    </p>
+                    <p><a href="https://www.ecfr.gov/current/title-14/chapter-I/subchapter-F/part-91/subpart-A/section-91.7"
+                            class="far">§ 91.7</a></p>
+
+                    <h4>Two Main Aspects</h4>
+                    <ul>
+                        <li>Is the plane legal?</li>
+                        <li>Is the plane safe?</li>
+                    </ul>
+
+                    <!--
+                    <h4>common airworthiness checklists</h4>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Method</th>
+                                <th>For Legality</th>
+                                <th>For Safety</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>ARROW</td>
+                                <td>&#10003;</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>AV1ATES</td>
+                                <td>&#10003;</td>
+                                <td>&#10003;</td>
+                            </tr>
+                            <tr>
+                                <td>KOEL</td>
+                                <td>&#10003;</td>
+                                <td>&#10003;</td>
+                            </tr>
+                            <tr>
+                                <td>ATOMATOFLAMES</td>
+                                <td>&#10003;</td>
+                                <td>&#10003;</td>
+                            </tr>
+                            <tr>
+                                <td>Personal Preflight Checklist</td>
+                                <td></td>
+                                <td>&#10003;</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    -->
+                </div>
+                <div class="col">
+                    <img src="https://res.cloudinary.com/dscigc3ga/image/upload/q_auto/f_auto/v1778801285/airplane-maintenance-1_hpvdjj.webp"
+                        alt="maintenenace">
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="row">
+                <div class="col">
+                    <img src="https://res.cloudinary.com/dscigc3ga/image/upload/q_auto/f_auto/v1778804058/hawkeye_ft7nvb.webp"
+                        alt="hawkeye">
+                </div>
+                <div class="col">
+                    <h3>ARROW Acronym</h3>
+                    <ul>
+                        <li>Airworthiness Certificate</li>
+                        <li>Registration</li>
+                        <li>Radio Station License (international only)</li>
+                        <li>Operating Limitations</li>
+                        <li>Weight and Balance</li>
+                    </ul>
+
+                    <h4>What does ARROW check?</h4>
+                    <ul>
+                        <li>Required documents with respect to the aircraft.</li>
+                        <li>Must be physically in the aircraft while flying.</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h5>Airworthiness Certificate</h5>
+                    <ul>
+                        <li>Given when the aircraft is manufactured</li>
+                        <li>Saying that it is legally "airworthy"</li>
+                        <li>Never expires as long as maintenenace is performed.</li>
+                        <li><a href="https://www.ecfr.gov/current/title-14/chapter-I/subchapter-C/part-21/subpart-H/section-21.181"
+                                class="far">§ 21.181</a></li>
+                    </ul>
+                    <h5>Registration</h5>
+                    <ul>
+                        <li>Registers your aircraft in the U.S.</li>
+                        <li>Valid for 7 years</li>
+                    </ul>
+
+                    <h5>Operating Limitations</h5>
+                    <ul>
+                        <li>POH / AFM</li>
+                        <li>Includes performance charts, standard operations, emergency operations, etc.</li>
+                    </ul>
+
+                    <h5>Weight and Balance</h5>
+                    <ul>
+                        <li>measurements used for weight and balance calculations</li>
+                        <li>Specific to 1 tailnumber</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="row">
+                <div class="col">
+                    <h3>AV1ATES Acronym</h3>
+                    <ul>
+                        <li>Annual Inspection</li>
+                        <li>VOR Inspection</li>
+                        <li>100 Hour Inspection</li>
+                        <li>ADs, SAs, SB, SAIBs,</li>
+                        <li>Transponder</li>
+                        <li>ELT</li>
+                        <li>Static System</li>
+                    </ul>
+
+                    <h4>What does AV1ATES check?</h4>
+                    <p>All the inspections that need to be done before you can fly.</p>
+                    <p>Records of these inspections must be kept in the maintenance logs.</p>
+                </div>
+                <div class="col">
+                    <h4>Annual Inspection</h4>
+                    <ul>
+                        <li>every 24 calendar months</li>
+                    </ul>
+
+                    <h4>100 Hour Inspection</h4>
+                    <ul>
+                        <li>every 100 engine hours</li>
+                        <li>can substitute for an annual</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h3>Who is Responsible for Airworthiness?</h3>
+            <h4>The Pilot (YOU!)</h4>
+            <p><a href="https://www.ecfr.gov/current/title-14/chapter-I/subchapter-F/part-91/subpart-A/section-91.7"
+                    class="far">§ 91.7</a></p>
+            
+            <h4>Also the Owner or Operator</h4>
+            <p><a href="https://www.ecfr.gov/current/title-14/chapter-I/subchapter-F/part-91/subpart-A/section-91.7"
+                    class="far">§ 91.7</a></p>
+        </section>
+    </main>
+</body>
+
+</html>

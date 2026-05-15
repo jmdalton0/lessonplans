@@ -59,6 +59,25 @@ public class AppService {
         return data;
     }
 
+    public String formatTitle(String slug) {
+        StringBuilder sb = new StringBuilder();
+
+        boolean nextIsCap = true;
+        for (int i = 2; i < slug.length(); i++) {
+            char c = slug.charAt(i);
+            if (c == '-') {
+                nextIsCap = true;
+                sb.append(' ');
+            } else if (nextIsCap && Character.isLetter(c)) {
+                nextIsCap = false;
+                sb.append(Character.toUpperCase(c));
+            } else {
+                sb.append(c);
+            }
+        }
+        return sb.toString();
+    }
+
     private String formatSlug(String filename) {
         return filename.replace(".html", "");
     }
