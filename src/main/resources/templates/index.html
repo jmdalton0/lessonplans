@@ -9,7 +9,7 @@
 
 <body>
     <main layout:fragment="content">
-        <section>
+        <div id="menu">
             <h2>All Lessons</h2>
             <ul>
                 <li th:each="group : ${data.keySet()}" class="group">
@@ -24,7 +24,7 @@
                     </ul>
                 </li>
             </ul>
-        </section>
+        </div>
     </main>
 </body>
 

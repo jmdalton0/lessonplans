@@ -16,7 +16,11 @@
     <header>
         <h1>CFI Lesson Plans</h1>
         <a th:href="@{/}">All Lessons</a>
-        <button id="back-to-top">^</button>
+        <nav>
+            <button id="top-btn" class="nav-btn">&#8593;</button>
+            <button id="prev-btn" class="nav-btn">&#8592;</button>
+            <button id="next-btn" class="nav-btn">&#8594;</button>
+        </nav>
     </header>
 
     <main layout:fragment="content">content</main>

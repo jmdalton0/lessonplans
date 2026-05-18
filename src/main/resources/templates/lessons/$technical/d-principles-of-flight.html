@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{layout}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title th:text="${title}"></title>
+</head>
+
+<body>
+    <main layout:fragment="content">
+
+        <section class="hero"
+            style="background-image: url('https://res.cloudinary.com/dscigc3ga/image/upload/q_auto/f_auto/v1779057476/wind-tunnel_lu1zh4.avif');">
+            <h2 th:text="${title}"></h2>
+        </section>
+
+        <section>
+            <h3>Topics</h3>
+            <h5><a href="#general">General Airworthiness</a></h5>
+            <h5><a href="#equipment">Equipment Requirements</a></h5>
+            <h5><a href="#special">Special Airworthiness Certificates</a></h5>
+        </section>
+
+        <section>
+            <h3>Objective</h3>
+            <p>Airfoil Design Characteristics</p>
+        </section>
+
+        <section id="airfoil-design">
+            <div class="row">
+                <div class="col">
+                    <h3>Airfoil Design</h3>
+                    <div class="flashcard">
+                        <p class="question">What is an airfoil?</p>
+                        <p class="answer">An object that produces lift when placed in a moving fluid.</p>
+                    </div>
+
+                    <h4>Anatomy of an Airfoil</h4>
+                    <ul>
+                        <li>leading edge</li>
+                        <li>trailing edge</li>
+                        <li>chord line</li>
+                        <li>upper camber</li>
+                        <li>lower camber</li>
+                        <li>mean camber line</li>
+                    </ul>
+                </div>
+
+                <div class="col">
+                    <div class="img"
+                        style="background-image: url('https://res.cloudinary.com/dscigc3ga/image/upload/q_auto/f_auto/v1779057128/Screenshot_2026-05-17_162714_ujv6ko.png');">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="row">
+                <div class="col">
+                    <h3>Forces Acting on an Airfoil</h3>
+
+                    <h4 class="mt">Newton's Basic Laws of Motion</h4>
+                    <ul>
+                        <li><b>I</b> - Objects maintain uniform motion unless acted on.</li>
+                        <li><b>II</b> - An object's acceleration depends on its mass and outside forces.</li>
+                        <li><b>III</b> - Every action has an equal and opposite reaction.</li>
+                    </ul>
+
+                    <h4 class="mt">Bernoulli's Principle</h4>
+                    <p>As the velocity of a fluid increases, the pressure of that fluid decreases.</p>
+                </div>
+
+                <div class="col">
+                    <div class="img"
+                        style="background-image: url('https://res.cloudinary.com/dscigc3ga/image/upload/q_auto/f_auto/v1779062621/Screenshot_2026-05-17_180324_hfitct.png');">
+                    </div>
+                    <div class="img"
+                        style="background-image: url('https://res.cloudinary.com/dscigc3ga/image/upload/q_auto/f_auto/v1779062355/venturi_gauma0.png');">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h3>How Does an Airfoil Produce Lift?</h3>
+            <div class="img"
+                style="background-image: url('https://res.cloudinary.com/dscigc3ga/image/upload/q_auto/f_auto/v1779059070/Screenshot_2026-05-17_170408_mn78ru.png');">
+            </div>
+        </section>
+
+        <section>
+            <div class="row">
+                <div class="col">
+                    <h3>Kinds of Airfoils</h3>
+                    <div class="flashcard">
+                        <p class="question">How many airfoils does a plane have?</p>
+                        <ul class="answer">
+                            <li>wings</li>
+                            <li>horizontal stabilizer</li>
+                            <li>vertical stabilizer</li>
+                            <li>propeller</li>
+                        </ul>
+                    </div>
+
+                    <h4>Propeller</h4>
+                    <p>produces thrust</p>
+
+                    <h4>Horizontal Stabilizer</h4>
+                    <p>produces lift towards the ground</p>
+
+                    <h4>Vertical Stabilizer</h4>
+                    <p>produces lift left or right</p>
+                </div>
+
+                <div class="col">
+                    <div class="img"
+                        style="background-image: url('https://res.cloudinary.com/dscigc3ga/image/upload/q_auto/f_auto/v1779059751/p-factor_v4no9h.png');">
+                    </div>
+                    <div class="img"
+                        style="background-image: url('https://res.cloudinary.com/dscigc3ga/image/upload/q_auto/f_auto/v1779059746/empennage_tvcqwq.png');">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="row">
+                <div class="col">
+                    <h3>Forces in Flight</h3>
+
+                    <h4 class="mt">Thrust vs Drag</h4>
+                    <ul>
+                        <li>Thrust is created by the powerplant pulling the aircraft through the air horizantally.</li>
+                        <li>Drag is the friction between the aircraft and the air.</li>
+                    </ul>
+
+                    <h4 class="mt">Lift vs Weight</h4>
+                    <ul>
+                        <li>Lift is produced as air flows across the airfoils (wings).</li>
+                        <li>Weight is counteracted by lift.</li>
+                    </ul>
+                </div>
+
+                <div class="col">
+                    <div class="img" style="background-image: url('https://res.cloudinary.com/dscigc3ga/image/upload/q_auto/f_auto/v1779068456/forces-1_qnghcy.png');"></div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="row">
+                <div class="col">
+                    <h3>Stability, Maneuverability and Controllability</h3>
+                    <h4 class="mt">Stability</h4>
+                    <p>The tendency of an aircraft to return to its original conditions after a disturbance.</p>
+                    <p>Stability <b>affects</b> maneuverability and controllability.</p>
+                    <h5 class="mt">Controllability</h5>
+                    <p>Capability of an aircraft to respond to pilot inputs.</p>
+                    <h5 class="mt">Maneuverability</h5>
+                    <p>Capability of an aircraft to perform and withstand the stress of manuevers.</p>
+                </div>
+
+                <div class="col">
+                    <div class="img"
+                        style="background-image: url('https://res.cloudinary.com/dscigc3ga/image/upload/q_auto/f_auto/v1779065398/sportcruiser_uqwnxq.jpg');">
+                    </div>
+                    <div class="img"
+                        style="background-image: url('https://res.cloudinary.com/dscigc3ga/image/upload/q_auto/f_auto/v1779065386/biplane_u7o4rr.jpg');">
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="img"
+                        style="background-image: url('https://res.cloudinary.com/dscigc3ga/image/upload/q_auto/f_auto/v1779065396/da20_fzzlgt.jpg');">
+                    </div>
+                    <div class="img"
+                        style="background-image: url('https://res.cloudinary.com/dscigc3ga/image/upload/q_auto/f_auto/v1779065397/f22_tqomuj.jpg');">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="row">
+                <div class="col">
+                    <h3>Types of Stability</h3>
+                    <h4>Static vs Dynamic</h4>
+                    <h4>Positive vs Negative</h4>
+                    <div class="img" style="background-image: url('https://res.cloudinary.com/dscigc3ga/image/upload/q_auto/f_auto/v1779065769/axes_f0a5iq.png');">
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="img" style="background-image: url('https://res.cloudinary.com/dscigc3ga/image/upload/q_auto/f_auto/v1779064173/stability_nxpdf9.png');"></div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h3>Left Turning Tendencies</h3>
+            <div class="row">
+                <div class="col text-center">
+                    <h4>P-factor</h4>
+                    <div class="img" style="background-image: url('https://res.cloudinary.com/dscigc3ga/image/upload/q_auto/f_auto/v1779059751/p-factor_v4no9h.png');"></div>
+                    <h4>Torque Reaction</h4>
+                    <div class="img" style="background-image: url('https://res.cloudinary.com/dscigc3ga/image/upload/q_auto/f_auto/v1779066591/torque_txurmt.png');"></div>
+                </div>
+                <div class="col text-center">
+                    <h4>Spiraling Slipstream</h4>
+                    <div class="img" style="background-image: url('https://res.cloudinary.com/dscigc3ga/image/upload/q_auto/f_auto/v1779066591/spiraling-slipstream_ihljmr.png');"></div>
+                    <h4>Gyroscopic Precession</h4>
+                    <div class="img" style="background-image: url('https://res.cloudinary.com/dscigc3ga/image/upload/q_auto/f_auto/v1779066590/Screenshot_2026-05-17_190904_luxqoo.png');"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="conclusion">
+            <h3>Conclusion</h3>
+        </section>
+    </main>
+</body>
+
+</html>

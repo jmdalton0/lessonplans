@@ -1,26 +1,52 @@
+let curSlide;
+
 document.addEventListener('DOMContentLoaded', () => {
-    registerBackToTopButton();
-    registerNextSlideClick();
+    registerSlideObserver();
+    registerTopBtn();
+    registerPrevBtn();
+    registerNextBtn();
 });
 
-function registerBackToTopButton() {
-    let btn = document.getElementById('back-to-top');
-    btn.addEventListener('click', () => {
+function registerSlideObserver() {
+    let slides = document.querySelectorAll('section');
+    curSlide = slides[0];
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                curSlide = entry.target;
+            }
+        });
+    }, {
+        threshold: 0.6
+    });
+
+    slides.forEach(slide => observer.observe(slide));
+}
+
+function registerTopBtn() {
+    let topBtn = document.getElementById('top-btn');
+    topBtn.addEventListener('click', () => {
         window.scrollTo(0, 0);
     });
 }
 
-function registerNextSlideClick() {
-    let slides = document.querySelectorAll('section');
-    for (let i = 2; i < slides.length; i++) {
-        let slide = slides.item(i);
+function registerPrevBtn() {
+    let prevBtn = document.getElementById('prev-btn');
+    prevBtn.addEventListener('click', () => {
+        const prevSlide = curSlide.previousElementSibling;
+        if (prevSlide && prevSlide.tagName === 'SECTION') {
+            prevSlide.scrollIntoView();
+        }
+    });
+}
 
-        slide.addEventListener('click', () => {
-            slide.scrollIntoView();
-        });
-
-        slide.addEventListener('touchend', () => {
-            slide.scrollIntoView();
-        })
-    }
+function registerNextBtn() {
+    let nextBtn = document.getElementById('next-btn');
+    nextBtn.addEventListener('click', () => {
+        const nextSlide = curSlide.nextElementSibling;
+        if (nextSlide && nextSlide.tagName === 'SECTION') {
+            nextSlide.scrollIntoView();
+        }
+    });
 }
