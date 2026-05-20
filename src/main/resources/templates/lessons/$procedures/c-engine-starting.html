@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{layout}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title th:text="${title}"></title>
+</head>
+
+<body>
+    <main layout:fragment="content">
+
+        <section class="hero" style="background-image: url('https://res.cloudinary.com/dscigc3ga/image/upload/q_auto/f_auto/v1779065396/da20_fzzlgt.jpg');">
+            <h2 th:text="${title}"></h2>
+        </section>
+
+        <section id="outline">
+            <div class="row">
+                <div class="col">
+                    <h3>Objective</h3>
+                    <ul>
+                        <li>Gain knowledge and skills necessary for engine starting, inlcuding different methods of starting as well as starting under various conditions.</li>
+                        <li>Gain knowledge and skills necessary for performing engine check procedures and monitoring engine operation during flight.</li>
+                        <li>Gain awareness of necessary safety considerations relating to the engine and propeller when starting the engine.</li>
+                        <li>Gain awareness of the importance of following approved checklist items.</li>
+                    </ul>
+                </div>
+
+                <div class="col">
+                    <h4>Topics</h4>
+                    <ul>
+                        <li><a href="#safety">Safety Considerations</a></li>
+                        <li><a href="#methods">Methods of Engine Starting</a></li>
+                        <li><a href="#check">Engine Check</a></li>
+                        <li><a href="#limitations">Engine Limitations</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="safety">
+            <h3>Safety Considerations</h3>
+            <div class="row">
+                <div class="col">
+                    <h4>Position of the Airplane</h4>
+                    <p>Consider the spinning propeller and the airflow it creates.</p>
+                    <ul>
+                        <li>safety of nearby persons and property</li>
+                        <li>other aircraft</li>
+                        <li>structures</li>
+                        <li>debris</li>
+                        <li>wind</li>
+                    </ul>
+
+                    <h4>Communicate</h4>
+                    <p>"Clear prop!"</p>
+                    <p>Brief passengers on emergency procedures.</p>
+
+                    <h4>Engine Operation</h4>
+                    <p>Verify safe and smooth operation of the engine.</p>
+                    <p>Make it a habit to monitor temperatures and pressures during flight.</p>
+                    <p>Know your systems.</p>
+                    <ul>
+                        <li>don't "double tap" the engine</li>
+                        <li>don't run the mixture too rich</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <div class="img" style="background-image: url('https://res.cloudinary.com/dscigc3ga/image/upload/q_auto/f_auto/v1779205354/planes-ground_zybk9u.jpg');">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="methods">
+            <div class="row">
+                <div class="col">
+                    <h3>Methods of Starting the Engine</h3>
+                    <h4>Use Your Checklists!</h4>
+                    <p>The POH will outline engine starting procedural flows for various situations.</p>
+
+                    <h4 class="mt">External Power Unit (EPU)</h4>
+                    <p>Many aircraft have a means of starting the engine via an external power supply (not the battery in the engine bay).</p>
+                    <p>Often used by maintenance to start the engine when electrical components are removed.</p>
+                </div>
+                <div class="col">
+                    <div class="img" style="background-image: url('https://res.cloudinary.com/dscigc3ga/image/upload/q_auto/f_auto/v1779206021/checklist_slvuzy.jpg');"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="check">
+            <div class="row">
+                <div class="col">
+                    <h3>Engine Check (Run Up)</h3>
+                    <h4>Use Your Checklists!</h4>
+                    <p>The POH will outline how to perform checklists that verify that your systems are operating correctly.</p>
+                </div>
+                <div class="col">
+                    <div class="img" style="background-image: url('https://res.cloudinary.com/dscigc3ga/image/upload/q_auto/f_auto/v1779206021/checklist_slvuzy.jpg');"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="limitations">
+            <h3>Engine Limitations When Starting</h3>
+            <p>Follow the instructions in the POH for engine starting. They are not suggestions.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>System</th>
+                        <th>Limitations</th>
+                        <th>Risks</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Starter</td>
+                        <td>max crank time</td>
+                        <td>
+                            <p>melting or welding of starter motor or components</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Starter</td>
+                        <td>"double tapping"</td>
+                        <td>
+                            <p>starter component damage</p>
+                            <p>loose metal in the engine</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Engine</td>
+                        <td>RPMs while engine is warming up</td>
+                        <td>engine damage</td>
+                    </tr>
+                    <tr>
+                        <td>Engine</td>
+                        <td>temperatures</td>
+                        <td>
+                            <p>engine overheating</p>
+                            <p>engine failure</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Fuel</td>
+                        <td>max fuel prime time</td>
+                        <td>
+                            <p>engine damage</p>
+                            <p>fire</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Oil</td>
+                        <td>verify oil reaches expected pressure quickly</td>
+                        <td>
+                            <p>engine damage</p>
+                            <p>engine seizure</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Mixture</td>
+                        <td>correct mixture setting</td>
+                        <td>
+                            <p>carbon deposits</p>
+                            <p>preignition</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="conclusion">
+            <h3>Conclusion</h3>
+            <h4>Care for your Engine!</h4>
+            <p>Care for your aircraft as if your life depends on it, because it does.</p>
+
+            <h4 class="mt">Check your Engine!</h4>
+            <p>Even if it was just flown, complete your run up.</p>
+            <p>Always monitor your engine gauges.</p>
+        </section>
+    </main>
+</body>
+
+</html>

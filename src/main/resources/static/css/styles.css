@@ -6,6 +6,7 @@
 
 :root {
     --gutter: 2rem;
+    --opacity: 0.8;
     --border-radius: 10px;
 
     --white: #fff;
@@ -162,7 +163,7 @@ th {
     color: var(--white);
     background-color: var(--text);
     border: 0;
-    opacity: 0.7;
+    opacity: var(--opacity);
 }
 
 .nav-btn:hover {
@@ -218,7 +219,7 @@ th {
 .hero h2 {
     padding: var(--gutter);
     color: var(--white);
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, var(--opacity));
 }
 
 .img {

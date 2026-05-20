@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{layout}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title th:text="${title}"></title>
+</head>
+
+<body>
+    <main layout:fragment="content">
+
+        <section class="hero" style="background-image: url('https://res.cloudinary.com/dscigc3ga/image/upload/q_auto/f_auto/v1779159915/sectional_w5sjay.png');">
+            <h2 th:text="${title}"></h2>
+        </section>
+
+        <section id="outline">
+            <div class="row">
+                <div class="col">
+                    <h3>Objective</h3>
+                    <ul>
+                        <li>Gain necessary knowledge of the various classes airspace, including their purpose and entrance requirements.</li>
+                        <li>Gain awareness of neccessary safety considerations when entering different airspaces.</li>
+                    </ul>
+                </div>
+
+                <div class="col">
+                    <h4>Topics</h4>
+                    <ul>
+                        <li><a href="#airspace">Classes of Airspace</a></li>
+                        <li><a href="#special">Special Use Airspaces</a></li>
+                        <li><a href="#other">Other Airspaces</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="airspace">
+            <h3>National Airspace System</h3>
+            <h4>Airspace is divided by:</h4>
+            <ul>
+                <li>complexity or density of aircraft movements</li>
+                <li>nature of the operations conducted within the airspace</li>
+                <li>the level of safety required</li>
+                <li>and national and public interest</li>
+            </ul>
+            <div class="img" style="background-image: url('https://res.cloudinary.com/dscigc3ga/image/upload/q_auto/f_auto/v1779159562/Screenshot_2026-05-18_201805_rq1oty.png');"></div>
+        </section>
+
+        <section>
+            <h3>Class A Airspace</h3>
+            <a href="https://www.faa.gov/air_traffic/publications/atpubs/aim_html/chap3_section_2.html" target="_blank" class="far">AIM 3-2-2</a>
+            <p>Above the entire US.</p>
+            <p>Used for IFR Traffic.</p>
+            <h5>Where</h5>
+            <p>from 18,000 msl to FL 600</p>
+            <h5>Depiction</h5>
+            <p>not depicted</p>
+            <h5>Entry Requirements</h5>
+            <p>IFR flight plan - clearance from ATC</p>
+            <h5>Equipment Requirements</h5>
+            <ul>
+                <li>IFR equipment</li>
+                <li>radio</li>
+                <li>transponder</li>
+                <li>ADSB out</li>
+            </ul>
+        </section>
+
+        <section>
+            <div class="row">
+                <div class="col">
+                    <h3>Class B Airspace</h3>
+                    <a href="https://www.faa.gov/air_traffic/publications/atpubs/aim_html/chap3_section_2.html" target="_blank" class="far">AIM 3-2-3</a>
+                    <p>Busy major airports.</p>
+                    <h5>Where</h5>
+                    <p>from surface to 10,000 msl (usually)</p>
+                    <p>upside down wedding cake (shelves)</p>
+                    <h5>Depiction</h5>
+                    <p>solid blue lines</p>
+                    <h5>Entry Requirements</h5>
+                    <p>private, sport, recreational cert, or student with endorsement</p>
+                    <p>must hear "tail number, cleared into bravo airspace"</p>
+                    <h5>Equipment Requirements</h5>
+                    <p>Mode C Veil (30 mile radius)</p>
+                    <ul>
+                        <li>radio</li>
+                        <li>transponder</li>
+                        <li>ADSB out</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <div class="img" style="background-image: url('https://res.cloudinary.com/dscigc3ga/image/upload/q_auto/f_auto/v1779226597/class-b-airspace_gch9ia.png');"></div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="row">
+                <div class="col">
+                    <h3>Class C Airspace</h3>
+                    <a href="https://www.faa.gov/air_traffic/publications/atpubs/aim_html/chap3_section_2.html" target="_blank" class="far">AIM 3-2-4</a>
+                    <p>Less busy airports.</p>
+                    <h5>Where</h5>
+                    <p>from surface to 4,000 agl</p>
+                    <p>5 nm core, 10 nm shelf starting at 1200</p>
+                    <h5>Depiction</h5>
+                    <p>solid magenta lines</p>
+                    <h5>Entry Requirements</h5>
+                    <p>hear your tail number</p>
+                    <h5>Equipment Requirements</h5>
+                    <p>above class C airspace</p>
+                    <ul>
+                        <li>radio</li>
+                        <li>transponder</li>
+                        <li>ADSB out</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <div class="img" style="background-image: url('https://res.cloudinary.com/dscigc3ga/image/upload/q_auto/f_auto/v1779226456/class-c-airspace_ddjssu.png');"></div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="row">
+                <div class="col">
+                    <h3>Class D Airspace</h3>
+                    <a href="https://www.faa.gov/air_traffic/publications/atpubs/aim_html/chap3_section_2.html" target="_blank" class="far">AIM 3-2-5</a>
+                    <p>Less busy airports.</p>
+                    <p>May be part time.</p>
+                    <h5>Where</h5>
+                    <p>from surface to 2,500 agl</p>
+                    <p>4 nm radius</p>
+                    <h5>Depiction</h5>
+                    <p>dashed blue lines</p>
+                    <h5>Entry Requirements</h5>
+                    <p>hear your tail number</p>
+                    <h5>Equipment Requirements</h5>
+                    <ul>
+                        <li>radio</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <div class="img" style="background-image: url('https://res.cloudinary.com/dscigc3ga/image/upload/q_auto/f_auto/v1779231317/class-d-airspace_xtgmrv.png');"></div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="row">
+                <div class="col">
+                    <h3>Class E Airspace</h3>
+                    <a href="https://www.faa.gov/air_traffic/publications/atpubs/aim_html/chap3_section_2.html" target="_blank" class="far">AIM 3-2-6</a>
+                    <p>Still controlled airspace, but minimal requirements</p>
+                    <h5>Where</h5>
+                    <p>generally from 1,200 agl to FL 600 (unless specified lower)</p>
+                    <p>above FL 600</p>
+                    <p>4 nm radius</p>
+                    <h5>Depiction</h5>
+                    <p>dashed magenta line (surface)</p>
+                    <p>gradient magenta line (700 agl)</p>
+                    <p>gradient blue line (1,200 agl)</p>
+                    <h5>Entry Requirements</h5>
+                    <p>none</p>
+                    <h5>Equipment Requirements</h5>
+                    <p>none below 10,000 msl</p>
+                    <p>at and above 10,000 msl and 2,500 agl</p>
+                    <ul>
+                        <li>radio</li>
+                        <li>transponder</li>
+                        <li>ADSB out</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <div class="img" style="background-image: url('https://res.cloudinary.com/dscigc3ga/image/upload/q_auto/f_auto/v1779232277/class-g-airspace_zzjcj2.png');"></div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="row">
+                <div class="col">
+                    <h3>Uncontrolled Airspace (Class G Airspace)</h3>
+                    <a href="https://www.faa.gov/air_traffic/publications/atpubs/aim_html/chap3_section_3.html" target="_blank" class="far">AIM 3-3-1</a>
+                    <p>Everywhere else. Any airspace that is not designated A, B, C, D, or E.</p>
+                    <h5>Where</h5>
+                    <p>from the surface to where any other airspace starts (usually E)</p>
+                    <h5>Depiction</h5>
+                    <p>not depicted</p>
+                    <h5>Entry Requirements</h5>
+                    <p>none</p>
+                    <h5>Equipment Requirements</h5>
+                    <p>none</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="row">
+                <div class="col">
+                    <h3>VFR Weather Minimums</h3>
+                    <a href="https://www.ecfr.gov/current/title-14/chapter-I/subchapter-F/part-91/subpart-B/subject-group-ECFR4d5279ba676bedc/section-91.155" target="_blank" class="far">91.155</a>
+                </div>
+                <div class="col">
+                    <div class="img" style="background-image: url('https://res.cloudinary.com/dscigc3ga/image/upload/q_auto/f_auto/v1779232787/vfr-weather-minimums_m1cyds.png');"></div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h3>Special Use Airspace</h3>
+            <p>Airspace wherein activities must be confined because of their nature, or wherein limitations are imposed upon aircraft operations that are not a part of those activities, or both.</p>
+
+            <h4>MCPRAWN</h4>
+            <ul>
+                <li></li>
+                <li></li>
+                <li>Prohibited Areas</li>
+                <li>Restricted Areas</li>
+                <li></li>
+            </ul>
+
+        </section>
+
+        <section>
+            <div class="row">
+                <div class="col">
+                    <h3>Speed Limits</h3>
+                    <a href="https://www.ecfr.gov/current/title-14/chapter-I/subchapter-F/part-91/subpart-B/subject-group-ECFRe4c59b5f5506932/section-91.117" target="_blank" class="far">91.117</a>
+                    <h4 class="mt">Below 10,000 msl</h4>
+                    <p>250 knots</p>
+                    <h4 class="mt">Near Towered Airports</h4>
+                    <p>200 knots</p>
+                    <p>Class B</p>
+                    <ul>
+                        <li>under the shelves</li>
+                        <li>through VFR corridors</li>
+                    </ul>
+                    <p>Class C and D</p>
+                    <ul>
+                        <li>at or below 2,500 agl and within 4 nm of the primary airport</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <div class="img" style="background-image: url('https://res.cloudinary.com/dscigc3ga/image/upload/q_auto/f_auto/v1779234834/sonic-boom_khpx9h.jpg');"></div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h3>Conclusion</h3>
+            <h4>Know where you are flying.</h4>
+            <h4>Don't bust airspace.</h4>
+        </section>
+    </main>
+</body>
+
+</html>

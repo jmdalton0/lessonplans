@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{layout}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title th:text="${title}"></title>
+</head>
+
+<body>
+    <main layout:fragment="content">
+
+        <section class="hero" style="background-image: url('https://res.cloudinary.com/dscigc3ga/image/upload/q_auto/f_auto/v1779065396/da20_fzzlgt.jpg');">
+            <h2 th:text="${title}"></h2>
+        </section>
+
+        <section id="outline">
+            <div class="row">
+                <div class="col">
+                    <h3>Objective</h3>
+                    <ul>
+                        <li>Gain the necessary knowledge and skills</li>
+                        <li>Gain an awareness of safety considerations</li>
+                    </ul>
+                </div>
+
+                <div class="col">
+                    <h4>Topics</h4>
+                    <ul>
+                        <li><a href="#general">General</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="conclusion">
+            <h3>Conclusion</h3>
+        </section>
+    </main>
+</body>
+
+</html>
