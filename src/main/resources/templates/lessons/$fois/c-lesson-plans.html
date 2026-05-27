@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{layout}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title th:text="${title}"></title>
+</head>
+
+<body>
+    <main layout:fragment="content">
+
+        <section class="hero" style="background-image: url('https://res.cloudinary.com/dscigc3ga/image/upload/q_auto/f_auto/v1779065396/da20_fzzlgt.jpg');">
+            <h2 th:text="${title}"></h2>
+        </section>
+
+        <section id="outline">
+            <div class="row">
+                <div class="col">
+                    <h3>Objective</h3>
+                    <p>The learner will aquire the necessary knowledge, skills, and awareness pertaining to:</p>
+                    <ul>
+                        <li>course and lesson development as applies to aviation study</li>
+                        <li>effectively organize and present material, integrating training aids, problem-based instruction, and other tools based on the learner and situation</li>
+                    </ul>
+                </div>
+
+                <div class="col">
+                    <h4>Topics</h4>
+                    <ul>
+                        <li><a href="#foundations">Foundations of Teaching</a></li>
+                        <li><a href="#design">Course Design and Planning</a></li>
+                        <li><a href="#objectives">Lesson Objectives and Preparation</a></li>
+                        <li><a href="#organization">Organizing and Delivering Lessons</a></li>
+                        <li><a href="#technology">Technology and Instructional Aids</a></li>
+                        <li><a href="#advanced">Advanced Instructional Methods</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="foundations">
+            <h3>Foundations of Teaching</h3>
+            <p>CFI's must be able to organize information in a way that learners will comprehend.</p>
+
+            <div class="row">
+                <div class="col">
+                    <h4>Learning Process</h4>
+                    <h5>PPAR</h5>
+                    <ul>
+                        <li>Preparation</li>
+                        <li>Presentation</li>
+                        <li>Application</li>
+                        <li>Review / Assessment</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h4>Essential Instructor Skills</h4>
+                    <h5>MAPS</h5>
+                    <ul>
+                        <li>Management Skills - plan, organize, lead, supervise</li>
+                        <li>Assessment Skills - verify learner progress</li>
+                        <li>People Skills - relate to learners, communicate effectively</li>
+                        <li>Subject Matter Expertise - comprehensive, deep understanding of required material</li>
+                    </ul>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="design">
+            <h3>Course Design and Planning</h3>
+            <h4>Levels of Planning</h4>
+            <div class="row bg bg-3">
+                <div class="col">
+                    <h4>Course</h4>
+                    <p>The overall goal.</p>
+                    <p>Syllabus and Lessons serve to reach this goal.</p>
+                    <p>Example: PPL 141 Course</p>
+
+                    <div class="row bg bg-2">
+                        <div class="col">
+                            <h4>Syllabus</h4>
+                            <p>structured sequence of objectives that add up to the course goal</p>
+                            <p>made up of building blocks</p>
+                            <ul>
+                                <li>road map</li>
+                                <li>arranges building blocks of learning in logical order</li>
+                                <li>well defined objectives and standards of completion</li>
+                                <li>flexible</li>
+                            </ul>
+                        </div>
+
+                        <div class="col bg bg-1">
+                            <div class="row">
+                                <div class="col">
+                                    <h4>Lesson Plans</h4>
+                                    <p>Organized structure for a single instruction period.</p>
+                                    <p>Includes:</p>
+                                    <ul>
+                                        <li>Objectives</li>
+                                        <li>Content</li>
+                                        <li>Completion Standards</li>
+                                    </ul>
+                                </div>
+                                <div class="col">
+                                    <h4>Building Blocks</h4>
+                                    <ul>
+                                        <li>A discrete skill or knowledge item that can be practiced individually.</li>
+                                        <li>Then combined with other building blocks to achieve larger objectives.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="objectives">
+            <h3>Lesson Objectives and Preparation</h3>
+            <h4>Two Types of Training Objectives</h4>
+            <div class="row">
+                <div class="col">
+                    <h4>Performance Based Objectives</h4>
+                    <p>Learner is expected to perform an exact procedure to a specific standard</p>
+                    <p>Includes:</p>
+                    <ul>
+                        <li>description</li>
+                        <li>conditions</li>
+                        <li>criteria</li>
+                    </ul>
+                </div>
+
+                <div class="col">
+                    <h4>Decision Based Objectives</h4>
+                    <p>As training progresses, shift to scenario-based training to develop judgement and ADM</p>
+                    <p>Higher level of learning</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="organization">
+            <h3>Organizing and Delivering Lessons</h3>
+            <h4 class="mt">Organization</h4>
+            <ul>
+                <li>
+                    <h5>Intro AMO</h5>
+                    <ul>
+                        <li>Attention</li>
+                        <li>Development</li>
+                        <li>Conclusion</li>
+                    </ul>
+                </li>
+                <li>
+                    <h5>Development</h5>
+                    <p>Should have logical order</p>
+                    <ul>
+                        <li>past to present</li>
+                        <li>simple to complex</li>
+                        <li>frequently used to infrequently used</li>
+                        <li>known to unknown</li>
+                    </ul>
+                </li>
+                <li>
+                    <h5>Conclusion</h5>
+                    <p>Review key concepts and relate them to the main idea.</p>
+                </li>
+            </ul>
+        </section>
+
+        <section id="conclusion">
+            <h3>Conclusion</h3>
+            <h4>Be Prepared!</h4>
+            <p>An unprepared or unkowledgable instructor makes the learner appathetic.</p>
+        </section>
+    </main>
+</body>
+
+</html>

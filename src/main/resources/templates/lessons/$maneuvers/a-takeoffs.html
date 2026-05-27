@@ -10,7 +10,7 @@
 <body>
     <main layout:fragment="content">
 
-        <section class="hero" style="background-image: url('https://res.cloudinary.com/dscigc3ga/image/upload/q_auto/f_auto/v1778797249/airplane-maintenance_qdhq7b.jpg');">
+        <section class="hero" style="background-image: url('https://res.cloudinary.com/dscigc3ga/image/upload/q_auto/f_auto/v1779065396/da20_fzzlgt.jpg');">
             <h2 th:text="${title}"></h2>
         </section>
 
@@ -18,9 +18,10 @@
             <div class="row">
                 <div class="col">
                     <h3>Objective</h3>
+                    <p>The learner will aquire the necessary knowledge, skills, and awareness pertaining to:</p>
                     <ul>
-                        <li>Gain the necessary knowledge and skills to perform all required landings safely and consistently within standards</li>
-                        <li>Gain an awareness of safety considerations and hazards when landing</li>
+                        <li>takeoff procedures, including normal, soft field, and short field takeoffs</li>
+                        <li>common errors, hazards, and other considerations when performing takeoffs</li>
                     </ul>
                 </div>
 
@@ -28,40 +29,190 @@
                     <h4>Topics</h4>
                     <ul>
                         <li><a href="#normal">Normal Takeoff</a></li>
+                        <li><a href="#rejected">Rejected Takeoff</a></li>
+                        <li><a href="#environment">Environmental Factors</a></li>
                         <li><a href="#soft">Soft Field Takeoff</a></li>
+                        <li><a href="#short">Short Field Takeoff</a></li>
                     </ul>
                 </div>
             </div>
         </section>
 
-        <section id="">
-            <h3>Procedures</h3>
+        <section id="normal">
+            <h3>Normal Takeoff</h3>
+            <h4>Procedure</h4>
             <ul>
                 <li>Verify "hold short" checklist complete</li>
                 <li>Adjust power and control rudder to roll onto runway</li>
                 <li>
-                    <p>Full power - verify:</p>
+                    <p>Full power - verify and vocalize:</p>
                     <ul>
-                        <li>gauges green</li>
                         <li>RPMs</li>
+                        <li>gauges green</li>
                         <li>airspeed alive</li>
                     </ul>
                 </li>
+                <li>Control rudder to maintain centerline</li>
                 <li>Rotate: Vr</li>
+                <li>Apply crosswind corrections if neccessary</li>
                 <li>Stay in ground effect until chosen climb out speed (Vy or Vx)</li>
-                <li>At safe altitude (about 400 AGL) set cruise flaps, pitch for cruise climb</li>
+                <li>At safe altitude (about 400 AGL) complete "climb" checklist</li>
+                <li>At cruise altitude, complete "cruise" checklist</li>
+            </ul>
+        </section>
+
+        <section id="rejected">
+            <h3>Rejected Takeoff</h3>
+        </section>
+
+        <section id="environment">
+            <h3>Crosswind Corrections</h3>
+            <div class="row">
+                <div class="col bg bg-1">
+                    <h4>Side Slip</h4>
+                    <ul>
+                        <li>ailerons into wind</li>
+                        <li>align nose with centerline using rudder</li>
+                    </ul>
+                </div>
+
+                <div class="col bg bg-1">
+                    <h4>Crab</h4>
+                    <ul>
+                        <li>rudder into wind</li>
+                        <li>wings level</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h3>Other Wind Considerations</h3>
+            <div class="row">
+                <div class="col bg bg-2">
+                    <h4>Wind Shear</h4>
+                    <p>Any abrupt change in wind direction or speed.</p>
+                    <h5>Corrections</h5>
+                    <ul>
+                        <li>delay takeoff</li>
+                        <li>increase Vr and Vy</li>
+                    </ul>
+                </div>
+
+                <div class="col bg bg-2">
+                    <h4>Tailwind on Takeoff</h4>
+                    <p>Increases takeoff ground roll.</p>
+                    <h5>Corrections</h5>
+                    <ul>
+                        <li>depart with a headwind</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="soft">
+            <h3>Soft Field Takeoff</h3>
+            <h4>Purpose</h4>
+            <p>Runway conditions are not always hard, dry asphalt. Runways might have a surface that is dirt, sand, grass, snow, etc.</p>
+            <p>Soft Field Takeoffs Procedures:</p>
+            <ul>
+                <li>transfer weight from the wheels to the wings as quickly as possible</li>
+                <li>reduce stress on the nose gear</li>
+                <li>reduce chances of getting stuck</li>
             </ul>
         </section>
 
         <section>
+            <h3>Soft Field Takeoff</h3>
+            <h4>Procedure</h4>
+            <ul>
+                <li>Verify "hold short" checklist complete</li>
+                <li class="text-danger">Apply full back pressure to lessen weight on nose wheel</li>
+                <li>Adjust power and control rudder to roll onto runway <span class="text-danger">with minimal braking</span></li>
+                <li>
+                    <p>Full power - verify and vocalize:</p>
                     <ul>
-                        <li>other traffic</li>
-                        <li>groud vehicles</li>
-                        <li>animals / birds</li>
-                        <li>terrain</li>
-                        <li>runway conditions</li>
+                        <li>RPMs</li>
+                        <li>gauges green</li>
+                        <li>airspeed alive</li>
                     </ul>
- 
+                </li>
+                <li>Control rudder to maintain centerline</li>
+                <li class="text-danger">Relieve back pressure as nose wheel lifts off</li>
+                <li>Apply crosswind corrections if neccessary</li>
+                <li>Stay in ground effect until chosen climb out speed (Vy or Vx)</li>
+                <li>At safe altitude (about 400 AGL) complete "climb" checklist</li>
+                <li>At cruise altitude, complete "cruise" checklist</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Soft Field Takeoff</h3>
+            <h4>Common Errors</h4>
+            <ul>
+                <li>failing to apply full back pressure <b>before</b> taxiing onto runway</li>
+                <li>losing ground speed while taxiing onto runway</li>
+                <li>failing to relieve back pressure as nose wheel lifts off, causing premature takeoff</li>
+            </ul>
+        </section>
+
+        <section>
+            <div class="row">
+                <div class="col">
+                    <h3>Short Field Takeoff</h3>
+                    <h4>Purpose</h4>
+                    <ul>
+                        <li>use best angle of climb (Vx)</li>
+                        <li>minimize ground roll on takeoff</li>
+                        <li>clear obstacles in vicinity of airport</li>
+                    </ul>
+                </div>
+
+                <div class="col bg bg-1">
+                    <h4>Vy and Vx</h4>
+                    <h5>Vy - best rate of climb</h5>
+                    <p>gain the most <b>altitude</b> in the shortest <b>time</b></p>
+                    <h5>Vx - best angle of climb</h5>
+                    <p>gain the most <b>altitude</b> in the shortest <b>distance</b></p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h3>Short Field Takeoff</h3>
+            <h4>Procedure</h4>
+            <ul>
+                <li>Verify "hold short" checklist complete</li>
+                <li>Adjust power and control rudder to roll onto runway <span class="text-danger">utilizing full runway</span></li>
+                <li class="text-danger">Apply full brakes</li>
+                <li>
+                    <p>Full power - verify and vocalize:</p>
+                    <ul>
+                        <li>RPMs</li>
+                        <li>gauges green</li>
+                        <li>airspeed alive <span class="text-danger">once rolling</span></li>
+                    </ul>
+                </li>
+                <li class="text-danger">Release brakes</li>
+                <li>Control rudder to maintain centerline</li>
+                <li>Rotate: Vr <span class="text-danger">(possibly different than Vr for normal takeoff - check POH)</span></li>
+                <li>Apply crosswind corrections if neccessary</li>
+                <li class="text-danger">Pitch for Vx and maintain until clear of obstacles (50 agl)</li>
+                <li class="text-danger">Once clear, pitch for Vy</li>
+                <li>At safe altitude (about 400 AGL) complete "climb" checklist</li>
+                <li>At cruise altitude, complete "cruise" checklist</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Short Field Takeoff</h3>
+            <h4>Common Errors</h4>
+            <ul>
+                <li>failing to utilize full runway</li>
+                <li>failing to align with centerline</li>
+                <li>failing to correct left turning tendencies</li>
+                <li>failing to maintain proper airspeed</li>
+            </ul>
         </section>
 
         <section id="conclusion">
@@ -69,8 +220,9 @@
             <h4>Takeoff is a Critical Phase of Flight!</h4>
             <ul>
                 <li>sterile flight deck</li>
-                <li>airspeed is king (don't stall)</li>
-                <li>verify aircraft performance and engine conditions</li>
+                <li>airspeed is king - stay above stall speed</li>
+                <li>verify aircraft and engine performance</li>
+                <li>note weather conditions</li>
                 <li>watch for obstacles</li>
             </ul>
             <h4 class="mt">Enjoy the Flight!</h4>

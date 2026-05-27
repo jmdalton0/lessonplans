@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{layout}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title th:text="${title}"></title>
+</head>
+
+<body>
+    <main layout:fragment="content">
+
+        <section class="hero" style="background-image: url('https://res.cloudinary.com/dscigc3ga/image/upload/q_auto/f_auto/v1779065396/da20_fzzlgt.jpg');">
+            <h2 th:text="${title}"></h2>
+        </section>
+
+        <section id="outline">
+            <div class="row">
+                <div class="col">
+                    <h3>Objective</h3>
+                    <p>The learner will aquire the necessary knowledge, skills, and awareness pertaining to:</p>
+                    <ul>
+                        <li>principles of flight pertaining to stalls</li>
+                        <li>inducing and recovering from a stall, including power on and power off stalls</li>
+                    </ul>
+                </div>
+
+                <div class="col">
+                    <h4>Topics</h4>
+                    <ul>
+                        <li><a href="#power-off">Power Off Stall</a></li>
+                        <li><a href="#power-on">Power On Stall</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="power-off">
+        </section>
+
+        <section>
+            <h3>Common Errors</h3>
+            <ul>
+                <li>fixating on instruments</li>
+                <li>using ailerons to correct heading</li>
+                <li>failing to apply adequate rudder</li>
+                <li>pitching down to aggressively</li>
+                <li>pitching up to aggressively</li>
+            </ul>
+        </section>
+
+        <section id="conclusion">
+            <h3>Conclusion</h3>
+        </section>
+    </main>
+</body>

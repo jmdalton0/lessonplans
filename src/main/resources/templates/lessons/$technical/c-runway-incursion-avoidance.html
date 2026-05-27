@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{layout}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title th:text="${title}"></title>
+</head>
+
+<body>
+    <main layout:fragment="content">
+
+        <section class="hero" style="background-image: url('https://res.cloudinary.com/dscigc3ga/image/upload/q_auto/f_auto/v1779570547/runway-1_gijjuq.jpg');">
+            <h2 th:text="${title}">Runway Incursion Avoidance</h2>
+        </section>
+
+        <section id="outline">
+            <div class="row">
+                <div class="col">
+                    <h3>Objective</h3>
+                    <p>The learner will aquire the necessary knowledge, skills, and awareness pertaining to:</p>
+                    <ul>
+                        <li>general airport operations, including taxiing and radio communications</li>
+                        <li>runway incursions and precautions to take to avoid them</li>
+                        <li>airport signs, markings, lights, etc.</li>
+                    </ul>
+                </div>
+
+                <div class="col">
+                    <h4>Topics</h4>
+                    <ul>
+                        <li><a href="#incursion">Runway Incursions</a></li>
+                        <li><a href="#taxi">Taxi Instructions and Clearances</a></li>
+                        <li><a href="#signs">Airport Signs and Markings</a></li>
+                        <li><a href="#hotspots">Hotspots</a></li>
+                        <li><a href="#uncontrolled">Non-Towered Airports</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="incursion">
+            <div class="row">
+                <div class="col">
+                    <h3>Runway Incursions</h3>
+                    <div class="flashcard">
+                        <p class="question">What is a runway incursion?</p>
+                        <p class="answer">Any occurrence at an aerodrome involving the incorrect presence of an aircraft, vehicle, or person on the protected area of a surface designated for the landing and takeoff of aircraft.</p>
+                    </div>
+
+                    <div class="flashcard">
+                        <p class="question">What kind are we worried about?</p>
+                        <p class="answer">Pilot Deviation</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="img" style="background-image: url('https://res.cloudinary.com/dscigc3ga/image/upload/q_auto/f_auto/v1779830773/runway-incursion_a7hiox.jpg');"></div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h3>Common Runway Incursions</h3>
+            <div class="row">
+                <div class="col bg bg-1">
+                    <h4>Entering Movement Area Without Clearance</h4>
+
+                    <h5>Movement Area (Protected Area)</h5>
+                    <ul>
+                        <li>the part of an aerodrome that is controlled by ATC</li>
+                        <li>all taxiways and runways</li>
+                    </ul>
+
+                    <h5>Non-Movement Area</h5>
+                    <ul>
+                        <li>the part of an aerodrome where vehicles can move freely without ATC direction.</li>
+                        <li>parking</li>
+                    </ul>
+
+                    <div class="img" style="background-image: url('https://res.cloudinary.com/dscigc3ga/image/upload/q_auto/f_auto/v1779835581/movement-area-boundary-marking_h7dn7f.webp');"></div>
+                </div>
+
+                <div class="col bg bg-1">
+                    <h4>Crossing a Hold Short Line Without Clearance</h4>
+                    <p>usually crossing a runway</p>
+                    <div class="img" style="background-image: url('https://res.cloudinary.com/dscigc3ga/image/upload/q_auto/f_auto/v1779835994/hold-short-marking_i92dvh.jpg');"></div>
+                </div>
+
+                <div class="col bg bg-1">
+                    <h4>Using the Wrong Taxiway</h4>
+                    <p>taxiing on a taxiway OTHER than the route you were cleared for</p>
+
+                    <div class="img" style="background-image: url('https://res.cloudinary.com/dscigc3ga/image/upload/q_auto/f_auto/v1779836206/taxiway-sign_mp5rg1.jpg');"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="taxi">
+            <h3>Taxi Instructions and Clearances</h3>
+            <p>Don't do anything until you are cleared. If you have a question, ask ATC. They are there to help.</p>
+
+            <h4>Anatomy of a Taxi Clearance</h4>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Segment</th>
+                        <th>Example</th>
+                        <th>Meaning</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>identification</td>
+                        <td>Skyhawk 123BF</td>
+                        <td>who the clearance is for</td>
+                    </tr>
+                    <tr>
+                        <td>destination</td>
+                        <td>taxi to Runway 18</td>
+                        <td>
+                            <p>the runway you will be departing</p>
+                            <p>or the furthest part of your clearance so far</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Route</td>
+                        <td>via Alpha, Bravo, Charlie</td>
+                        <td>the route you will follow</td>
+                    </tr>
+                    <tr>
+                        <td>Constraints</td>
+                        <td>hold short of Runway 9</td>
+                        <td>any other instructions</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="row">
+                <div class="col">
+                    <h4>Readback all Clearances</h4>
+                    <ul>
+                        <li>runway assignments</li>
+                        <li>hold short instructions</li>
+                        <li>your tail number</li>
+                        <li>(any of the numbers / details)</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h4>Important Notes</h4>
+                    <ul>
+                        <li>"cleared to runway X" does NOT mean "cleared to cross runway Y"</li>
+                        <li>always write down your clearance</li>
+                        <li>be ready with your ipad, kneeboard, etc.</li>
+                        <li>plan ahead before you move - trace the route you will take and make sure you understand</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h3>Progressive Taxi</h3>
+            <p>If anything happens, ask for "Progressive Taxi Instructions."</p>
+            <p>This is a service that ATC provides where they give you step by step instructions.</p>
+            <p>Request if:</p>
+            <ul>
+                <li>confused</li>
+                <li>new to the airport</li>
+                <li>visibility is low</li>
+                <li>obstructions, construction, other vehicles, etc.</li>
+            </ul>
+        </section>
+
+        <section id="signs">
+            <h3>Airport Signs and Markings</h3>
+            <div class="img" style="background-image: url('https://res.cloudinary.com/dscigc3ga/image/upload/q_auto/f_auto/v1779849163/airport-signs_i7gliu.png');"></div>
+        </section>
+
+        <section>
+            <h3>Airport Lights</h3>
+            <div class="img" style="background-image: url('https://res.cloudinary.com/dscigc3ga/image/upload/q_auto/f_auto/v1779849716/runway-lights_u0lqqb.jpg');"></div>
+        </section>
+
+        <section>
+            <h3>Flight Deck Activities When Taxiing</h3>
+            <p>Keep your eyes up!</p>
+        </section>
+
+        <section id="hotspots">
+            <h3>Hotspots</h3>
+        </section>
+
+        <section id="uncontrolled">
+            <h3>Non-Towered Airports</h3>
+            <p>ATC is not available to direct traffic.</p>
+            <p>Pilots are entirely responsible for collision avoidance.</p>
+
+            <ul>
+                <li>Communicate your intentions on the CTAF</li>
+                <li>Clarify any misunderstandings</li>
+                <li>Be courteous and respectful, but above all SAFE and PREDICTABLE</li>
+            </ul>
+ 
+            <h4>Anatomy of a Non-Towered Radio Call</h4>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Who You Are Talking To</th>
+                        <th>Who And What You Are</th>
+                        <th>Where You Are</th>
+                        <th>What You Plan To Do</th>
+                        <th>Who You Are Talking To</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Spanish Fork traffic</td>
+                        <td>Katana 123BF</td>
+                        <td>left crosswind 30</td>
+                        <td>closed traffic</td>
+                        <td>Spanish Fork traffic</td>
+                    </tr>
+                    <tr>
+                        <td>Spanish Fork traffic</td>
+                        <td>SportCruiser 123BF</td>
+                        <td>10 miles SW at 7500</td>
+                        <td>inbound, planning to enter the 45 for left downwind runway 30</td>
+                        <td>Spanish Fork traffic</td>
+                    </tr>
+                    <tr>
+                        <td>Spanish Fork traffic</td>
+                        <td>DiamondStar 123BF</td>
+                        <td>left base 12</td>
+                        <td>full stop</td>
+                        <td>Spanish Fork traffic</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="conclusion">
+            <h3>Conclusion</h3>
+            <ul>
+                <li>Plan ahead</li>
+                <li>Pay attention</li>
+                <li>Always be sure</li>
+                <li>Communicate</li>
+            </ul>
+            <p class="mt">So you never hear:</p>
+            <h4 class="bg bg-3">"Advise when ready to copy a phone number."</h4>
+            <div class="img" style="background-image: url('https://res.cloudinary.com/dscigc3ga/image/upload/q_auto/f_auto/v1779848422/runway-2_nm4dab.webp');"></div>
+        </section>
+    </main>
+</body>
+
+</html>

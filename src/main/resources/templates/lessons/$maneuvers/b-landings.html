@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{layout}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title th:text="${title}"></title>
+</head>
+
+<body>
+    <main layout:fragment="content">
+
+        <section class="hero" style="background-image: url('https://res.cloudinary.com/dscigc3ga/image/upload/q_auto/f_auto/v1779065396/da20_fzzlgt.jpg');">
+            <h2 th:text="${title}"></h2>
+        </section>
+
+        <section id="outline">
+            <div class="row">
+                <div class="col">
+                    <h3>Objective</h3>
+                    <p>The learner will aquire the necessary knowledge, skills, and awareness pertaining to:</p>
+                    <ul>
+                        <li>landing procedures, including normal, soft field, and short field landings</li>
+                        <li>common errors, hazards, and other considerations when performing landings</li>
+                    </ul>
+                </div>
+
+                <div class="col">
+                    <h4>Topics</h4>
+                    <ul>
+                        <li><a href="#normal">Normal Landing</a></li>
+                        <li><a href="#rejected">Rejected Landing</a></li>
+                        <li><a href="#environment">Environmental Factors</a></li>
+                        <li><a href="#soft">Soft Field Landing</a></li>
+                        <li><a href="#short">Short Field Landing</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="row">
+                <div class="col">
+                    <h3>Takeoff is Optional</h3>
+                    <h3 class="mt">Landing is Mandatory</h3>
+                </div>
+                <div class="col">
+                    <div class="img" style="background-image: url('https://res.cloudinary.com/dscigc3ga/image/upload/q_auto/f_auto/v1779763880/landing-meme_c80flz.jpg');"></div>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="normal">
+            <h3>Normal Landing</h3>
+            <h4>Procedure</h4>
+            <p>See Stanman</p>
+        </section>
+
+        <section>
+            <h3>Crosswind Corrections</h3>
+            <div class="row">
+                <div class="col bg bg-1">
+                    <h4>Side Slip</h4>
+                    <ul>
+                        <li>ailerons into wind</li>
+                        <li>align nose with centerline using rudder</li>
+                    </ul>
+                </div>
+
+                <div class="col bg bg-1">
+                    <h4>Crab</h4>
+                    <ul>
+                        <li>rudder into wind</li>
+                        <li>wings level</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h3>Other Wind Considerations</h3>
+            <div class="row">
+                <div class="col bg bg-2">
+                    <h4>Wind Shear</h4>
+                    <p>Any abrupt change in wind direction or speed.</p>
+                    <h5>Corrections</h5>
+                    <ul>
+                        <li>increase approach airspeed</li>
+                        <li>add half the gust factor</li>
+                        <li>go around</li>
+                    </ul>
+                </div>
+
+                <div class="col bg bg-2">
+                    <h4>Tailwind Landing</h4>
+                    <p>Increases landing distance.</p>
+                    <h5>Corrections</h5>
+                    <ul>
+                        <li>land with a headwind</li>
+                        <li>go around</li>
+                        <li>be aware of increased landing distance</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="soft">
+            <h3>Soft Field Landing</h3>
+            <h4>Purpose</h4>
+            <p>Runway conditions are not always hard, dry asphalt. Runways might have a surface that is dirt, sand, grass, snow, etc.</p>
+            <p>Soft Field Landings Procedures:</p>
+            <ul>
+                <li>allow the wings to hold more of the aircrafts weight</li>
+                <li>reduce stress on the nose gear</li>
+                <li>reduce chances of getting stuck</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Soft Field Landing</h3>
+            <h4>Procedure</h4>
+            <p>Similar to a normal landing, however</p>
+            <ul>
+                <li>maintain back pressure to keep the nose wheel off of the ground</li>
+                <li>keep nose wheel off the ground until loss of elevator authority</li>
+                <li>minimize braking while taxiing off the runway</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Soft Field Landing</h3>
+            <h4>Common Errors</h4>
+            <ul>
+                <li>applying too much back pressure and lifting off again</li>
+                <li>allowing the nose wheel to touch down prematurely</li>
+                <li>applying brakes prematurely</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Short Field Landing</h3>
+            <h4>Purpose</h4>
+            <ul>
+                <li>increase approach angle</li>
+                <li>minimize ground roll on landing</li>
+                <li>clear obstacles in vicinity of airport</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Short Field Landing</h3>
+            <h4>Procedure</h4>
+            <p>See Stanman</p>
+        </section>
+
+        <section>
+            <h3>Short Field Landing</h3>
+            <h4>Common Errors</h4>
+            <ul>
+                <li>too fast on approach</li>
+                <li>too low on approach</li>
+                <li>too much flare causing floating</li>
+                <li>too much brakes</li>
+                <li>failing to apply maximum aerodynamic braking</li>
+            </ul>
+        </section>
+
+        <section id="conclusion">
+            <h3>Conclusion</h3>
+            <h4>Landing is a Critical Phase of Flight!</h4>
+            <ul>
+                <li>sterile flight deck</li>
+                <li>airspeed is king - stay above stall speed</li>
+                <li>verify aircraft and engine performance</li>
+                <li>note weather conditions</li>
+                <li>watch for obstacles</li>
+            </ul>
+            <h4 class="mt">Enjoy the Flight!</h4>
+        </section>
+    </main>
+</body>
+
+</html>

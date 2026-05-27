@@ -12,6 +12,8 @@
     --white: #fff;
     --text: #000;
     --far: blue;
+    --alert: orange;
+    --danger: red;
     --grey-1: rgb(174, 189, 196);
     --grey-2: rgb(100, 116, 125);
     --grey-3: rgb(67, 77, 83);
@@ -157,8 +159,9 @@ th {
 }
 
 .nav-btn {
-    width: var(--gutter);
+    width: 4rem; 
     height: 4rem;
+    font-size: 1.2rem;
     font-weight: bold;
     color: var(--white);
     background-color: var(--text);
@@ -247,6 +250,14 @@ th {
 
 .mt {
     margin-top: var(--gutter);
+}
+
+.text-alert {
+    color: var(--alert);
+}
+
+.text-danger {
+    color: var(--danger);
 }
 
 .bg {

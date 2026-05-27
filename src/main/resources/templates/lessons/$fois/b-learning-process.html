@@ -11,143 +11,213 @@
     <main layout:fragment="content">
 
         <section class="hero" style="background-image: url('https://res.cloudinary.com/dscigc3ga/image/upload/q_auto/f_auto/v1779065396/da20_fzzlgt.jpg');">
-            <h2 th:text="${title}">Learning Process</h2>
+            <h2 th:text="${title}"></h2>
         </section>
 
         <section id="outline">
             <div class="row">
                 <div class="col">
                     <h3>Objective</h3>
+                    <p>The learner will aquire the necessary knowledge, skills, and awareness pertaining to:</p>
                     <ul>
-                        <li>Understand how adults acquire knowledge and skills.</li>
-                        <li>Understand how memory works.</li>
-                        <li>Apply educational theories to manage risks and provide effective flight instruction.</li>
+                        <li>learning theory, including laws, domains, and characteristics of learning</li>
+                        <li>methods and considerations for developing new knowledge and skills in others, including examining and critiquing</li>
+                        <li>memory and its functions</li>
+                        <li>developing and maintaining learner motivation</li>
                     </ul>
                 </div>
 
                 <div class="col">
                     <h4>Topics</h4>
                     <ul>
-                        <li><a href="#learning">What is Learning</a></li>
+                        <li><a href="#learning">Definitions of Learning</a></li>
                     </ul>
                 </div>
             </div>
         </section>
 
         <section id="learning">
-            <h3>What is Learning?</h3>
-            <p>A change in behavior as a result of experience.</p>
+            <h3>Definitions of Learning?</h3>
+            <div class="flashcard">
+                <p class="question">How would you define learning?</p>
+                <p class="answer">A change in behavior as a result of experience.</p>
+            </div>
 
-            <h4>Two Theories</h4>
-            <h5>Behaviorism</h5>
-            <ul>
-                <li>focuses on overt behavior</li>
-                <li>learning is a response to environmental stimuli (rewards and punishments)</li>
-                <li>Pavlov's dog</li>
-            </ul>
+            <div class="row">
+                <div class="col">
+                    <h4>Two Theories</h4>
+                    <h5>Behaviorism</h5>
+                    <ul>
+                        <li>focuses on overt behavior</li>
+                        <li>learning is a response to environmental stimuli (rewards and punishments)</li>
+                        <li>Pavlov's dog</li>
+                    </ul>
 
-            <h5>Cognitive Theory</h5>
-            <ul>
-                <li>focuses on what's happening inside the mind</li>
-                <li>learning is a process of thinking, knowing, and perceiving.</li>
-            </ul>
+                    <h5>Cognitive Theory</h5>
+                    <ul>
+                        <li>focuses on what's happening inside the mind</li>
+                        <li>learning is a process of thinking, knowing, and perceiving.</li>
+                    </ul>
+                </div>
+
+                <div class="col">
+                    <div class="img" style="background-image: url('https://res.cloudinary.com/dscigc3ga/image/upload/q_auto/f_auto/v1779476280/pavlov-dog_wc4xjl.webp');"></div>
+                </div>
+            </div>
         </section>
 
         <section>
             <h3>How We Construct Meaning</h3>
-            <h4>Perceptions</h4>
-            <p>All learning comes from perceptions via our senses.</p>
-            <p>Pyramid of Needs</p>
+            <div class="row">
+                <div class="col">
+                    <h4>Perceptions</h4>
+                    <p>All learning comes from perceptions via our senses.</p>
+                    <p>Pyramid of Needs</p>
 
-            <h4>Insight</h4>
-            <p>The result of grouping perceptions into meaningful wholes.</p>
+                    <h4>Insight</h4>
+                    <p>The result of grouping perceptions into meaningful wholes.</p>
+                </div>
+                <div class="col">
+                    <div class="img" style="background-image: url('https://res.cloudinary.com/dscigc3ga/image/upload/q_auto/f_auto/v1779475806/maslow-pyramid_d2tptz.png');"></div>
+                </div>
+            </div>
         </section>
 
         <section>
-        Acquiring Knowledge:
-        The three phases:
-        <ul>
-            <li>memorization</li>
-            <li>understanding</li>
-            <li>application</li>
-        </ul>
-        </section>
-
-        <section>
-            <h3>The Laws and Domains of Learning</h3>
-            <h4>The 6 Laws of Learning (REEPIR)</h4>
+            <h3>Acquiring Knowledge:</h3>
+            <p>The three phases:</p>
             <ul>
-                <li>Readiness: Students learn best when they are ready to learn.</li>
-                <li>Exercise: Things most often repeated are best remembered</li>
-                <li>Effect: Learning is strengthened by a positive emotional feeling</li>
-                <li>Primacy: What is learned first creates a strong impression (teach it right the first time!)</li>
-                <li>Intensity: A dramatic or exciting learning experience teaches more than a boring one</li>
-                <li>Recency: Things most recently learned are best remembered.</li>
+                <li>memorization</li>
+                <li>understanding</li>
+                <li>application</li>
             </ul>
         </section>
 
         <section>
-        Domains of Learning (CAP)
-        - Cognitive (Thinking): Knowledge, rote memory, and analysis
-        - Affective (Feeling): Tying emotions, values, and safety attitudes to flying
-        - Psychomotor (Doing): Physical hands-on stick-and-rudder skills
+            <h3>The Laws and Domains of Learning</h3>
+            <div class="row">
+                <div class="col">
+                    <h4>The 6 Laws of Learning (REEPIR)</h4>
+                    <ul>
+                        <li>Readiness: Students learn best when they are ready to learn.</li>
+                        <li>Exercise: Things most often repeated are best remembered</li>
+                        <li>Effect: Learning is strengthened by a positive emotional feeling</li>
+                        <li>Primacy: What is learned first creates a strong impression (teach it right the first time!)</li>
+                        <li>Intensity: A dramatic or exciting learning experience teaches more than a boring one</li>
+                        <li>Recency: Things most recently learned are best remembered.</li>
+                    </ul>
+                </div>
+
+                <div class="col">
+                    <div class="img" style="background-image: url('https://res.cloudinary.com/dscigc3ga/image/upload/q_auto/f_auto/v1779475575/reepir_sdimkh.jpg');"></div>
+                </div>
+            </div>
         </section>
 
         <section>
-        <h3>Skill Acquisition and Practice</h3>
-        <h4>Stages of Skill Acquisition</h4>
-        <ul>
-            <li>Cognitive Stage: Student memorizes steps</li>
-            <li>Associative Stage: Student practices and self-corrects</li>
-            <li>Automatic Response: Performance is smooth and requires little conscious thought</li>
-        </ul>
+            <h3>Domains of Learning (CAP)</h3>
+
+            <div class="row">
+                <div class="col bg bg-3">
+                    <h4>Cognitive</h4>
+                    <h5>(thinking)</h5>
+                    <ul>
+                        <li>knowledge</li>
+                        <li>rote memory</li>
+                        <li>analysis</li>
+                    </ul>
+                </div>
+
+                <div class="col bg bg-3">
+                    <h4>Affective</h4>
+                    <h5>(feeling)</h5>
+                    <ul>
+                        <li>emotions</li>
+                        <li>values</li>
+                        <li>safety attitudes</li>
+                    </ul>
+                </div>
+
+                <div class="col bg bg-3">
+                    <h4>Psychomotor</h4>
+                    <h5>(doing)</h5>
+                    <ul>
+                        <li>physical</li>
+                        <li>hands-on</li>
+                        <li>stick-and-rudder skills</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="img" style="background-image: url('https://res.cloudinary.com/dscigc3ga/image/upload/q_auto/f_auto/v1779474928/learning-domains_ervquz.png');"></div>
         </section>
 
         <section>
-        <h3>Learning Plateaus - Slumps in progress</h3>
-        CFI Tip: Mitigate by moving to a different maneuver or giving the student a break
-        <h4>Types of Practive</h4>
-        <ul>
-            <li>Deliberate: Aimed at a specific goal with feedback.</li>
-            <li>Blocked: Repeating the same drill over and over (leads to good short-term performance, poor long-term retention).</li>
-            <li>Random: Mixing up maneuvers (better for long-term retention).</li>
-        </ul>
-        Scenario-Based Training (SBT): Using highly realistic situations to teach decision-making rather than just isolated maneuvers.
+            <h3>Skill Acquisition and Practice</h3>
+            <h4>Stages of Skill Acquisition</h4>
+            <ul>
+                <li>Cognitive Stage: Student memorizes steps</li>
+                <li>Associative Stage: Student practices and self-corrects</li>
+                <li>Automatic Response: Performance is smooth and requires little conscious thought</li>
+            </ul>
         </section>
 
         <section>
-        <h3>Memory, Forgetting, and Retention</h3>
-        Three Chambers of Memory
-        <ul>
-            <li>Sensory: Receives input from senses, discards or passes it to STM in seconds.</li>
-            <li>Short-Term (STM): Holds information for about 30 seconds; limited capacity (approx. 7 items).</li>
-            <li>Long-Term (LTM): Permanent storage; requires coding and significance to access.</li>
-        </ul>
-        Why We Forget (RIFD):
-        <br>
-        Retrieval Failure, Interference, Fading/Decay, Depression/Repression
-        <br>
-        Retention of Learning: Praise, favorable attitudes, association, meaningful repetition, and multi-sensory learning help retain info
+            <h3>Learning Plateaus</h3>
+            <p>Temporary leveling off of learning.</p>
+            <p>Learning Plateus are normal.</p>
+            <p class="bg bg-2">Mitigate by moving to a different maneuver or giving the student a break</p>
         </section>
 
         <section>
-        Transfer of Learning
-        <br>
-        Positive: Learning one thing helps learn another (e.g., driving a manual transmission helps understand taxiing engine control)
-        <br>
-        Negative: Learning one thing hinders another (e.g., steering a car with a steering wheel vs. steering a plane with rudders)
+            <h3>Types of Practive</h3>
+            <ul>
+                <li>Deliberate: Aimed at a specific goal with feedback.</li>
+                <li>Blocked: Repeating the same drill over and over (leads to good short-term performance, poor long-term retention).</li>
+                <li>Random: Mixing up maneuvers (better for long-term retention).</li>
+            </ul>
+            <p>Scenario-Based Training (SBT): Using highly realistic situations to teach decision-making rather than just isolated maneuvers.</p>
         </section>
 
         <section>
-        Assessment, Errors, and Workload Management 
-        <br>
-        Evaluation vs. Critique: Evaluation tests the student against a standard (grading)
-        <br>
-        Critique provides immediate, useful feedback to improve
-        <br>
-        Slip: Plans to do the right thing, but does the wrong action
-        <br>
-        Mistake: Intends to do the wrong thing and succeeds (lack of knowledge)
+            <h3>Memory, Forgetting, and Retention</h3>
+            <h4>Memory Systems</h4>
+            <ul>
+                <li>Sensory Register: Receives input from senses, discards or passes it to STM in seconds.</li>
+                <li>Short-Term Memory: Holds information for about 30 seconds; limited capacity (approx. 7 items).</li>
+                <li>Long-Term Memory: Permanent storage; requires coding and significance to access.</li>
+            </ul>
+
+            <h4>Why We Forget</h4>
+            <ul>
+                <li>retrieval failure</li>
+                <li>interference</li>
+                <li>fading</li>
+                <li>repression</li>
+            </ul>
+
+            <h4>Retention of Learning</h4>
+            <p>Praise, favorable attitudes, association, meaningful repetition, and multi-sensory learning help retain info.</p>
+        </section>
+
+        <section>
+            <h3>Transfer of Learning</h3>
+
+            <h4>Positive</h4>
+            <p>Learning one thing helps learn another</p>
+            <p class="bg bg-1">slow flight -> short field landings</p>
+
+            <h4>Negative</h4>
+            <p>Learning one thing hinders another</p>
+            <p class="bg bg-1">inverted video game controls -> steering during taxi with pedals</p>
+        </section>
+
+        <section>
+            <h3>Assessment, Errors, and Workload Management</h3>
+            <p>Evaluation vs. Critique: Evaluation tests the student against a standard (grading)</p>
+            <p>Critique provides immediate, useful feedback to improve</p>
+            <p>Slip: Plans to do the right thing, but does the wrong action</p>
+            <p>Mistake: Intends to do the wrong thing and succeeds (lack of knowledge)</p>
         </section>
 
         <section id="conclusion">
