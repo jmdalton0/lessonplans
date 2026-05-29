@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{layout}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title th:text="${title}"></title>
+</head>
+
+<body>
+    <main layout:fragment="content">
+
+        <section class="hero" style="background-image: url('https://res.cloudinary.com/dscigc3ga/image/upload/q_auto/f_auto/v1779065396/da20_fzzlgt.jpg');">
+            <h2 th:text="${title}"></h2>
+        </section>
+
+        <section id="outline">
+            <div class="row">
+                <div class="col">
+                    <h3>Objective</h3>
+                    <p>The learner will aquire the necessary knowledge, skills, and awareness pertaining to:</p>
+                    <ul>
+                        <li>how human behavior and communication effect the learning process</li>
+                        <li>aspects of human behavior including the hierarchy of needs</li>
+                        <li>effective communication by understanding the different components source, symbols, and receiverl</li>
+                    </ul>
+                </div>
+
+                <div class="col">
+                    <h4>Topics</h4>
+                    <ul>
+                        <li><a href="#behavior">Definitions of Human Behavior</a></li>
+                        <li><a href="#motivation">Motivation</a></li>
+                        <li><a href="#needs">Human Needs</a></li>
+                        <li><a href="#defense">Defense Mechanisms</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="behavior">
+            <h3>Human Behavior</h3>
+            <p>The study of human behavior is an attempt to explain how and why humans function the way they do.</p>
+            <p>Behavior is a combination of many factors, including innate human nature as well as individual experiences.</p>
+
+            <h4>Satisfying Needs</h4>
+            <p>Another definition of human behavior is the result of attempts to satisfy needs.</p>
+            <p>All humans have needs, ranging from simple (air, food, sleep) to complex (fulfilling relationships, reaching potential).</p>
+        </section>
+
+        <section>
+            <h3>Instructor / Learner Relationship</h3>
+            <p>Each learner has a different style of learning.</p>
+            <p>Instructors must be able to adapt to different learning styles.</p>
+
+            <h4>Changing Instructors</h4>
+            <p>Not everyone will meld.</p>
+            <p>Make sure your student knows they can change instructors if needed.</p>
+        </section>
+
+        <section>
+            <h3>Motivation and Human Needs</h3>
+            <p>Motivation is the reason that causes someone to behave a certain way.</p>
+            <p>A person will not typcially gain new knowledge or skills without motivation.</p>
+
+            <div class="row">
+                <div class="col bg bg-1">
+                    <h4>Positive Motivation</h4>
+                    <p>Promise of reward</p>
+                    <p>Positive Motivation is always more effective</p>
+                    <ul>
+                        <li>secure, pleasant environment</li>
+                        <li>tangible returns for efforts</li>
+                        <li>group approval and belonging</li>
+                        <li>favorable self-image</li>
+                    </ul>
+                </div>
+                <div class="col bg bg-3">
+                    <h4>Negative Motivation</h4>
+                    <p>Also effective for a time, but overall detrimental to a learners continued growth.</p>
+                    <p>Should be avoided (except possibly with extremely overconfident, impulsive, unsafe learners).</p>
+                    <ul>
+                        <li>threats</li>
+                        <li>fear</li>
+                        <li>criticism</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h3>Maintaining Motivation</h4>
+                <p>Humans will inevitably experience drops in motivation, especially as novelty and excitement wears off.</p>
+                <p>As instructors, we can:</p>
+                <ul>
+                    <li>praise incremental success</li>
+                    <li>relate each block of learning to larger objectives</li>
+                    <li>vary training</li>
+                    <li>remind the learner of their goals and motivations</li>
+                </ul>
+                <p>Plateaus are normal and usually temporary.</p>
+        </section>
+
+        <section id="needs">
+            <h3>Maslow's Hierarchy of Needs</h3>
+            <div class="row">
+                <div class="col">
+                    <p>Higher levels are more complex.</p>
+                    <p>To an extent, humans cannot satisfy a need on one level until the needs on all the lower levels are met.</p>
+                    <ul>
+                        <li>
+                            <h5>Physiological</h5>
+                        </li>
+                        <li>
+                            <h5>Safety and Security</h5>
+                        </li>
+                        <li>
+                            <h5>Belonging</h5>
+                            <ul>
+                                <li>give and recieve friendship and love</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h5>Esteem</h5>
+                            <ul>
+                                <li>Internal - self-esttem, confidence, independence</li>
+                                <li>External - recognition, reputation, status</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h5>Cognitive and Aesthetic - understand the world around you</h5>
+                            <ul>
+                                <li>Cognitive - knowledge, understanding</li>
+                                <li>Aesthetic - opinions, tastes (can affect instructor / learner relationship)</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h5>Self-Actualization</h5>
+                            <ul>
+                                <li>fulfill potential</li>
+                                <li>solve problems</li>
+                                <li>concerned about personal growth</li>
+                                <li>appreciate life</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <div class="img" style="background-image: url('https://res.cloudinary.com/dscigc3ga/image/upload/q_auto/f_auto/v1779475806/maslow-pyramid_d2tptz.png');"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="defense">
+            <h3>Defense Mechanisms</h3>
+            <p>Unconscious mental process to protect oneself from axiety and unpleasant emotions.</p>
+            <p class="bg bg-2">Defense Mechanisms tend to distort, transform, or otherwise falsify reality</p>
+            <div class="row">
+                <div class="col">
+                    <ul>
+                        <li>
+                            <h5>Repression</h5>
+                            <p>Placing uncomfortable thoughts into inaccessible areas of the unconsious mind.</p>
+                            <p>Example: some who is assaulted might not remember the event</p>
+                        </li>
+                        <li>
+                            <h5>Denial</h5>
+                            <p>A refusal to accept external reality.</p>
+                            <p>Example: heavy drinker says it is not affecting their health</p>
+                        </li>
+                        <li>
+                            <h5>Compensation</h5>
+                            <p>Disguising a weak quality by emphasizing a strong one.</p>
+                            <p>Example: student compensates for their harsh landings by emphasizing that their steep turns were in standards</p>
+                        </li>
+                        <li>
+                            <h5>Projection</h5>
+                            <p>Relegating the blame for shortcomings onto other people or conditions.</p>
+                            <p>Example: student blames their lack of ground knowledge on their instructor</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <ul>
+                        <li>
+                            <h5>Rationalization</h5>
+                            <p>Justifying actions that otherwise would be unacceptable.</p>
+                            <p>Example: student claims they failed an exam because there was not enough time</p>
+                        </li>
+                        <li>
+                            <h5>Reaction Formation</h5>
+                            <p>Faking a belief that is opposite what the person actually feels.</p>
+                            <p>Example: student claiming that they do not care if they are a difficult personality to fly with</p>
+                        </li>
+                        <li>
+                            <h5>Fantasy</h5>
+                            <p>Daydreaming about how things should be rather than taking action.</p>
+                            <p>Example: spending more time thinking about being an airline pilot than studying to become one</p>
+                        </li>
+                        <li>
+                            <h5>Displacement</h5>
+                            <p>Shifting an emotion from the original cause to a less threatening substitute.</p>
+                            <p>Example: upset about failing a checkride, a student lashes out at a friend</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="conclusion">
+            <h3>Conclusion</h3>
+            <h4>A capable flight instructor is someone who understands human behavior and can accomodate individual needs.</h4>
+        </section>
+    </main>
+</body>
+
+</html>
