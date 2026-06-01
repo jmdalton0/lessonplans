@@ -9,17 +9,14 @@
 
 <body>
     <main layout:fragment="content">
-        <div id="menu">
-            <h2>All Lessons</h2>
+        <div id="menu" class="mt">
+            <h2 class="mt">All Lessons</h2>
             <ul>
                 <li th:each="group : ${data.keySet()}" class="group">
                     <h3 th:text="${group}" class="group-name">Group</h3>
                     <ul>
                         <li th:each="lesson : ${data.get(group)}" class="lesson">
-                            <a th:href="
-                            @{/lessons/{group}/{slug}
-                            (group = ${group}, slug = ${lesson.slug()})}
-                        " th:text="${lesson.name()}" class="lesson-name">Lesson</a>
+                            <a th:href="@{/lessons/{group}/{slug} (group = ${group}, slug = ${lesson.slug()})}" th:text="${lesson.name()}" class="lesson-name">Lesson</a>
                         </li>
                     </ul>
                 </li>

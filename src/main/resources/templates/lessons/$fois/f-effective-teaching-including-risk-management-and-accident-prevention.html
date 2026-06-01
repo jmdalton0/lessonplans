@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{layout}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title th:text="${title}"></title>
+</head>
+
+<body>
+    <main layout:fragment="content">
+
+        <section class="hero" style="background-image: url('https://res.cloudinary.com/dscigc3ga/image/upload/q_auto/f_auto/v1780248571/instruction_wl6eaq.webp');">
+            <h2 th:text="${title}"></h2>
+        </section>
+
+        <section id="outline">
+            <h3>Area of Operation I. Fundamentals of Instructing</h3>
+            <h4>Task F. Elements of Effective Teaching that Include Risk Management and Accident Prevention</h4>
+
+            <h4>Objectives</h4>
+            <ul>
+                <li>Learn importance of risk management.</li>
+                <li>Develop risk management techniques.</li>
+                <li>Gain awareness of scenarios and conditions that can be hazardous.</li>
+                <li>Learn about and develop skills to teach these topics to a learner.</li>
+            </ul>
+
+            <h4>Completion Standards</h4>
+            <ul>
+                <li>The learner can effectively identify and mitigate risk.</li>
+                <li>The learner can effectively teach the same principles to another learner.</li>
+            </ul>
+
+            <h4>Topics</h4>
+            <ul>
+                <li><a href="#general">Risk Management Techniques</a></li>
+                <li><a href="#adm">Aeronautical Decision Making and Human Factors</a></li>
+                <li><a href="#teaching">Teaching Risk Management</a></li>
+                <li><a href="#flight">Managing Risk During Flight Instruction</a></li>
+            </ul>
+
+            <h4>References</h4>
+            <ul>
+                <li>Aviation Instructor's Handbook</li>
+                <li>FAA Flight Risk Assessment Tool (FRAT)</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Introduction</h3>
+            <h4>Importance of Risk Management and Teaching Risk Management</h4>
+
+            <h4>Outline</h4>
+            <ul>
+                <li>
+                    <p>Review of Risk Management and ADM principles</p>
+                    <ul>
+                        <li>types of risk</li>
+                        <li>identifying risk</li>
+                        <li>assessing risk</li>
+                        <li>mitigating risk</li>
+                        <li>adm and human factors</li>
+                    </ul>
+                </li>
+                <li>
+                    <p>Teaching these principles to our students</p>
+                    <ul>
+                        <li>when to teach risk management</li>
+                        <li>risk management during different phases of training</li>
+                        <li>managing risks associated with flight instruction</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <section id="general">
+            <div class="row">
+                <div class="col">
+                    <h3>Risk Management</h3>
+                    <h4>Defining Risk</h4>
+                    <p class="bg bg-2">Risk is the probability and possible severity of accident from exposure to various hazards.</p>
+
+                    <h4>Principles of Risk Management</h4>
+                    <ul>
+                        <li>Accept no unnecessary risk</li>
+                        <li>Make risk decisions at the appropriate level</li>
+                        <li>Accept risk when benefits outweigh the costs</li>
+                        <li>Integrate risk management into planning at all levels</li>
+                    </ul>
+
+                    <div class="row mt">
+                        <div class="col">
+                            <h4>Risk Management Process</h4>
+                            <ul>
+                                <li>Identify the Hazard</li>
+                                <li>Assess the Risk</li>
+                                <li>Mitigate the Risk</li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <h4>Three P Model</h4>
+                            <ul>
+                                <li>Perceive</li>
+                                <li>Process</li>
+                                <li>Perform</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="img" style="background-image: url('https://res.cloudinary.com/dscigc3ga/image/upload/q_auto/f_auto/v1780250929/types-of-risk_owfx3u.png');"></div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="row">
+                <div class="col">
+                    <h3>Identify the Hazard</h3>
+                    <p>How do we identify potential hazards?</p>
+                    <ul>
+                        <li>PAVE</li>
+                        <li>Plan, Plane, Pilot, Passengers, Programming</li>
+                        <li>IMSAFE</li>
+                        <li>NWKRAFT</li>
+                    </ul>
+                    <div class="img" style="background-image: url('https://res.cloudinary.com/dscigc3ga/image/upload/q_auto/f_auto/v1780251729/pave_candwq.png');"></div>
+                </div>
+                <div class="col">
+                    <div class="img" style="background-image: url('https://res.cloudinary.com/dscigc3ga/image/upload/q_auto/f_auto/v1780251757/imsafe_jajdx6.png');"></div>
+                    <div class="img" style="background-image: url('https://res.cloudinary.com/dscigc3ga/image/upload/q_auto/f_auto/v1780253017/5p_tnbfpo.png');"></div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="row">
+                <div class="col">
+                    <h3>Assess the Risk</h3>
+                    <p>How do we decide if the risk is acceptable or unacceptable?</p>
+                    <p>How do we accomodate for unidentified risk?</p>
+
+                    <h4>Flight Risk Assessment Tool (FRAT)</h4>
+                    <div class="img" style="background-image: url('https://res.cloudinary.com/dscigc3ga/image/upload/q_auto/f_auto/v1780251930/risk-assessment-matrix_woxq9o.png');"></div>
+                </div>
+                <div class="col">
+                    <div class="img" style="background-image: url('https://res.cloudinary.com/dscigc3ga/image/upload/q_auto/f_auto/v1780252432/frat_cyajnl.png');"></div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h3>Mitigate the Risk</h3>
+            <div class="row bg bg-1">
+                <div class="col">
+                    <h4>Scenario</h4>
+                    <p>You want to fly your Cherokee from Provo to Vegas for a birthday party.</p>
+                    <ul>
+                        <li>Provo is MVFR</li>
+                        <li>30% probability of thunderstorms over Cedar</li>
+                        <li>Vegas has a very high density altitude</li>
+                    </ul>
+
+                    <h4 class="mt">Apply Team</h4>
+                    <ul>
+                        <li>Transfer</li>
+                        <li>Eliminate</li>
+                        <li>Accept</li>
+                        <li>Mitigate</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <div class="img" style="background-image: url('https://res.cloudinary.com/dscigc3ga/image/upload/q_auto/f_auto/v1780252432/frat_cyajnl.png');"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="adm">
+            <h3>Aeronautical Decision Making and Human Factors</h3>
+            <p>Systematic approach to the mental process used to determine the best course of action</p>
+            <div class="row mt">
+                <div class="col">
+                    <h4>DECIDE Model</h4>
+                    <ul>
+                        <li><b>D</b>etect the problem</li>
+                        <li><b>E</b>stimate the need to react</li>
+                        <li><b>C</b>onsider all the alternatives</li>
+                        <li><b>I</b>dentify the best alternatives</li>
+                        <li><b>D</b>o the necessary actions</li>
+                        <li><b>E</b>valuate and monitor the effects</li>
+                    </ul>
+                </div>
+
+                <div class="col">
+                    <h4>Factors That Inhibit ADM</h4>
+                    <ul>
+                        <li>Hazardous Attitudes</li>
+                        <li>Distractions (losing situational awareness while teaching)</li>
+                        <li>Complacency (overconfidence caused by repeated experience without incident)</li>
+                        <li>Stress</li>
+                        <li>Fatigue</li>
+                    </ul>
+                </div>
+
+                <div class="col">
+                    <div class="img" style="background-image: url('https://res.cloudinary.com/dscigc3ga/image/upload/q_auto/f_auto/v1780274027/hazardous-attitudes_lypzzr.png');"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="teaching">
+            <h3>Teaching Risk Management</h3>
+            <div class="row">
+                <div class="col">
+                    <h4>When</h4>
+                    <ul>
+                        <li>From the beginning and throughout</li>
+                        <li>Preliminary ground lesson about risk management before any flight time</li>
+                        <li>Continuously integrated into the training</li>
+                        <li>Particularly during every pre and post flight briefing</li>
+                    </ul>
+                </div>
+
+                <div class="col">
+                    <h4>RM During Phases of Training</h4>
+                    <p>Different considerations during different phases of training.</p>
+                    <ul>
+                        <li>
+                            <p>Private Pilots</p>
+                            <ul>
+                                <li>Pre-Solo - learner performs simple RM, uses non-numerical FRAT</li>
+                                <li>Post-Solo - learner performs broader RM with guidance from instructor</li>
+                                <li>XC - learner performs all RM with approval from instructor</li>
+                            </ul>
+                        </li>
+                        <li>Instrument Pilots - focus on complex weather and instrument failures</li>
+                        <li>Transitioning Aircraft - focus on aspects of the new aircraft</li>
+                        <li>Recurrent - use scenarios that mirror the pilot's typical environment</li>
+                        <li>Professional Pilots - scale RM complexity to match the flight</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="flight">
+            <h3>Managing Risk During Flight Instruction</h3>
+            <p>Using fundamental risk management, mitigate new risks introduced by the instruction environment.</p>
+            <div class="row">
+                <div class="col bg bg-1">
+                    <h4>Pilot</h4>
+                    <ul>
+                        <li>Aware of personal aeromedical conditions as well as those of the learner</li>
+                        <li>Be prepared for learner's errors / lack of situational awareness</li>
+                        <li>Select areas / altitudes appropriate for training</li>
+                        <li>Clear transfer of controls</li>
+                    </ul>
+                </div>
+                <div class="col bg bg-1">
+                    <h4>Aircraft</h4>
+                    <ul>
+                        <li>Instructor might not have access to trianer aircraft maintenance logs</li>
+                        <li>Often flying small trainer aircraft with two pilots</li>
+                        <li>Ensure learner performed a thorough preflight (oil, fuel)</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col bg bg-1">
+                    <h4>Environment</h4>
+                    <ul>
+                        <li>Aware of changing airspace</li>
+                        <li>Busy and crowded airspace or airports used for practice</li>
+                        <li>Hearing radio calls while giving instruction</li>
+                        <li>Ensure learner performed a thorough preflight (weather, notams)</li>
+                    </ul>
+                </div>
+                <div class="col bg bg-1">
+                    <h4>External Pressures</h4>
+                    <ul>
+                        <li>Keeping pace of training</li>
+                        <li>Completing lessons before deadlines or bad weather</li>
+                        <li>Inadequate training because of financial constraints</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h3>Managing Risk During Flight Instruction</h3>
+            <p>Using fundamental risk management, mitigate new risks introduced by the instruction environment.</p>
+
+            <h4 class="mt">Other Considerations</h4>
+            <ul>
+                <li>Always involve the learner in RM. Share responsibility for airworthiness, traffic avoidance, go / no go decisions.</li>
+                <li>Be familiar with the aircraft. Never teach in an unfamiliar aircraft.</li>
+                <li>Establish good habits through teaching but also by example.</li>
+                <li>Be adaptable. Coach the learner through your decision process as you make changes.</li>
+                <li>Expose the learner to all possible scenarios.</li>
+            </ul>
+
+            <h4 class="mt">Considerations When Teaching Takeoffs and Landings</h4>
+            <ul>
+                <li>Teach when the learner is able to listen and absorb.</li>
+                <li>Avoid teaching mechanically. Instead identify problems and offer solutions in real time.</li>
+                <li>Be ready to take controls.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Conclusion</h3>
+            <h4>Proper Risk Management Keeps You Alive</h4>
+        </section>
+
+    </main>
+</body>
+
+</html>
