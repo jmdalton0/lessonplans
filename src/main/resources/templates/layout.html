@@ -15,11 +15,16 @@
 <body>
     <header>
         <h1>CFI Lesson Plans</h1>
-        <a th:href="@{/}">All Lessons</a>
         <nav>
-            <button id="top-btn" class="nav-btn">&#8593;</button>
-            <button id="prev-btn" class="nav-btn">&#8592;</button>
-            <button id="next-btn" class="nav-btn">&#8594;</button>
+            <ul id="menu" class="list-plain">
+                <li><a th:href="@{/}">Lessons</a></li>
+                <li><a th:href="@{/standards}">Standards</a></li>
+            </ul>
+        </nav>
+        <nav class="controls">
+            <button id="top-btn" class="control-btn">&#8593;</button>
+            <button id="prev-btn" class="control-btn">&#8592;</button>
+            <button id="next-btn" class="control-btn">&#8594;</button>
         </nav>
     </header>
 

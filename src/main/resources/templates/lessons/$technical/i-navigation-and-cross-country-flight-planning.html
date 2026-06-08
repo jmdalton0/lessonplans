@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{layout}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title th:text="${title}"></title>
+</head>
+
+<body>
+    <main layout:fragment="content">
+
+        <section class="hero" style="background-image: url('https://res.cloudinary.com/dscigc3ga/image/upload/q_auto/f_auto/v1779065396/da20_fzzlgt.jpg');">
+            <h2 th:text="${title}"></h2>
+        </section>
+
+        <section id="outline">
+            <h3>Area of Operation II. Technical Subject Areas</h3>
+            <div class="row">
+                <div class="col">
+                    <h4>Task I. Navigation and Cross Country Flight Planning</h4>
+                </div>
+
+                <div class="col">
+                    <h4>Objective</h4>
+                    <ul>
+                        <li>Develop skills necessary to plan a flight, including route, altitude, airspace and airport considerations, and conditions like weather, day/night, etc.</li>
+                        <li>Develop skills necessary to calculate performance metrics of an aircraft given environment conditions.</li>
+                        <li>Develop skills necessary to act safely and timely in diversion and lost scenarios.</li>
+                    </ul>
+
+                    <h4>Topics</h4>
+                    <ul>
+                        <li><a href="#"></a></li>
+                    </ul>
+
+                    <h4>References</h4>
+                    <ul>
+                        <li>Pilot's Handbook of Aeronautical Knowledge</li>
+                        <li>VFR Charts and Chart Supplements</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h3>Introduction</h3>
+            <div class="row">
+                <div class="col">
+                    <h4 class="mt">Outline</h4>
+                    <ul>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h3>Lost Procedures</h3>
+            <div class="row">
+                <h4>5 C's of Lost Procedures</h4>
+                <div class="col">
+                    <ul>
+                        <li>Confess - admit that you are lost and need help</li>
+                        <li>Circle - don't get further off track</li>
+                        <li>Climb - increase nav signals, better view of landmarks</li>
+                        <li>Communicate - ask ATC for help</li>
+                        <li>Conserve - consider fuel reserves</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h4>Tools to Reestablish Proper Navigation</h4>
+                    <ul>
+                        <li>VOR / GPS</li>
+                        <li>ATC</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="conclusion">
+            <h3>Conclusion</h3>
+        </section>
+    </main>
+</body>
+
+</html>

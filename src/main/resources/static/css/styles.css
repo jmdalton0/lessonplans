@@ -55,11 +55,8 @@ footer {
 }
 
 nav {
-    position: fixed;
-    bottom: 0;
-    right: 0;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 main {
@@ -162,7 +159,15 @@ th {
     text-align: center;
 }
 
-.nav-btn {
+.controls {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.control-btn {
     width: 4rem; 
     height: 4rem;
     font-size: 1.2rem;
@@ -173,7 +178,7 @@ th {
     opacity: var(--opacity);
 }
 
-.nav-btn:hover {
+.control-btn:hover {
     opacity: 1;
 }
 
@@ -266,7 +271,7 @@ th {
 .bg {
     margin-top: 1rem;
     margin-bottom: 1rem;
-    padding: 0.5rem 1rem;
+    padding: 1rem;
     border-radius: var(--border-radius);
     overflow: hidden;
 }
@@ -310,6 +315,15 @@ th {
 }
 
 #menu {
-    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
 }
 
+#menu li {
+    margin: 0 0 0 1rem;
+}
+
+#lessons-menu {
+    padding: var(--gutter);
+}

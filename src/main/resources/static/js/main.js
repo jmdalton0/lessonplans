@@ -34,9 +34,11 @@ function registerTopBtn() {
 function registerPrevBtn() {
     let prevBtn = document.getElementById('prev-btn');
     prevBtn.addEventListener('click', () => {
-        const prevSlide = curSlide.previousElementSibling;
-        if (prevSlide && prevSlide.tagName === 'SECTION') {
-            prevSlide.scrollIntoView();
+        if (curSlide) {
+            const prevSlide = curSlide.previousElementSibling;
+            if (prevSlide && prevSlide.tagName === 'SECTION') {
+                prevSlide.scrollIntoView();
+            }
         }
     });
 }
@@ -44,9 +46,11 @@ function registerPrevBtn() {
 function registerNextBtn() {
     let nextBtn = document.getElementById('next-btn');
     nextBtn.addEventListener('click', () => {
-        const nextSlide = curSlide.nextElementSibling;
-        if (nextSlide && nextSlide.tagName === 'SECTION') {
-            nextSlide.scrollIntoView();
+        if (curSlide) {
+            const nextSlide = curSlide.nextElementSibling;
+            if (nextSlide && nextSlide.tagName === 'SECTION') {
+                nextSlide.scrollIntoView();
+            }
         }
     });
 }

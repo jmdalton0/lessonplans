@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{layout}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title th:text="${title}"></title>
+</head>
+
+<body>
+    <main layout:fragment="content">
+
+        <section class="hero" style="background-image: url('https://res.cloudinary.com/dscigc3ga/image/upload/q_auto/f_auto/v1779065396/da20_fzzlgt.jpg');">
+            <h2 th:text="${title}"></h2>
+        </section>
+
+        <section id="outline">
+            <h3>Area of Operation II. Technical Subject Areas</h3>
+            <div class="row">
+                <div class="col">
+                    <h4>Task E. Aircraft Flight Controls and Operation of Systems</h4>
+                </div>
+
+                <div class="col">
+                    <h4>Objective</h4>
+                    <ul>
+                        <li>Learner will gain required knowledge pertaining to all aircraft controls and systems.</li>
+                        <li>Learner will develop skills required to determine and manage system abnormalities and failures and manage associated risk.</li>
+                    </ul>
+
+                    <h4>Topics</h4>
+                    <ul>
+                        <li><a href="#primary">Primary Flight Controls</a></li>
+                        <li><a href="#secondary">Secondary Flight Controls</a></li>
+                        <li><a href="#powerplant">Powerplant and Propeller</a></li>
+                        <li><a href="#gear">Landing Gear</a></li>
+                        <li><a href="#fuel">Fuel, Oil, and Hydraulic Systems</a></li>
+                        <li><a href="#electrical">Electrical Systems</a></li>
+                        <li><a href="#avionics">Avionics</a></li>
+                        <li><a href="#static">Static System and Instruments</a></li>
+                        <li><a href="#environmental">Environmental Systems</a></li>
+                        <li><a href="#icing">Icing Prevention Systems</a></li>
+                        <li><a href="#oxygen">Oxygen Systems</a></li>
+                    </ul>
+
+                    <h4>References</h4>
+                    <ul>
+                        <li>Pilot's Handbook of Aeronautical Knowledge</li>
+                        <li>Applicable Aircraft POH or AFM</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h3>Introduction</h3>
+            <div class="row">
+                <div class="col">
+                    <h4>Attention</h4>
+                    <a href="https://en.wikipedia.org/wiki/Air_France_Flight_447">Air France Flight 447</a>
+                    <h4 class="mt">Motivation</h4>
+                    <p></p>
+                </div>
+                <div class="col">
+                    <h4>Outline</h4>
+                    <ul>
+                        <li>Primary Flight Controls</li>
+                        <li>Secondary Flight Controls</li>
+                        <li>Powerplant and Propeller</li>
+                        <li>Landing Gear</li>
+                        <li>Fuel, Oil, and Hydraulic Systems</li>
+                        <li>Electrical Systems</a></li>
+                        <li>Avionics</a></li>
+                        <li>Static System and Instruments</a></li>
+                        <li>Environmental Systems</a></li>
+                        <li>Icing Prevention Systems</a></li>
+                        <li>Oxygen Systems</a></li>
+                    </ul>
+                    <ul>
+                        <li>operation</li>
+                        <li>managing abnormalities and failures</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="primary">
+            <h3>Primary Flight Controls</h3>
+            <div class="row">
+                <div class="col bg bg-1">
+                    <h4>Ailerons</h4>
+                    <h5>Control</h5>
+                    <p>roll about the longitudinal axis</p>
+                    <p>left stick input = raises left aileron, lowers right aileron</p>
+                    <h5>Adverse Yaw</h5>
+                    <h5>Types of Ailerons</h5>
+                    <ul>
+                        <li>standard</li>
+                        <li>differential</li>
+                        <li>frise</li>
+                        <li>coupled</li>
+                    </ul>
+                </div>
+
+                <div class="col bg bg-1">
+                    <h4>Elevator</h4>
+                    <h5>Control</h5>
+                    <p>pitch about the lateral axis</p>
+                    <p>back stick input = raises elevator</p>
+                    <h5>Types of Elevators</h5>
+                    <ul>
+                        <li>T-tail</li>
+                        <li>Stabilator</li>
+                    </ul>
+                </div>
+
+                <div class="col bg bg-1">
+                    <h4>Rudder</h4>
+                    <h5>Control</h5>
+                    <p>yaw about the vertical axis</p>
+                    <p>left pedal input = left rudder</p>
+                    <h5>V-tail</h5>
+                </div>
+            </div>
+            <h4>Risks</h4>
+            <p>mechanical linkages can be overstressed</p>
+        </section>
+
+        <section id="secondary">
+            <h3>Secondary Flight Controls</h3>
+            <div class="row">
+                <div class="col bg bg-1">
+                    <h4>Flaps</h4>
+                    <p>Hinged panels on the trailing edge of a wing that can be lowered.</p>
+                    <p>Increase lift and drag at a given AOA.</p>
+                    <h5>Operation</h5>
+                    <p>can be mechanical, electrical, hydraulic</p>
+                    <h5>Risks</h5>
+                    <ul>
+                        <li>overspeeding</li>
+                        <li>failure</li>
+                    </ul>
+                    <div class="img" style="background-image: url('https://res.cloudinary.com/dscigc3ga/image/upload/q_auto/f_auto/v1780857412/types-of-flaps_ht946d.jpg');"></div>
+                </div>
+
+                <div class="col bg bg-1">
+                    <h4>Spoilers</h4>
+                    <p>Hinged panels on the trailing edge of a wing that can be raised.</p>
+                    <p>Decrease lift and increase drag at a given AOA.</p>
+                    <ul>
+                        <li>reduce lift to increase descent rate without increasing airspeed</li>
+                        <li>transfer more weight to wheels on landing</li>
+                        <li>can be used to control roll</li>
+                    </ul>
+                    <h5>Risks</h5>
+                    <ul>
+                        <li>failure</li>
+                    </ul>
+                </div>
+
+                <div class="col bg bg-1">
+                    <h4>Trim</h4>
+                    <p>Small hinged panels on the trailing edges of control surfaces.</p>
+                    <p>Minimized control input required to operate control surface.</p>
+                    <h5>Operation</h5>
+                    <p>mechanical or electrical</p>
+                    <p>individual control or connected to main surface control linkage</p>
+                    <h5>Types of Trim Systems</h5>
+                    <ul>
+                        <li>trim tab</li>
+                        <li>balance tab</li>
+                        <li>servo tab</li>
+                        <li>antiservo tab</li>
+                        <li>ground adjustable</li>
+                    </ul>
+                    <h5>Risks</h5>
+                    <ul>
+                        <li>relying on trim to control the aircraft</li>
+                        <li>elevator trim stall</li>
+                        <li>failure</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="powerplant">
+            <h3>Powerplant</h3>
+            <p>GA aircraft typically use a reciprocating (piston) engine to convert chemical energy (fuel) to kinetic energy (thrust).</p>
+            <div class="row">
+                <div class="col">
+                    <h4>Number of Strokes</h4>
+                    <ul>
+                        <li>2 stroke</li>
+                        <li>4 stroke</li>
+                    </ul>
+
+                    <h4>Orientation</h4>
+                    <ul>
+                        <li>radial</li>
+                        <li>inline</li>
+                        <li>horizontally opposed</li>
+                    </ul>
+                </div>
+
+                <div class="col">
+                    <h4>Ignition Types</h4>
+                    <ul>
+                        <li>spark</li>
+                        <li>compression</li>
+                    </ul>
+
+                    <h4>Induction Types</h4>
+                    <ul>
+                        <li>carbureted</li>
+                        <li>fuel injected</li>
+                    </ul>
+
+                    <h4>Cooling Types</h4>
+                    <ul>
+                        <li>oil</li>
+                        <li>air</li>
+                        <li>liquid</li>
+                    </ul>
+                </div>
+
+                <div class="col">
+                    <div class="img" style="background-image: url('https://res.cloudinary.com/dscigc3ga/image/upload/q_auto/f_auto/v1780863429/piston-engine_pjtgmh.png');"></div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h3>2 Stroke vs 4 Stroke Engines</h3>
+        </section>
+
+        <section>
+            <h3>Engine Shapes (Cylinder Orientation)</h3>
+            <div class="row">
+                <div class="col">
+                    <h4>Radial</h4>
+                    <ul>
+                        <li>&#9989; efficient air cooling</li>
+                        <li>&#10060; large profile</li>
+                        <li>&#9989; short moment of inertia</li>
+                    </ul>
+                    <h4>Inline</h4>
+                    <ul>
+                        <li>&#10060; poor air cooling</li>
+                        <li>&#9989; small profile</li>
+                        <li>&#9989; long moment of inertia</li>
+                    </ul>
+                    <h4>Horizontally Opposed</h4>
+                    <ul>
+                        <li>somewhere in the middle</li>
+                        <li>most common comtemporary GA aircraft engine</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h3>Engine Ignition</h3>
+            <div class="row">
+                <div class="col">
+                    <h4>Spark Ignition</h4>
+                    <h4>Compression Ignition</h4>
+                </div>
+
+                <div class="col">
+                    <h4 class="mt">Magnetos</h4>
+                    <ul>
+                        <li>permanent magent spins inside a coil to generate an electrical current</li>
+                        <li>completely independent of the aircraft's electrical system</li>
+                        <li>
+                            <h5>Dual Magnetos</h5>
+                            <ul>
+                                <li>redundancy</li>
+                                <li>more power</li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                    <p>Risk Item: always switch ignition to OFF position</p>
+
+                    <div class="img" style="background-image: url('https://res.cloudinary.com/dscigc3ga/image/upload/q_auto/f_auto/v1780876870/magnetos_ick8ig.png');"></div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h3>Engine Induction Types</h3>
+        </section>
+
+        <section>
+            <h3>Engine Cooling Systems</h3>
+        </section>
+
+        <section>
+            <h3>Propeller</h3>
+        </section>
+
+        <section id="gear">
+            <h3>Landing Gear</h3>
+            <div class="row">
+                <div class="col">
+                    <h4>Types</h4>
+                    <ul>
+                        <li>wheels for land</li>
+                        <li>floats for water</li>
+                    </ul>
+                    <h4 class="mt">Fixed vs Retractable Gear</h4>
+                </div>
+                <div class="col">
+                    <div class="bg bg-3">
+                        <h4>Tricycle</h4>
+                        <ul>
+                            <li>&#9989;better braking without nosing over</li>
+                            <li>&#9989;better visibility during taxi and takeoff</li>
+                        </ul>
+                        <p>Steerable nosewheels are connected to the rudder pedals.</p>
+                    </div>
+
+                    <div class="bg bg-3">
+                        <h4>Conventional</h4>
+                        <p>main gear are ahead of center of gravity and support most of the weight</p>
+                        <ul>
+                            <li>&#9989;higher prop</li>
+                            <li>&#9989;better for uneven / rough terrain</li>
+                            <li>&#10060;worse visibility during taxi and takeoff</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="electrical">
+            <h3>Electrical System</h3>
+        </section>
+
+        <section id="icing">
+            <h3>Deice and Anti-Ice Systems</h3>
+            <div class="row">
+                <div class="col">
+                    <ul>
+                        <li>Deice - removes</li>
+                        <li>Anti-Ice - prevents</li>
+                    </ul>
+                </div>
+
+                <div class="col">
+                </div>
+            </div>
+        </section>
+
+        <section id="conclusion">
+            <h3>Conclusion</h3>
+        </section>
+    </main>
+</body>
+
+</html>

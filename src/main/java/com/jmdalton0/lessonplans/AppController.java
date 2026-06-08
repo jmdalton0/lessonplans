@@ -32,4 +32,9 @@ public class AppController {
         return "lessons/$" + group + "/" + slug;
     }
 
+    @GetMapping("/standards")
+    public String showStandards() {
+        return "standards";
+    }
+
 }

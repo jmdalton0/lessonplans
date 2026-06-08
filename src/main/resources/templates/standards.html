@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{layout}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Lessons</title>
+</head>
+
+<body>
+    <main layout:fragment="content">
+
+        <section class="mt">
+            <h2 class="mt">ACS Standards</h2>
+
+            <h3>Landings</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th rowspan="2">Maneuver</th>
+                        <th colspan="2">Airspeed</th>
+                        <th colspan="2">Distance</th>
+                    </tr>
+                    <tr>
+                        <th>Private</th>
+                        <th>Commercial</th>
+                        <th>Private</th>
+                        <th>Commercial</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Regular Landing</td>
+                        <td>+10 / -5</td>
+                        <td>+5 / -5</td>
+                        <td>400 ft</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Soft Field Landing</td>
+                        <td>+10 / -5</td>
+                        <td>+5 / -5</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Short Field Landing</td>
+                        <td>+10 / -5</td>
+                        <td>+5 / -5</td>
+                        <td>200 ft</td>
+                        <td>100 ft</td>
+                    </tr>
+                    <tr>
+                        <td>Rejected Landing</td>
+                        <td>+10 / -5</td>
+                        <td>+5 / -5</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Power Off 180 Landing</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>200 ft</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+    </main>
+</body>
+
+</html>
