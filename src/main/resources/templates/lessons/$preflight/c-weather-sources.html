@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{layout}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title th:text="${title}"></title>
+</head>
+
+<body>
+    <main layout:fragment="content">
+
+        <section class="hero" style="background-image: url('https://res.cloudinary.com/dscigc3ga/image/upload/q_auto/f_auto/v1779159915/sectional_w5sjay.png');">
+            <h2 th:text="${title}"></h2>
+        </section>
+
+        <section id="outline">
+            <h3>Area of Operation</h3>
+            <div class="row">
+                <div class="col">
+                    <ul>
+                        <li>Learner will gain required knowledge pertaining to approved sources of weather information used for flight planning.</li>
+                        <li>Learner will develop skills required to read and interpret various weather tools in order to make a go / no go decision.</li>
+                    </ul>
+                </div>
+
+                <div class="col">
+                    <h4>Topics</h4>
+                    <ul>
+                        <li><a href="#sources">Approved Sources of Weather</a></li>
+                        <li><a href="#obserations">Observations</a></li>
+                        <li><a href="#forecasts">Forecasts</a></li>
+                        <li><a href="#outlooks">Outlooks, AIRMETs, and SIGMETs</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h3>Conclusion</h3>
+        </section>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{layout}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title th:text="${title}"></title>
+</head>
+
+<body>
+    <main layout:fragment="content">
+
+        <section>
+            <h2 th:text="${title}"></h2>
+            <h3>Area of Operation II.A</h3>
+
+            <div class="row">
+                <div class="col">
+                    <h4>Objective</h4>
+                    <ul>
+                        <li>Learner will gain required knowledge pertaining to human factors that affect safety of flight.</li>
+                        <li>Learner will develop skills required to recognize dangerous human factors and manage associated risk.</li>
+                    </ul>
+
+                    <h4>References</h4>
+                    <ul>
+                        <li>Pilot's Handbook of Aeronautical Knowledge</li>
+                        <li>Aeronautical Information Manual</li>
+                    </ul>
+                </div>
+
+                <div class="col">
+                    <h4>Topics</h4>
+                    <ul>
+                        <li><a href="#psychological">Pilot Psychological Factors</a></li>
+                        <li><a href="#hypoxia">Hypoxia</a></li>
+                        <li><a href="#hyperventilation">Hyperventilation</a></li>
+                        <li><a href="#middle-ear">Middle Ear Problems and Spatial Disorientation</a></li>
+                        <li><a href="#co2">Carbon Monoxide Poisoning</a></li>
+                        <li><a href="#stress">Stress and Fatigue</a></li>
+                        <li><a href="#diet">Dehydration and Nutrition</a></li>
+                        <li><a href="#hypothermia">Hypothermia</a></li>
+                        <li><a href="#illusions">Optical Illusions</a></li>
+                        <li><a href="#scuba">Scuba Diving and Aviation</a></li>
+                        <li><a href="#drugs">Drugs and Alcohol</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="psychological">
+            <h3>Pilot Psychological Factors</h3>
+            <div class="row">
+                <div class="col">
+                    <h4>Maintaining Situational Awareness</h4>
+                    <ul>
+                        <li>task saturation</li>
+                        <li>distractions</li>
+                        <li>disorientation</li>
+                    </ul>
+
+                    <h4>Biases</h4>
+                    <ul>
+                        <li>confirmation</li>
+                        <li>expectation</li>
+                    </ul>
+
+                    <h4>Scanning Errors</h4>
+                    <ul>
+                        <li>Fixation</li>
+                        <li>Omission</li>
+                        <li>Misinterpretation</li>
+                        <li>Emphasis</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <div class="img" style="background-image: url('https://res.cloudinary.com/dscigc3ga/image/upload/q_auto/f_auto/v1780274027/hazardous-attitudes_lypzzr.png');"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="hypoxia">
+            <h3>Hypoxia</h3>
+            <div class="row">
+                <div class="col">
+                    <div class="row">
+                        <div class="col bg bg-1">
+                            <h4>Hypoxic Hypoxia</h4>
+                            <p>lack of oxygen</p>
+                            <ul>
+                                <li>choking</li>
+                                <li>drowning</li>
+                                <li>high altitude</li>
+                            </ul>
+                        </div>
+                        <div class="col bg bg-1">
+                            <h4>Hypemic Hypoxia</h4>
+                            <p>lack of blood</p>
+                            <ul>
+                                <li>severe bleeding</li>
+                                <li>anemia</li>
+                                <li>CO poisoning</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col bg bg-1">
+                            <h4>Histotixic Hypoxia</h4>
+                            <p>cells cannot use oxygen</p>
+                            <ul>
+                                <li>drugs and alcohol</li>
+                                <li>poison</li>
+                            </ul>
+                        </div>
+                        <div class="col bg bg-1">
+                            <h4>Stagnant Hypoxia</h4>
+                            <p>lack of blood flow</p>
+                            <ul>
+                                <li>poor circulation</li>
+                                <li>pulling Gs</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <h4>Symptoms</h4>
+                    <ul>
+                        <li>cyanosis</li>
+                        <li>headache, lightheadedness, dizziness</li>
+                        <li>impaired judgement and slow reaction time</li>
+                        <li>euphoria</li>
+                        <li>drowsiness</li>
+                        <li>visual impairment</li>
+                        <li>tingling or numbness</li>
+                    </ul>
+                    <h4>Risk Mitigation</h4>
+                    <ul>
+                        <li>understand time of useful consciousness</li>
+                        <li>proper preflight (IMSAFE)</li>
+                        <li>descend</li>
+                        <li>oxygen systems</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="hyperventilation">
+            <h3>Hyperventilation</h3>
+            <p>lack of CO2</p>
+            <h4>Causes</h4>
+            <ul>
+                <li>increased breathing rate</li>
+                <li>stressful situations</li>
+            </ul>
+            <h4>Symptoms</h4>
+            <ul>
+                <li>visual impairment</li>
+                <li>headache, lightheadedness, dizziness</li>
+                <li>tingling</li>
+                <li>hot and cold sensations</li>
+                <li>muscle spasms</li>
+            </ul>
+        </section>
+
+        <section id="middle-ear">
+            <h3>Middle Ear Problems and Disorientation</h3>
+        </section>
+
+        <section id="co2">
+            <h3>Carbon Monoxide Poisoning</h3>
+        </section>
+
+        <section id="stress">
+            <h3>Stress</h3>
+        </section>
+
+        <section id="diet">
+            <h3>Diet</h3>
+        </section>
+
+        <section id="hypothermia">
+            <h3>Hypothermia</h3>
+        </section>
+
+        <section id="illusions">
+            <h3>Optical Illusions</h3>
+        </section>
+
+        <section id="scuba">
+            <h3>Scuba Diving and Aviation</h3>
+        </section>
+
+        <section id="drugs">
+            <h3>Drugs and Alcohol</h3>
+        </section>
+ 
+        <section id="conclusion">
+            <h3>Conclusion</h3>
+            <p>Take care of yourself!</p>
+            <p>Never fly if you are unfit!</p>
+        </section>
+    </main>
+</body>
+
+</html>

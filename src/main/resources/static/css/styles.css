@@ -11,18 +11,29 @@
 
     --white: #fff;
     --text: #000;
-    --far: blue;
-    --alert: orange;
     --danger: red;
-    --grey-1: rgb(174, 189, 196);
-    --grey-2: rgb(100, 116, 125);
-    --grey-3: rgb(67, 77, 83);
+
+    --grey: #d5e3e6;
+    --grey-dark: #a6b0b3;
+
+    --color-1: #4b7580;
+    --color-1-dark: #36555c;
+
+    --color-2: #5a686b;
+    --color-2-dark: #363e40;
+
+    --color-3: #d4c7ba;
+    --color-3-dark: #b0a59a;
+
+    --far: #0f53d4;
+    --far-dark: #0b40a3;
 }
 
 html {
     font-family: "Roboto", sans-serif;
     font-size: 16px;
-    background-color: var(--grey-1);
+    color: var(--text);
+    background-color: var(--white);
 }
 
 body {
@@ -33,16 +44,22 @@ body {
 }
 
 header {
-    position: absolute;
-    top: 0;
-    left: 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     width: 100%;
     padding: 1rem var(--gutter);
-    background-color: var(--grey-1);
+    color: var(--white);
+    background-color: var(--color-1-dark);
+}
+
+header a {
+    color: var(--white);
+}
+
+header a:hover {
+    color: var(--grey);
 }
 
 footer {
@@ -51,7 +68,8 @@ footer {
     align-items: center;
     text-align: center;
     padding: 1rem var(--gutter);
-    background-color: var(--grey-1);
+    color: var(--white);
+    background-color: var(--color-1-dark);
 }
 
 nav {
@@ -66,8 +84,9 @@ main {
 section {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    min-height: 100vh;
     padding: var(--gutter);
+    background: linear-gradient(340deg, var(--color-1) 0%, var(--grey) 40%);
 }
 
 h1 {
@@ -75,11 +94,15 @@ h1 {
 }
 
 h2 {
-    font-size: 3rem;
+    font-size: 2.5rem;
+    padding: 1rem;
+    color: var(--white);
+    background-color: var(--text);
 }
 
 h3 {
     font-size: 2rem;
+    margin-top: 1rem;
 }
 
 h4 {
@@ -105,11 +128,11 @@ p {
 a {
     font-size: 1rem;
     text-decoration: none;
-    color: var(--grey-3);
+    color: var(--color-2);
 }
 
 a:hover {
-    color: var(--grey-2);
+    color: var(--color-2-dark);
 }
 
 button:hover {
@@ -125,17 +148,18 @@ li {
 }
 
 table {
-    margin: var(--gutter) 0;
     border-collapse: collapse;
+    margin-top: 1rem;
 }
 
 th, td {
     padding: 0.5rem;
-    border: 2px solid var(--grey-2);
+    border: 2px solid var(--color-1-dark);
 }
 
 th {
-    background-color: var(--grey-1);
+    color: var(--white);
+    background-color: var(--color-1);
 }
 
 .row {
@@ -159,7 +183,68 @@ th {
     text-align: center;
 }
 
-.controls {
+.img {
+    flex: 1;
+    margin: 1rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.m {
+    margin: var(--gutter);
+}
+
+.mt {
+    margin-top: var(--gutter);
+}
+
+.text-danger {
+    color: var(--danger);
+}
+
+.far {
+    color: var(--far);
+}
+
+.far:hover {
+    color: var(--far-dark);
+}
+
+.bg {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+}
+
+.bg-1 {
+    color: var(--white);
+    background-color: var(--color-1);
+}
+
+.bg-2 {
+    color: var(--white);
+    background-color: var(--color-2);
+}
+
+.bg-3 {
+    color: var(--text);
+    background-color: var(--color-3);
+}
+
+#menu {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+#menu li {
+    margin: 0 0 0 1rem;
+}
+
+#controls {
     position: fixed;
     bottom: 0;
     right: 0;
@@ -189,11 +274,11 @@ th {
 }
 
 .group-name {
-    padding: 0.5rem;
+    padding: 0.5rem 1rem;
     text-transform: capitalize;
-    background-color: var(--grey-3);
+    color: var(--white);
+    background-color: var(--color-1-dark);
     border-radius: var(--border-radius);
-    color: var(--grey-1);
 }
 
 .lesson {
@@ -206,93 +291,14 @@ th {
     display: flex;
     padding: 1rem;
     text-transform: capitalize;
-    color: var(--grey-3);
-    background-color: var(--grey-1);
+    color: var(--white);
+    background-color: var(--color-2);
     border-radius: var(--border-radius);
 }
 
 .lesson-name:hover {
-    color: var(--grey-1);
-    background-color: var(--grey-2);
-}
-
-.hero {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-.hero h2 {
-    padding: var(--gutter);
     color: var(--white);
-    background-color: rgba(0, 0, 0, var(--opacity));
-}
-
-.img {
-    flex: 1;
-    margin: 1rem;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-}
-
-.video {
-    width: fit-content;
-    padding: 0.5rem;
-    color: var(--grey-2);
-    background-color: var(--white);
-    border: 2px solid var(--grey-2);
-    border-radius: var(--border-radius);
-}
-
-.video:hover {
-    color: var(--white);
-    background-color: var(--grey-2);
-    border: 2px solid var(--grey-2);
-}
-
-.mt {
-    margin-top: var(--gutter);
-}
-
-.text-alert {
-    color: var(--alert);
-}
-
-.text-danger {
-    color: var(--danger);
-}
-
-.bg {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    padding: 1rem;
-    border-radius: var(--border-radius);
-    overflow: hidden;
-}
-
-.bg-1 {
-    background-color: var(--grey-1);
-    color: var(--text);
-}
-
-.bg-2 {
-    background-color: var(--grey-2);
-    color: var(--white);
-}
-
-.bg-3 {
-    background-color: var(--grey-3);
-    color: var(--white);
-}
-
-.far {
-    color: var(--far);
+    background-color: var(--color-2-dark);
 }
 
 .flashcard {
@@ -312,18 +318,4 @@ th {
 
 .flashcard .answer {
     padding: 0.5rem;
-}
-
-#menu {
-    display: flex;
-    flex-direction: row;
-    list-style-type: none;
-}
-
-#menu li {
-    margin: 0 0 0 1rem;
-}
-
-#lessons-menu {
-    padding: var(--gutter);
 }
