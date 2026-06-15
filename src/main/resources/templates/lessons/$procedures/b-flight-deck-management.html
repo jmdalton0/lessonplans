@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{layout}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title th:text="${title}"></title>
+</head>
+
+<body>
+    <main layout:fragment="content">
+
+        <section>
+            <h2 th:text="${title}"></h2>
+            <h3>Area of Operation V. Preflight Procedures</h3>
+
+            <div class="row">
+                <div class="col">
+                    <h4>Task B. Flight Deck Management</h4>
+                </div>
+
+                <div class="col">
+                    <h4>Objective</h4>
+                    <ul>
+                        <li>Learner will gain required knowledge pertaining to proper flight deck management.</li>
+                        <li>Learner will gain knowledge and awareness of the consequences of improper planning, adm, and resource management.</li>
+                    </ul>
+
+                    <h4>Topics</h4>
+                    <ul>
+                        <li><a href="#importance">Importance of Proper Flight Deck Management</a></li>
+                    </ul>
+
+                    <h4>References</h4>
+                    <ul>
+                        <li>Pilot's Handbook of Aeronautical Knowledge</li>
+                        <li>Applicable Aircraft POH or AFM</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h3>Introduction</h3>
+            <div class="row">
+                <div class="col">
+                    <h4 class="mt">Outline</h4>
+                </div>
+            </div>
+        </section>
+
+        <section id="checklists">
+            <h3>Checklists</h3>
+        </section>
+
+        <section id="passenger-brief">
+            <h3>Passenger Briefing</h3>
+            <ul>
+                <li><b>S</b>eat belts</li>
+                <li><b>A</b>ir vents / Environmental controls</li>
+                <li><b>F</b>ire plans</li>
+                <li><b>E</b>mergencies / Exits</li>
+                <li><b>T</b>raffic / Talking</li>
+                <li><b>Y</b>our questions</li>
+            </ul>
+        </section>
+
+        <section id="navigation">
+            <h3>Current and Appropriate Navigation Data</h3>
+            <ul>
+                <li>charts</li>
+                <li>airport and approach plates</li>
+                <li>gps database</li>
+            </ul>
+        </section>
+
+        <section id="cargo">
+            <h3>Securing Items and Cargo</h3>
+        </section>
+
+        <section id="conclusion">
+            <h3>Conclusion</h3>
+        </section>
+    </main>
+</body>
+
+</html>

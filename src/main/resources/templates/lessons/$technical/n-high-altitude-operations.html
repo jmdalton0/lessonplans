@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{layout}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title th:text="${title}"></title>
+</head>
+
+<body>
+    <main layout:fragment="content">
+
+        <section>
+            <h2 th:text="${title}"></h2>
+            <h3>Area of Operation II</h3>
+
+            <div class="row">
+                <div class="col">
+                    <h4>Task N. High Altitude Operations - Supplemental Oxygen</h4>
+                    <h4>Task O. High Altitude Operations - Pressurization</h4>
+                </div>
+
+                <div class="col">
+                    <h4>Objective</h4>
+                    <ul>
+                        <li>Learner will gain required knowledge pertaining to high altitude operations, supplemental oxygen, and aircraft pressurization.</li>
+                        <li>Learner will gain knowledge and awareness of the effects of hypoxia and depressurization risks.</li>
+                        <li>Learner will develop skills required to mitigate risk associated with hypoxia and depressurization.</li>
+                    </ul>
+
+                    <h4>Topics</h4>
+                    <ul>
+                        <li><a href="#effects">Effects of High Altitudes</a></li>
+                        <li><a href="#oxygen">Supplemental Oxygen</a></li>
+                        <li><a href="#pressurization">Pressurization</a></li>
+                    </ul>
+
+                    <h4>References</h4>
+                    <ul>
+                        <li>Pilot's Handbook of Aeronautical Knowledge</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h3>Introduction</h3>
+            <div class="row">
+                <div class="col">
+                    <h4 class="mt">Outline</h4>
+                    <ul>
+                        <li>
+                            <p>effects of altitude</p>
+                            <ul>
+                                <li>hypoxia</li>
+                                <li>time of useful consciousness</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p>supplemental oxygen</p>
+                            <ul>
+                                <li>delivery systems</li>
+                                <li>aviation grade oxygen and precautions</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p>pressurization</p>
+                            <ul>
+                                <li>systems and malfunctions</li>
+                                <li>types of depressurization</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <a href="https://www.youtube.com/watch?v=6Efvl6AwILo">Rapid Decompression Video</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="effects">
+            <h3>Effects of High Altitudes</h3>
+            <div class="row">
+                <div class="col">
+                    <h4>Oxygen</h4>
+                    <ul>
+                        <li>
+                            <p>lower atmospheric pressure</p>
+                            <ul>
+                                <li>partial pressure of oxygen is lower</li>
+                                <li>reverse diffusion</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <h4>Hypoxia</h4>
+                    <p>hypoxic hypoxia - lungs cannot absorb enough oxygen</p>
+                    <ul>
+                        <li>cyanosis</li>
+                        <li>headache, lightheadedness, dizziness</li>
+                        <li>impaired judgement and slow reaction time</li>
+                        <li>euphoria</li>
+                        <li>drowsiness</li>
+                        <li>visual impairment</li>
+                        <li>unconsciousness</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <div class="img" style="background-image: url('https://res.cloudinary.com/dscigc3ga/image/upload/q_auto/f_auto/v1781542120/tuc_koijkf.jpg');"></div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h3>Effects of High Altitudes</h3>
+            <div class="row">
+                <div class="col">
+                    <h4>Other Considerations</h4>
+                    <h5>Temperature</h5>
+                    <p>adiabatic cooling as hot air rises</p>
+
+                    <h5>Humidity</h5>
+                    <p>air is dryer at altitude</p>
+
+                    <h5>Air Circulation</h5>
+                    <p>closed system would not allow for fresh air</p>
+
+                    <h5>Pressure in the Body</h5>
+                    <p>trapped pressure in the body can be painful</p>
+
+                    <h5>Decompression Sickness</h5>
+                    <p>nitrogen bubbles form in the body</p>
+                </div>
+                <div class="col">
+                </div>
+            </div>
+        </section>
+
+        <section id="oxygen">
+            <h3>Supplemental Oxygen</h3>
+            <h4>Legal Requirements</h4>
+            <a href="https://www.ecfr.gov/current/title-14/chapter-I/subchapter-F/part-91/subpart-C/section-91.211" class="far mt">91.211</a>
+        </section>
+
+        <section>
+            <h3>Supplemental Oxygen</h3>
+            <div class="row">
+                <div class="col">
+                    <h4>Delivery Systems</h4>
+                    <h4>Aviation Grade Oxygen</h4>
+                    <h4>Precautions</h4>
+                </div>
+                <div class="col">
+                    <div class="img" style="background-image: url('https://res.cloudinary.com/dscigc3ga/image/upload/q_auto/f_auto/v1781543679/oxygen-delivery-systems_tpoy2i.jpg');"></div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h3>Supplemental Oxygen</h3>
+            <h4>Oxygen Quantity and Flight Planning</h4>
+        </section>
+
+        <section id="pressurization">
+            <h3>Aircraft Pressurization</h3>
+            <div class="row">
+                <div class="col">
+                    <h4>Controls</h4>
+                    <ul>
+                        <li>outflow valve</li>
+                        <li>safety valve</li>
+                    </ul>
+
+                    <h4>Instruments</h4>
+                    <ul>
+                        <li>cabin altimeter</li>
+                        <li>cabin differential pressure</li>
+                        <li>cabin rate of climb</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <div class="img" style="background-image: url('https://res.cloudinary.com/dscigc3ga/image/upload/q_auto/f_auto/v1781544919/pressurization-system_jprihf.png');"></div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h3>Aircraft Pressurization</h3>
+            <div class="row">
+                <div class="col">
+                    <h4>Types of Depressurization</h4>
+                    <ul>
+                        <li>
+                            <h5>Explosive</h5>
+                            <ul>
+                                <li>less than 0.5 seconds</li>
+                                <li>faster than the lungs can safely decompress</li>
+                                <li>noise</li>
+                                <li>airflow and debris</li>
+                                <li>fog and dust</li>
+                                <li>temperature drop</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h5>Rapid</h5>
+                            <p>immediately dangerous, but does not damage the lungs</p>
+                        </li>
+                        <li>
+                            <h5>Gradual</h5>
+                            <p>may not be detected</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col">
+                </div>
+            </div>
+        </section>
+
+        <section id="conclusion">
+            <h3>Conclusion</h3>
+        </section>
+    </main>
+</body>
+
+</html>
