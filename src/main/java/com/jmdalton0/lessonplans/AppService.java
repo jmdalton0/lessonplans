@@ -1,7 +1,7 @@
 package com.jmdalton0.lessonplans;
 
 import java.util.ArrayList;
-import java.util.HashMap;
+import java.util.TreeMap;
 import java.util.List;
 import java.util.Map;
 
@@ -15,7 +15,7 @@ public class AppService {
     private static final String path = "classpath*:/templates/lessons/**";
 
     public Map<String, List<Lesson>> get() {
-        Map<String, List<Lesson>> data = new HashMap<>();
+        Map<String, List<Lesson>> data = new TreeMap<>();
 
         try {
 
@@ -35,28 +35,33 @@ public class AppService {
                     String segment = segments[i];
 
                     if (segment.startsWith("$")) {
-                        group = segment.substring(1);
-                    }
-                    
-                    if (i == segments.length - 1) {
+                        group = formatGroup(segment);
+
+                        if (!data.containsKey(group)) {
+                            data.put(group, new ArrayList<>());
+                        }
+                    } else if (i == segments.length - 1) {
                         lesson = new Lesson(formatSlug(segment), formatName(segment));
                     }
                 }
 
                 if (group != null && lesson != null && uri.endsWith(".html")) {
-
-                    if (!data.containsKey(group)) {
-                        data.put(group, new ArrayList<>());
-                    }
-
                     data.get(group).add(lesson);
                 }
             }
+
+
         } catch (Exception e) {
             throw new AppException();
         }
 
         return data;
+    }
+
+    public String formatGroup(String filename) {
+        return filename
+                .substring(1)
+                .replace("-", " ");
     }
 
     public String formatTitle(String slug) {
