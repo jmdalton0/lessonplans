@@ -12,11 +12,11 @@
         <div class="m">
             <h2>All Lessons</h2>
             <ul>
-                <li th:each="group : ${data.keySet()}" class="group">
-                    <h3 th:text="${group}" class="group-name">Group</h3>
+                <li th:each="groupId : ${data.keySet()}" class="group">
+                    <h3 th:text="${data.get(groupId).getFirst().groupName}" class="group-name">Group</h3>
                     <ul>
-                        <li th:each="lesson : ${data.get(group)}" class="lesson">
-                            <a th:href="@{/lessons/{group}/{slug} (group = ${group}, slug = ${lesson.slug()})}" th:text="${lesson.name()}" class="lesson-name">Lesson</a>
+                        <li th:each="lesson : ${data.get(groupId)}" class="lesson">
+                            <a th:href="@{/lessons/{group}/{slug} (group = ${lesson.groupSlug}, slug = ${lesson.lessonSlug})}" th:text="${lesson.lessonName()}" class="lesson-name">Lesson</a>
                         </li>
                     </ul>
                 </li>

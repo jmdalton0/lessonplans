@@ -1,7 +1,7 @@
 package com.jmdalton0.lessonplans;
 
 import java.util.ArrayList;
-import java.util.TreeMap;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -14,8 +14,8 @@ public class AppService {
 
     private static final String path = "classpath*:/templates/lessons/**";
 
-    public Map<String, List<Lesson>> get() {
-        Map<String, List<Lesson>> data = new TreeMap<>();
+    public Map<Integer, List<Lesson>> get() {
+        Map<Integer, List<Lesson>> data = new HashMap<>();
 
         try {
 
@@ -27,30 +27,17 @@ public class AppService {
                 String uri = resource.getURI().toString();
                 String[] segments = uri.split("/");
 
-                String group = null;
-                Lesson lesson = null;
+                if (isLesson(segments)) {
+					int groupId = getGroupId(segments);
+					Lesson lesson = getLesson(segments);
 
-                for (int i = 0; i < segments.length; i++) {
+					if (!data.containsKey(groupId)) {
+						data.put(groupId, new ArrayList<>());
+					}
 
-                    String segment = segments[i];
-
-                    if (segment.startsWith("$")) {
-                        group = formatGroup(segment);
-
-                        if (!data.containsKey(group)) {
-                            data.put(group, new ArrayList<>());
-                        }
-                    } else if (i == segments.length - 1) {
-                        lesson = new Lesson(formatSlug(segment), formatName(segment));
-                    }
-                }
-
-                if (group != null && lesson != null && uri.endsWith(".html")) {
-                    data.get(group).add(lesson);
+					data.get(groupId).add(lesson);
                 }
             }
-
-
         } catch (Exception e) {
             throw new AppException();
         }
@@ -58,15 +45,41 @@ public class AppService {
         return data;
     }
 
-    public String formatGroup(String filename) {
-        return filename
-                .substring(1)
-                .replace("-", " ");
+    private Boolean isLesson(String[] segments) {
+		String lastSegment = segments[segments.length - 1];
+		if (!lastSegment.contains("$") && lastSegment.endsWith(".html")) {
+			return true;
+		}
+		return false;
     }
 
-    public String formatTitle(String slug) {
-        StringBuilder sb = new StringBuilder();
+    private int getGroupId(String[] segments) {
+		String groupSegment = segments[segments.length - 2];
+		return Character.getNumericValue(groupSegment.charAt(1));
+    }
 
+    private Lesson getLesson(String[] segments) {
+		String groupSegment = segments[segments.length - 2];
+		String lessonSegment = segments[segments.length - 1];
+
+		String groupSlug = formatGroupSlug(groupSegment);
+		String groupName = getNameFromSlug(groupSlug);
+		String lessonSlug = formatLessonSlug(lessonSegment);
+		String lessonName = getNameFromSlug(lessonSlug);
+
+		return new Lesson(groupSlug, groupName, lessonSlug, lessonName);
+    }
+
+    private String formatGroupSlug(String filename) {
+        return filename.replace("$", "");
+    }
+
+    private String formatLessonSlug(String filename) {
+        return filename.replace(".html", "");
+    }
+
+    public String getNameFromSlug(String slug) {
+        StringBuilder sb = new StringBuilder();
         boolean nextIsCap = true;
         for (int i = 2; i < slug.length(); i++) {
             char c = slug.charAt(i);
@@ -81,17 +94,6 @@ public class AppService {
             }
         }
         return sb.toString();
-    }
-
-    private String formatSlug(String filename) {
-        return filename.replace(".html", "");
-    }
-
-    private String formatName(String filename) {
-        return filename 
-                .substring(1)
-                .replace(".html", "")
-                .replace('-', ' ');
     }
 
 }

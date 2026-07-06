@@ -22,14 +22,14 @@ public class AppController {
         return "index";
     }
 
-    @GetMapping("/lessons/{group}/{slug}")
+    @GetMapping("/lessons/{groupSlug}/{lessonSlug}")
     public String showLesson(
-        @PathVariable String group,
-        @PathVariable String slug,
+        @PathVariable String groupSlug,
+        @PathVariable String lessonSlug,
         Model model
     ) {
-        model.addAttribute("title", service.formatTitle(slug));
-        return "lessons/$" + group + "/" + slug;
+        model.addAttribute("title", service.getNameFromSlug(lessonSlug));
+        return "lessons/$" + groupSlug + "/" + lessonSlug;
     }
 
     @GetMapping("/standards")
