@@ -10,53 +10,38 @@
 <body>
     <main layout:fragment="content">
 
-        <section id="outline">
+        <section>
+            <h2 th:text="${title}"></h2>
+            <h3>Area of Operation II.C</h3>
+
             <div class="row">
                 <div class="col">
-                    <h3>Objective</h3>
-                    <p>The learner will aquire the necessary knowledge, skills, and awareness pertaining to:</p>
+                    <h4>Objective</h4>
                     <ul>
-                        <li>general airport operations, including taxiing and radio communications</li>
-                        <li>runway incursions and precautions to take to avoid them</li>
-                        <li>airport signs, markings, lights, etc.</li>
+                        <li>The learner will understand airport operations, including taxiing and taxi instructions, airport signs, lights and markings, and communication with ATC.</li>
+                        <li>The learner will develop skills to safely operate at towered and non-towered airports.</li>
+                        <li>The learner will mitigate risk by understanding runway incursions, incidents, and accidents, and taking precautions to avoid them.</li>
                     </ul>
-                </div>
 
-                <div class="col">
+                    <h4>References</h4>
+                    <ul>
+                        <li>Pilot's Handbook of Aeronautical Knowledge</li>
+                    </ul>
+
                     <h4>Topics</h4>
                     <ul>
-                        <li><a href="#incursion">Runway Incursions</a></li>
-                        <li><a href="#taxi">Taxi Instructions and Clearances</a></li>
-                        <li><a href="#signs">Airport Signs and Markings</a></li>
-                        <li><a href="#hotspots">Hotspots</a></li>
-                        <li><a href="#uncontrolled">Non-Towered Airports</a></li>
+                        <li><a href="#"></a></li>
                     </ul>
-                </div>
-            </div>
-        </section>
-
-        <section id="incursion">
-            <div class="row">
-                <div class="col">
-                    <h3>Runway Incursions</h3>
-                    <div class="flashcard">
-                        <p class="question">What is a runway incursion?</p>
-                        <p class="answer">Any occurrence at an aerodrome involving the incorrect presence of an aircraft, vehicle, or person on the protected area of a surface designated for the landing and takeoff of aircraft.</p>
-                    </div>
-
-                    <div class="flashcard">
-                        <p class="question">What kind are we worried about?</p>
-                        <p class="answer">Pilot Deviation</p>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="img" style="background-image: url('https://res.cloudinary.com/dscigc3ga/image/upload/q_auto/f_auto/v1779830773/runway-incursion_a7hiox.jpg');"></div>
                 </div>
             </div>
         </section>
 
         <section>
-            <h3>Common Runway Incursions</h3>
+            <h3>Runway Incursions</h3>
+            <p class="bg bg-2">Any occurrence at an aerodrome involving the incorrect presence of an aircraft, vehicle, or person on the protected area of a surface designated for the landing and takeoff of aircraft.</p>
+            <a href="https://www.youtube.com/watch?v=6czlnU0ef5Q" target="_blank" class="far">Possible Pilot Deviation Video</a>
+
+            <h4>Common Runway Incursions</h4>
             <div class="row">
                 <div class="col bg bg-1">
                     <h4>Entering Movement Area Without Clearance</h4>
@@ -106,13 +91,13 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>identification</td>
-                        <td>Skyhawk 123BF</td>
+                        <td>Identification</td>
+                        <td>"Skyhawk 123BF"</td>
                         <td>who the clearance is for</td>
                     </tr>
                     <tr>
-                        <td>destination</td>
-                        <td>taxi to Runway 18</td>
+                        <td>Destination</td>
+                        <td>"taxi to Runway 18"</td>
                         <td>
                             <p>the runway you will be departing</p>
                             <p>or the furthest part of your clearance so far</p>
@@ -120,12 +105,12 @@
                     </tr>
                     <tr>
                         <td>Route</td>
-                        <td>via Alpha, Bravo, Charlie</td>
+                        <td>"via Alpha, Bravo, Charlie"</td>
                         <td>the route you will follow</td>
                     </tr>
                     <tr>
                         <td>Constraints</td>
-                        <td>hold short of Runway 9</td>
+                        <td>"hold short of Runway 9"</td>
                         <td>any other instructions</td>
                     </tr>
                 </tbody>
@@ -168,7 +153,7 @@
 
         <section id="signs">
             <h3>Airport Signs and Markings</h3>
-            <div class="img" style="background-image: url('https://res.cloudinary.com/dscigc3ga/image/upload/q_auto/f_auto/v1779849163/airport-signs_i7gliu.png');"></div>
+            <a href="https://www.faa.gov/sites/faa.gov/files/SignsAndMarkings_one-doc.pdf" target="_blank" class="far mt">Airport Signs and Markings Guide</a>
         </section>
 
         <section>
@@ -242,7 +227,7 @@
                 <li>Communicate</li>
             </ul>
             <p class="mt">So you never hear:</p>
-            <h4 class="bg bg-3">"Advise when ready to copy a phone number."</h4>
+            <h4 class="bg bg-1">"Advise when ready to copy a phone number."</h4>
             <div class="img" style="background-image: url('https://res.cloudinary.com/dscigc3ga/image/upload/q_auto/f_auto/v1779848422/runway-2_nm4dab.webp');"></div>
         </section>
     </main>
