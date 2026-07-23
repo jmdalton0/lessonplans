@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{layout}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title th:text="${title}"></title>
+</head>
+
+<body>
+    <main layout:fragment="content">
+
+        <section>
+            <h2 th:text="${title}"></h2>
+            <h3>Area of Operation X.I</h3>
+
+            <div class="row">
+                <div class="col">
+                    <h4>Objective</h4>
+                    <ul>
+                        <li></li>
+                    </ul>
+
+                    <h4>References</h4>
+                    <ul>
+                        <li>Pilot's Handbook of Aeronautical Knowledge</li>
+                        <li>Airplane Flying Handbook</li>
+                    </ul>
+                </div>
+
+                <div class="col">
+                    <h4>Topics</h4>
+                    <ul>
+                        <li><a href="#notes">Notes from Spin Training</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h3>Notes</h3>
+            <h4>Phases</h4>
+            <ul>
+                <li>
+                    <h5>Entry</h5>
+                    <ul>
+                        <li>stall plus yaw</li>
+                    </ul>
+                </li>
+                <li>
+                    <h5>Incipient</h5>
+                    <ul>
+                        <li>varying airspeed, vertical speed, radius of rotation</li>
+                        <li>generally slower rotations</li>
+                        <li>lose more altitude per rotation</li>
+                    </ul>
+                </li>
+                <li>
+                    <h5>Developed</h5>
+                    <ul>
+                        <li>everything is constant rate and radius</li>
+                        <li>faster rotations</li>
+                        <li>lose less altitude per rotation because rotation speed decreases</li>
+                        <li>nose is spinning about a point on the ground</li>
+                    </ul>
+                </li>
+                <li>
+                    <h5>Recovery</h5>
+                    <ul>
+                        <li>always check POH for specific recovery procedures</li>
+                        <li>PARE is NOT universal</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Notes</h3>
+            <h4>Recovery</h4>
+            <ul>
+                <li>
+                    <h5>Power Idle</h5>
+                    <ul>
+                        <li>less messy / aggravated recovery</li>
+                    </ul>
+                </li>
+                <li>
+                    <h5>Ailerons Nuetral</h5>
+                    <ul>
+                        <li>aileron will not counteract rotation</li>
+                        <li>aileron into the spin accelerates - increases speed of rotation</li>
+                        <li>aileron away from the spin aggravates - changes axis of rotation to more of a flat spin</li>
+                    </ul>
+                </li>
+                <li>
+                    <h5>Rudder Opposite then Nuetral</h5>
+                    <ul>
+                        <li>counteract rotation</li>
+                        <li>apply nuetral rudder when rotation stops to avoid spinning in the opposite direction</li>
+                    </ul>
+                </li>
+                <li>
+                    <h5>Elevator Down then Up</h5>
+                    <ul>
+                        <li>lower angle of attack to regain lift</li>
+                        <li>recover smoothly to avoid overloading the airframe</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+    </main>
+</body>

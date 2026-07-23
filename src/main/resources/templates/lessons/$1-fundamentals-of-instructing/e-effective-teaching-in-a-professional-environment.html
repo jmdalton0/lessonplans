@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{layout}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title th:text="${title}"></title>
+</head>
+
+<body>
+    <main layout:fragment="content">
+
+        <section>
+            <h2 th:text="${title}"></h2>
+            <h3>Area of Operation I.E</h3>
+
+            <div class="row">
+                <div class="col">
+                    <h4>Objective</h4>
+                    <ul>
+                        <li>The learner will understand instructor responsibilities, qualifications, ethics, and professionalism.</li>
+                        <li>The learner will develop skills to provide a professional, appropriate, and effective learning environment.</li>
+                        <li>The learner will mitigate risk by providing a professional experience and fulfilling instructor responsibilities.</li>
+                    </ul>
+
+                    <h4>References</h4>
+                    <ul>
+                        <li>Aviation Instructor's Handbook</li>
+                    </ul>
+                </div>
+
+                <div class="col">
+                    <h4>Topics</h4>
+                    <ul>
+                        <li><a href="#aviation">Aviation Instructor Responsibilities</a></li>
+                        <li><a href="#flight">Flight Instructor Responsibilities</a></li>
+                        <li><a href="#professionalism">Professionalism</a></li>
+                        <li><a href="#ethics">Instructor Ethics</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h3>Introduction</h3>
+            <p class="bg bg-1">Think about your favorite teacher.</p>
+            <ul>
+                <li>What did they do that made them your favorite?</li>
+                <li>How did it influence your learning?</li>
+            </ul>
+        </section>
+
+        <section id="aviation">
+            <h3>Aviation Instructor Responsibilities</h3>
+            <div class="row">
+                <div class="col">
+                    <h4>Helping Learners</h4>
+                    <ul>
+                        <li>learning should be enjoyable, interesting, and goal-oriented</li>
+                        <li>instructors should not try to make learning easy, rather, challenging but accessible</li>
+                        <li>measure against standards so learners have a clear picture of their progress</li>
+                    </ul>
+
+                    <h4>Providing Adequate Instruction</h4>
+                    <ul>
+                        <li>instructors must adapt to learners' personality, thinking processes, ability, temperament</li>
+                        <li>incorrect analysis of a student's characteristics will lead to improper instruction</li>
+                        <li>instructors often use teaching methods that work for them, or were used for their training - consider other methods</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h4>Standards of Performance</h4>
+                    <ul>
+                        <li>learners should be held to established standards</li>
+                    </ul>
+
+                    <h4>Emphasizing the Positive</h4>
+                    <ul>
+                        <li>learners will learn better when the experience is enjoyable</li>
+                        <li>avoid causing uneasiness in the learner by focusing on negative or dangerous aspects of aviation</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h3>Aviation Instructor Responsibilities</h3>
+            <h4>Minimizing Learner Frustration</h4>
+            <div class="row">
+                <div class="col">
+                    <ul>
+                        <li>
+                            <h5>Motivate Learners</h5>
+                            <ul>
+                                <li>people learn better when they want to rather than being forced to</li>
+                                <li>relate smaller steps to larger objectives</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h5>Keep Learners Informed</h5>
+                            <ul>
+                                <li>update learners on progress</li>
+                                <li>remind learners of assignments, exams, deadlines</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h5>Approach Learners as Individuals</h5>
+                            <ul>
+                                <li>generalized teaching fits no one</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <ul>
+                        <li>
+                            <h5>Give Credit When Due</h5>
+                            <ul>
+                                <li>recognize high performance</li>
+                                <li>don't give too freely or it loses value</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h5>Criticize Constructively</h5>
+                            <ul>
+                                <li>identify errors AND provide corrections</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h5>Be Consistent</h5>
+                            <ul>
+                                <li>avoid confusion</li>
+                                <li>if standards change, learner will become frustrated</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h5>Admit Errors</h5>
+                            <ul>
+                                <li>earn learner respect by admitting mistakes</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="flight">
+            <h3>Flight Instructor Responsibilities</h3>
+            <p class="bg bg-2">Instructors shoulder an enormous responsibility to mold their students into safe, professional pilots.</p>
+
+            <h4>Physiological Obstacles for Flight Learners</h4>
+            <p>help learners understand causes of negative factors so they can mitigate them</p>
+            <ul>
+                <li>fear of small aircraft</li>
+                <li>strange noises</li>
+                <li>G-forces</li>
+                <li>airsickness</li>
+            </ul>
+
+            <h4>Ensuring Learner Skill Set</h4>
+            <ul>
+                <li>constantly be evaluating your students against appropriate standards</li>
+                <li>ensure learners consistently demonstrate proficiency in all required areas before solo flight</li>
+                <li>foster in learners a habit of constant improvement and better understanding</li>
+            </ul>
+
+            <h4>Instructor Qualifications</h4>
+            <ul>
+                <li>stay current on latest procedures for training, certification, and safety</li>
+                <li>continually become more familiar with all aircraft and avionics in use</li>
+                <li>retain familiarity with training techniques, certification requirements, procedures, etc.</li>
+            </ul>
+        </section>
+
+        <section id="professionalism">
+            <h3>Professionalism</h3>
+            <div class="row">
+                <div class="col bg bg-2">
+                    <h4>Sincerity</h4>
+                    <ul>
+                        <li>be straight-forward and honest</li>
+                        <li>do not hide inadequacy</li>
+                    </ul>
+                </div>
+                <div class="col bg bg-2">
+                    <h4>Acceptance of the Learner</h4>
+                    <ul>
+                        <li>accept faults and problems</li>
+                        <li>support and encourage rather than ridicule and reprove</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col bg bg-2">
+                    <h4>Personal Appearance and Habits</h4>
+                    <ul>
+                        <li>be neat, clean, appropriately dressed</li>
+                        <li>have common courtesy</li>
+                        <li>bad habits can be distracting and lose respect</li>
+                    </ul>
+                </div>
+                <div class="col bg bg-2">
+                    <h4>Demeanor</h4>
+                    <ul>
+                        <li>maintain a calm, thoughtful, thoughtful, and disciplined demeanor</li>
+                        <li>demonstrate genuine interest in the learner's well-being</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h3>Professional Development</h3>
+            <p class="bg bg-1">Constantly be looking for ways to improve your qualifications, effectiveness, techniques, knowledge, services, etc.</p>
+            <div class="row">
+                <div class="col">
+                    <h4>Continuing Education</h4>
+                    <ul>
+                        <li>
+                            <h5>Government</h5>
+                            <ul>
+                                <li>seminars</li>
+                                <li>articles</li>
+                                <li>AC's</li>
+                                <li>WINGS Program</li>
+                                <li>Gold Seal Certificate</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h5>Educational / Training Institutions</h5>
+                        </li>
+                        <li>
+                            <h5>Commercial and Industry Organizations</h5>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h4>Sources of Material</h4>
+                    <ul>
+                        <li>FAR</li>
+                        <li>AIM</li>
+                        <li>ACS</li>
+                        <li>ACs</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="ethics">
+            <h3>Instructor Ethics and Conduct</h3>
+            <h4>Flight Instructors Model Code of Conduct</h4>
+            <a href="https://repository.fit.edu/AviatorsModelCodes/" target="_blank" class="far mt">FIMCC</a>
+        </section>
+
+        <section id="conclusion">
+            <h3>Conclusion</h3>
+            <h4>Evaluation</h4>
+            <ul>
+                <li>Where should instructors go to find the requirements and standards to which their students are held?</li>
+                <li>List some ways that an instructor can show genuine commitment to a learner's improvement.</li>
+                <li>List ways that an instructor can minimize frustration in their learners.</li>
+                <li>List ways that an instructor can maintain a professional image. Why is this important?</li>
+            </ul>
+        </section>
+    </main>
+</body>
+
+</html>

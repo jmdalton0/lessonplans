@@ -10,18 +10,23 @@
 <body>
     <main layout:fragment="content">
 
-        <section class="hero" style="background-image: url('https://res.cloudinary.com/dscigc3ga/image/upload/q_auto/f_auto/v1779065396/da20_fzzlgt.jpg');">
+        <section>
             <h2 th:text="${title}"></h2>
-        </section>
+            <h3>Area of Operation II.K</h3>
 
-        <section id="outline">
             <div class="row">
                 <div class="col">
-                    <h3>Objective</h3>
-                    <p>The learner will aquire the necessary knowledge, skills, and awareness pertaining to:</p>
+                    <h4>Objective</h4>
                     <ul>
-                        <li>logbook entries and endorsements</li>
-                        <li>responsibilities as a flight instructor including maintaining a current certificate</li>
+                        <li>The learner will understand the requirements for proper logbook entries and endorsements when giving flight training, flight reviews, and submitting students for evaluation.</li>
+                        <li>The learner will develop skills to identify the necessary requirements that a student must satisfy based on their ratings and experience.</li>
+                        <li>The learner will mitigate risk by properly logging and retaining all necessary records and properly preparing students for evaluation.</li>
+                    </ul>
+
+                    <h4>References</h4>
+                    <ul>
+                        <li>14 CFR</li>
+                        <li>AC-61-65</li>
                     </ul>
                 </div>
 
@@ -34,8 +39,14 @@
             </div>
         </section>
 
+        <section>
+            <h3>Introduction</h3>
+            <p class="bg bg-1">Improper record keeping / validation of requirements can stall your training.</p>
+        </section>
+
         <section id="logbooks">
             <h3>Logbooks</h3>
+            <a href="https://www.ecfr.gov/current/title-14/chapter-I/subchapter-D/part-61/subpart-A/section-61.51" class="far">61.51</a>
             <p>Each logbook entry must include:</p>
             <ul>
                 <li>date</li>
@@ -47,6 +58,9 @@
                 <li>conditions (night, IMC, etc.)</li>
             </ul>
             <p>If a safety pilot was required for the flight, their name must also be included in the entry.</p>
+            
+            <h3>Dual Given</h3>
+            <a href="https://www.ecfr.gov/current/title-14/chapter-I/subchapter-D/part-61/subpart-A/section-61.189" class="far">61.189</a>
         </section>
 
         <section>
