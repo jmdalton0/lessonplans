@@ -10,21 +10,32 @@
 <body>
     <main layout:fragment="content">
 
-        <section class="hero"
-            style="background-image: url('https://res.cloudinary.com/dscigc3ga/image/upload/q_auto/f_auto/v1778824912/preflight-2_pmdjpt.jpg');">
-            <h2 th:text="${title}"></h2>
-        </section>
-
         <section>
-            <h3>Topics</h3>
-        </section>
+            <h2 th:text="${title}"></h2>
+            <h3>Area of Operation</h3>
 
-        <section id="general">
+            <div class="row">
+                <div class="col">
+                    <h4>Objective</h4>
+                    <ul>
+                        <li>The learner will understand how to properly verify that an aircraft is suitable for flight.</li>
+                        <li>The learner will gain skills to assess the condition of an aircraft, its controls, and its avionics.</li>
+                        <li>The learner will mitigate risk by understanding the legal and safety requirements of an airworthy aircraft.</li>
+                    </ul>
+
+                    <h4>References</h4>
+                    <ul>
+                        <li>14 CFR</li>
+                        <li>Pilot's Handbook of Aeronautical Knowledge</li>
+                        <li>Applicable Aircraft POH or AFM</li>
+                    </ul>
+                </div>
+            </div>
         </section>
 
         <section id="conclusion">
             <h3>Conclusion</h3>
-            <h4>Always Conduct a Thorough Preflight</h4>
+            <h4>Evaluation</h4>
         </section>
     </main>
 </body>
