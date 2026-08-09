@@ -177,10 +177,6 @@ th {
     margin-right: 0;
 }
 
-.text-center {
-    text-align: center;
-}
-
 .img {
     flex: 1;
     margin: 1rem;

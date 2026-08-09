@@ -10,182 +10,125 @@
 <body>
     <main layout:fragment="content">
 
-        <section class="hero" style="background-image: url('https://res.cloudinary.com/dscigc3ga/image/upload/q_auto/f_auto/v1778797249/airplane-maintenance_qdhq7b.jpg');">
+        <section>
             <h2 th:text="${title}"></h2>
-        </section>
+            <h3>Area of Operation III.B</h3>
 
-        <section id="outline">
             <div class="row">
                 <div class="col">
-                    <h3>Objective</h3>
+                    <h4>Objective</h4>
                     <ul>
-                        <li>Gain the necessary knowledge and skills to determine if an aircraft is airworthy.</li>
-                        <li>Gain the necessary knowledge and skills to prepare an aircraft with inoperative equipment for flight.</li>
-                        <li>Gain an awareness of the importance of ensuring an aircraft is airworthy.</li>
+                        <li>The learner will understand airworthiness as it applies to aircraft and how to verify and aircraft is worthy of flight.</li>
+                        <li>The learner will develop skills to verify that an aircraft is safe and legal to fly, as well as steps to take if it is not.</li>
+                        <li>The learner will mitigate risk by understanding the importance of ensuring an aircraft is airworthy.</li>
+                    </ul>
+
+                    <h4>References</h4>
+                    <ul>
+                        <li>14 CFR</li>
+                        <li>Pilot's Handbook of Aeronautical Knowledge</li>
+                        <li>Aeronautical Information Manual</li>
                     </ul>
                 </div>
 
                 <div class="col">
                     <h4>Topics</h4>
                     <ul>
-                        <li><a href="#general">General Airworthiness</a></li>
+                        <li><a href="#definition">Definition of Airworthiness</a></li>
+                        <li><a href="#documents">Required Documents</a></li>
+                        <li><a href="#inspections">Required Inspections</a></li>
                         <li><a href="#equipment">Equipment Requirements</a></li>
+                        <li><a href="#special">Special Flight Permits</a></li>
+                        <li><a href="#maintenance">Preventative Maintenance</a></li>
                     </ul>
                 </div>
             </div>
         </section>
 
-        <section id="general">
-            <div class="row">
-                <div class="col">
-
-                    <h3>Airplane Airworthiness</h3>
-                    <p class="bg bg-2">How do you as a pilot determine that an aircraft can be flown?</p>
-                    <p>Airworthiness is an assessment of the condition of an aircraft, ensuring that it is suitable to be flown.</p>
-                    <p><a href="https://www.ecfr.gov/current/title-14/chapter-I/subchapter-F/part-91/subpart-A/section-91.7" target="_blank" class="far">§ 91.7</a></p>
-
-                    <h4>Two Main Aspects</h4>
-                    <ul>
-                        <li>Is the plane legal?</li>
-                        <li>Is the plane safe?</li>
-                    </ul>
-
-                    <!--
-                    <h4>common airworthiness checklists</h4>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Method</th>
-                                <th>For Legality</th>
-                                <th>For Safety</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>ARROW</td>
-                                <td>&#10003;</td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>AV1ATES</td>
-                                <td>&#10003;</td>
-                                <td>&#10003;</td>
-                            </tr>
-                            <tr>
-                                <td>KOEL</td>
-                                <td>&#10003;</td>
-                                <td>&#10003;</td>
-                            </tr>
-                            <tr>
-                                <td>ATOMATOFLAMES</td>
-                                <td>&#10003;</td>
-                                <td>&#10003;</td>
-                            </tr>
-                            <tr>
-                                <td>Personal Preflight Checklist</td>
-                                <td></td>
-                                <td>&#10003;</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    -->
-                </div>
-                <div class="col">
-                    <div class="img" style="background-image: url('https://res.cloudinary.com/dscigc3ga/image/upload/q_auto/f_auto/v1778801285/airplane-maintenance-1_hpvdjj.webp');"></div>
-                </div>
-            </div>
+        <section>
+            <h3>Introduction</h3>
+            <p class="bg bg-1">You go out to your plane and notice that something is not working properly. Can you fly?</p>
         </section>
 
-        <section id="arrow">
-            <div class="row">
-                <div class="col">
-                    <h3>ARROW Acronym</h3>
-                    <ul>
-                        <li>Airworthiness Certificate</li>
-                        <li>Registration</li>
-                        <li>Radio Station License (international only)</li>
-                        <li>Operating Limitations</li>
-                        <li>Weight and Balance</li>
-                    </ul>
+        <section id="definition">
+            <h3>Airplane Airworthiness</h3>
+            <p class="bg bg-1">Airworthiness is an assessment of the condition of an aircraft, ensuring that it is suitable to be flown.</p>
+            <p><a href="https://www.ecfr.gov/current/title-14/chapter-I/subchapter-F/part-91/subpart-A/section-91.7" target="_blank" class="far">§ 91.7</a></p>
 
-                    <h4>What does ARROW check?</h4>
-                    <ul>
-                        <li>Required documents with respect to the aircraft.</li>
-                        <li>Must be physically in the aircraft while flying.</li>
-                    </ul>
-
-                    <div class="img" style="background-image: url('https://res.cloudinary.com/dscigc3ga/image/upload/q_auto/f_auto/v1778804058/hawkeye_ft7nvb.webp');"></div>
-                </div>
-                <div class="col">
-                    <h5>Airworthiness Certificate</h5>
-                    <ul>
-                        <li>Given when the aircraft is manufactured</li>
-                        <li>Saying that it is legally "airworthy"</li>
-                        <li>Never expires as long as maintenenace is performed.</li>
-                        <li><a href="https://www.ecfr.gov/current/title-14/chapter-I/subchapter-C/part-21/subpart-H/section-21.181" target="_blank" class="far">§ 21.181</a></li>
-                    </ul>
-                    <h5>Registration</h5>
-                    <ul>
-                        <li>Registers your aircraft in the U.S.</li>
-                        <li>Valid for 7 years</li>
-                    </ul>
-
-                    <h5>Operating Limitations</h5>
-                    <ul>
-                        <li>POH / AFM</li>
-                        <li>Includes performance charts, standard operations, emergency operations, etc.</li>
-                    </ul>
-
-                    <h5>Weight and Balance</h5>
-                    <ul>
-                        <li>Measurements used for weight and balance calculations</li>
-                        <li>Specific to 1 tail number</li>
-                    </ul>
-                </div>
-            </div>
+            <h4>Two Main Aspects</h4>
+            <ul>
+                <li>Is the plane legal?</li>
+                <li>Is the plane safe?</li>
+            </ul>
         </section>
 
-        <section id="aviates">
-            <div class="row">
-                <div class="col">
-                    <h3>AV1ATES Acronym</h3>
+        <section id="documents">
+            <h3>Required Documents</h3>
+
+            <h5>Airworthiness Certificate</h5>
+            <ul>
+                <li>does not expire as long as maintenance and inspections are performed</li>
+                <li><a href="https://www.ecfr.gov/current/title-14/chapter-I/subchapter-C/part-21/subpart-H/section-21.181" target="_blank" class="far">§ 21.181</a></li>
+                <li>
+                    <h5>Standard</h5>
                     <ul>
-                        <li>Annual Inspection</li>
-                        <li>VOR Inspection</li>
-                        <li>100 Hour Inspection</li>
-                        <li>Additional Requirements (ADs, SAs, SB, SAIBs)</li>
-                        <li>Transponder</li>
-                        <li>ELT</li>
-                        <li>Static System</li>
+                        <li>white</li>
+                        <li>normal, utility, acrobatic, transport</li>
                     </ul>
 
-                    <h4>What does AV1ATES check?</h4>
+                    <h5>Special</h5>
                     <ul>
-                        <li>All the inspections that need to be done before you can fly.</li>
-                        <li>Records of these inspections must be kept in the maintenance logs.</li>
+                        <li>pink</li>
+                        <li>experimental, restricted, light-sport</li>
                     </ul>
-                </div>
+                </li>
+            </ul>
+
+            <h5>Registration</h5>
+            <ul>
+                <li>expires after 7 years</li>
+            </ul>
+
+            <h5>Radio Operators License</h5>
+
+            <h5>Operating Limitations</h5>
+            <ul>
+                <li>POH / AFM</li>
+            </ul>
+
+            <h5>Weight and Balance</h5>
+            <ul>
+                <li>measurements used for weight and balance calculations for that tail number</li>
+            </ul>
+        </section>
+
+        <section id="inspections">
+            <h3>Required Inspections</h3>
+
+            <div class="row">
                 <div class="col bg bg-2">
-                    <h3>General</h3>
+                    <h4>General</h4>
 
-                    <h4>Annual Inspection</h4>
+                    <h5>Annual Inspection</h5>
                     <ul>
                         <li>every 12 calendar months</li>
+                        <li>A&P with Inspection Authorization (IA)</li>
                     </ul>
 
-                    <h4>100 Hour Inspection</h4>
+                    <h5>100 Hour Inspection</h5>
                     <ul>
                         <li>every 100 engine hours</li>
                         <li>an annual can be used as a 100 hour</li>
                         <li>for hire only</li>
+                        <li>can exceed 100 hours by 10 hours if en route to inspection location</li>
                     </ul>
 
-                    <h4>Transponder</h4>
+                    <h5>Transponder</h5>
                     <ul>
                         <li>every 24 calendar months</li>
                     </ul>
 
-                    <h4>ELT (Emergency Locator Transmitter)</h4>
+                    <h5>ELT (Emergency Locator Transmitter)</h5>
                     <ul>
                         <li>121.5</li>
                         <li>every 12 calendar months</li>
@@ -193,120 +136,75 @@
                         <li>half of the useful battery life</li>
                     </ul>
                 </div>
-                <div class="col bg bg-1">
-                    <h3>IFR Only</h3>
 
-                    <h4>VOR</h4>
+                <div class="col bg bg-2">
+                    <h4>IFR Only</h4>
+
+                    <h5>VOR</h5>
                     <ul>
                         <li>every 30 days</li>
                         <li>can be performed by pilot</li>
                     </ul>
 
-                    <h4>Static System</h4>
+                    <h5>Static System</h5>
                     <ul>
                         <li>every 24 calendar months</li>
                     </ul>
-
-                    <div class="img" style="background-image: url('https://res.cloudinary.com/dscigc3ga/image/upload/q_auto/f_auto/v1778816165/vor_jd382o.jpg');"></div>
                 </div>
             </div>
         </section>
 
-        <section id="airworthiness-directives">
-            <div class="row">
-                <div class="col">
-                    <h3>Additional Airworthiness Requirements</h3>
-                    <h5>(ADs, SAs, SBs, SAIBs)</h5>
-
-                    <p class="bg bg-2">What happens if the FAA or manufacturer wants to update the airworthiness
-                        requirements AFTER the aircraft has been certified?</p>
-
-                    <ul>
-                        <li>AD = Airworthiness Directive</li>
-                        <li>SAIB = Special Airworthiness Information Bulletin</li>
-                        <li>SB = Safety Bulletin</li>
-                        <li>SA = Safety Alert</li>
-                    </ul>
-
-                    <p class="bg bg-1">An aircraft must comply with all regulatory requirements in order to remain
-                        airworthy.</p>
-                </div>
-                <div class="col">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th></th>
-                                <th>Source</th>
-                                <th>Regulatory</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>AD</td>
-                                <td>FAA</td>
-                                <td>YES</td>
-                            </tr>
-                            <tr>
-                                <td>SAIB</td>
-                                <td>FAA</td>
-                                <td>NO</td>
-                            </tr>
-                            <tr>
-                                <td>SB</td>
-                                <td>Manufacturer</td>
-                                <td>DEPENDS</td>
-                            </tr>
-                            <tr>
-                                <td>SA</td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                        </tbody>
-                    </table>
-
-                    <div class="img" style="background-image: url('https://res.cloudinary.com/dscigc3ga/image/upload/q_auto/f_auto/v1778816685/alert_rdh77o.jpg');"></div>
-                </div>
-            </div>
+        <section>
+            <h3>Additional Airworthiness Requirements</h3>
+            <p class="bg bg-2">What happens if the FAA or manufacturer wants to update the airworthiness requirements AFTER the aircraft has been certified?</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Source</th>
+                        <th>Regulatory</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Airworthiness Directive</td>
+                        <td>FAA</td>
+                        <td>YES</td>
+                    </tr>
+                    <tr>
+                        <td>Special Airworthiness Information Bulletin</td>
+                        <td>FAA</td>
+                        <td>NO</td>
+                    </tr>
+                    <tr>
+                        <td>Service Bulletin</td>
+                        <td>Manufacturer</td>
+                        <td>DEPENDS</td>
+                    </tr>
+                </tbody>
+            </table>
         </section>
 
         <section id="equipment">
-            <div class="row">
-                <div class="col">
-                    <h3>Required Equipment</h3>
-                    <p class="bg bg-2">Is it possible for equipment to fail in between inspections?</p>
+            <h3>Required Equipment</h3>
+            <p class="bg bg-2">Is it possible for equipment to fail in between inspections?</p>
 
-                    <h4>Required Equpment Checklists</h4>
-                    <ul>
-                        <li>MEL</li>
-                        <li>KOEL</li>
-                        <li>91.205</li>
-                        <li>TCDS</li>
-                    </ul>
+            <h4>Inoperative Equipment Checklists</h4>
+            <ul>
+                <li>MEL</li>
+                <li>KOEL</li>
+                <li>91.205</li>
+                <li>TCDS</li>
+                <li>ADs</li>
+            </ul>
 
-                    <p class="bg bg-2">What must a pilot do if they find something on the plane that is inoperative?</p>
-                </div>
-
-                <div class="col">
-                    <h3>Inop Flow</h3>
-
-                    <div class="row">
-                        <div class="col">
-                            <h4 class="bg bg-1">MEL</h4>
-                            <h4 class="bg bg-2">KOEL</h4>
-                            <h4 class="bg bg-2">ATOMATOFLAMES</h4>
-                            <h4 class="bg bg-2">TCDS</h4>
-                            <h4 class="bg bg-2">AD or SA</h4>
-                        </div>
-
-                        <div class="col">
-                            <h4 class="bg bg-1">decide whether it is SAFE</h4>
-                            <h4 class="bg bg-1">deactivate or remove</h4>
-                            <h4 class="bg bg-1">placard INOP</h4>
-                            <h4 class="bg bg-1">make a note in maintenance logs</h4>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <h4>Inoperative Equipment Checklists</h4>
+            <ul>
+                <li>decide if safe</li>
+                <li>deactivate or remove</li>
+                <li>placard INOP</li>
+                <li>make a note in maintenance logs</li>
+            </ul>
         </section>
 
         <section id="special">
@@ -323,31 +221,19 @@
             </ul>
         </section>
 
-        <section id="responsibility">
-            <div class="row">
-                <div class="col">
-                    <h3>Who is Responsible for Airworthiness?</h3>
-
-                    <h4>The Pilot (YOU!)</h4>
-                    <p>before every flight</p>
-                    <p><a href="https://www.ecfr.gov/current/title-14/chapter-I/subchapter-F/part-91/subpart-A/section-91.7" target="_blank" class="far">§ 91.7</a></p>
-
-                    <h4>Also the Owner or Operator</h4>
-                    <p>long term maintenance</p>
-                    <p><a href="https://www.ecfr.gov/current/title-14/chapter-I/subchapter-F/part-91/subpart-A/section-91.403" target="_blank" class="far">§ 91.403</a></p>
-                </div>
-
-                <div class="col">
-                    <div class="img" style="background-image: url('https://res.cloudinary.com/dscigc3ga/image/upload/q_auto/f_auto/v1778817845/uncle-sam_iq5vv4.jpg');"></div>
-                </div>
-            </div>
+        <section id="maintenance">
+            <h3>Preventative Maintenance</h3>
+            <a href="https://www.ecfr.gov/current/title-14/chapter-I/subchapter-C/part-43/section-43.3" target="_blank" class="far">43.3</a>
         </section>
 
         <section>
             <h3>Conclusion</h3>
-            <h4>NEVER Fly an Aircraft that is NOT Airworthy</h4>
-            <p>It is illegal!</p>
-            <p>It is unsafe!</p>
+            <h4>Evaluation</h4>
+            <ul>
+                <li>Explain what documents are required for airworthiness.</li>
+                <li>Explain what inspections are required for airworthiness.</li>
+                <li>Can a private pilot perform preventative maintenance?</li>
+            </ul>
         </section>
     </main>
 </body>

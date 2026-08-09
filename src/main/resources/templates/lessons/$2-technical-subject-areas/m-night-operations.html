@@ -10,56 +10,166 @@
 <body>
     <main layout:fragment="content">
 
-        <section class="hero" style="background-image: url('https://res.cloudinary.com/dscigc3ga/image/upload/q_auto/f_auto/v1779065396/da20_fzzlgt.jpg');">
+        <section>
             <h2 th:text="${title}"></h2>
-        </section>
+            <h3>Area of Operation II.M</h3>
 
-        <section id="outline">
             <div class="row">
                 <div class="col">
-                    <h3>Objective</h3>
-                    <p>The learner will aquire the necessary knowledge, skills, and awareness pertaining to:</p>
+                    <h4>Objective</h4>
                     <ul>
-                        <li>night operations and factors unique to night flight</li>
-                        <li>human factors at night including changes to vision</li>
-                        <li>lighting systems and airport operations at night</li>
-                        <li>equipment requirements at night</li>
+                        <li>The learner will understand human factors, lighting, and operations that apply to night flight.</li>
+                        <li>The learner will develop skills to legally and safely prepare for and fly at night.</li>
+                        <li>The learner will mitigate risk by recognizing and responding to adverse situations possible during night flight.</li>
+                    </ul>
+
+                    <h4>References</h4>
+                    <ul>
+                        <li>14 CFR</li>
+                        <li>Pilot's Handbook of Aeronautical Knowledge</li>
+                        <li>Aeronautical Information Manual</li>
                     </ul>
                 </div>
 
                 <div class="col">
                     <h4>Topics</h4>
                     <ul>
-                        <li><a href="#night">Night</a></li>
                         <li><a href="#vision">Vision at Night</a></li>
                     </ul>
                 </div>
             </div>
         </section>
 
-        <section id="night">
-            <h3>Night Flying</h3>
-            <p class="bg bg-2">How does flying at night change things for us as pilots? What are some of the considerations that we must make?</p>
+        <section>
+            <h3>Introduction</h3>
+            <p class="bg bg-1">What are some things that might change for us at night?</p>
         </section>
 
-        <section id="vision">
-            <h3>Eyes at Night</h3>
+        <section>
+            <h3>Legal Considerations</h3>
 
-            <h4>Rods and Cones</h4>
+            <h4>Night Currency</h4>
+            <a href="https://www.ecfr.gov/current/title-14/chapter-I/subchapter-D/part-61/subpart-A/section-61.57" target="_blank" class="far">61.57</a>
+
+            <h4>Equipment</h4>
+            <a href="https://www.ecfr.gov/current/title-14/chapter-I/subchapter-F/part-91/subpart-C/section-91.205" target="_blank" class="far">91.205</a>
+        </section>
+
+        <section>
+            <h3>Airport Lightings Systems</h3>
             <div class="row">
                 <div class="col">
-                    <h4>Rods</h4>
+                    <h4>Taxiway</h4>
+                    <ul>
+                        <li>edge</li>
+                        <li>centerline</li>
+                        <li>holding positions</li>
+                    </ul>
+
+                    <h4>Runway</h4>
+                    <ul>
+                        <li>edge</li>
+                        <li>RCLS</li>
+                        <li>REIL</li>
+                        <li>TDZL</li>
+                        <li>LAHS</li>
+                        <li>taxiway centerline lead-off/on lights</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h4>Approach</h4>
+                    <ul>
+                        <li>ALS</li>
+                        <li>VGI</li>
+                        <li>VASI</li>
+                        <li>PAPI</li>
+                    </ul>
+
+                    <h4>Beacon</h4>
+                    <ul>
+                        <li>land</li>
+                        <li>sea</li>
+                        <li>military</li>
+                        <li>heliport</li>
+                    </ul>
+
+                    <h4>Obstruction</h4>
+                    <ul>
+                        <li>red / white</li>
+                    </ul>
                 </div>
             </div>
         </section>
 
         <section>
-            <h3>Visual Illusions at Night</h3>
+            <h3>Human Factors</h3>
 
+            <h4>Vision at Night</h4>
+            <ul>
+                <li>Cones - center of retina</li>
+                <li>Rods - in a ring around the cones, used more at night</li>
+                <li>off-center viewing</li>
+                <li>night vision takes about 30 minutes</li>
+                <li>red light</li>
+            </ul>
+
+            <h4>Illusions</h4>
+            <ul>
+                <li>unusual attitudes</li>
+                <li>autokinesis</li>
+                <li>size-distance illusion - light changing intensity looks to be moving</li>
+                <li>flicker vertigo</li>
+                <li>false horizon</li>
+                <li>featureless terrain - looks higher</li>
+                <li>ground lighting near runway</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Interpreting Traffic Position and Direction</h3>
+            <div class="img" style="background-image: url('https://res.cloudinary.com/dscigc3ga/image/upload/v1785974730/position-lights_nagghq.jpg');"></div>
+        </section>
+
+        <section>
+            <h3>Personal Equipment</h3>
+            <ul>
+                <li>headlamp</li>
+                <li>flashlight</li>
+                <li>warm clothing</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Other Considerations</h3>
+            <ul>
+                <li>
+                    <p>extra caution during all phases of flight</p>
+                    <ul>
+                        <li>preflight</li>
+                        <li>engine staring</li>
+                        <li>taxi</li>
+                        <li>takeoff / climb</li>
+                        <li>landing / descent</li>
+                        <li>cruise</li>
+                    </ul>
+                </li>
+                <li>other pilots night vision</li>
+                <li>navigation</li>
+                <li>weather</li>
+                <li>terrain</li>
+                <li>obstacles</li>
+            </ul>
         </section>
 
         <section id="conclusion">
             <h3>Conclusion</h3>
+            <h4>Evaluation</h4>
+            <ul>
+                <li>If you were to create a separate preflight checklist for night flights, what would you include?</li>
+                <li>Explain how our eyes adjust for low light conditions. What are some adverse affects of this?</li>
+                <li>Define night currency.</li>
+                <li>Choose an illusion associated with night flight. What causes it? How can you mitigate it?</li>
+            </ul>
         </section>
     </main>
 </body>

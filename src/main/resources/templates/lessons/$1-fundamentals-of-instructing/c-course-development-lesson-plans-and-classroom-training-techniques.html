@@ -10,27 +10,34 @@
 <body>
     <main layout:fragment="content">
 
-		<section>
+        <section>
             <h2 th:text="${title}"></h2>
             <h3>Area of Operation I.C</h3>
 
             <div class="row">
                 <div class="col">
-					<h4>Objective</h4>
-					<ul>
-						<li>The learner will understand the teaching process, lesson preparation and organization, delivery methods, and teaching tools.</li>
-						<li>The learner will develop skills to create appropriate, organized, and flexible lesson plans.</li>
-						<li>The learner will mitigate risk by recognizing and accomodating various learning styles.</li>
-					</ul>
-
-					<h4>References</h4>
+                    <h4>Objective</h4>
                     <ul>
-						<li>Aviation Instructor's Handbook</li>
+                        <li>The learner will understand the teaching process, lesson preparation and organization, delivery methods, and teaching tools.</li>
+                        <li>The learner will develop skills to create appropriate, organized, and flexible lesson plans.</li>
+                        <li>The learner will mitigate risk by recognizing and accommodating various learning styles.</li>
                     </ul>
 
+                    <h4>References</h4>
+                    <ul>
+                        <li>Aviation Instructor's Handbook</li>
+                    </ul>
+                </div>
+
+                <div class="col">
                     <h4>Topics</h4>
                     <ul>
-                        <li><a href="#topic">Topic</a></li>
+                        <li><a href="#foundations">Foundations of Teaching</a></li>
+                        <li><a href="#design">Course Design and Planning</a></li>
+                        <li><a href="#objectives">Lesson Objectives</a></li>
+                        <li><a href="#organization">Organizing and Delivering Lessons</a></li>
+                        <li><a href="#delivery">Training Delivery Methods</a></li>
+                        <li><a href="#technology">Technology and Instructional Aids</a></li>
                     </ul>
                 </div>
             </div>
@@ -42,8 +49,7 @@
 
             <div class="row">
                 <div class="col">
-                    <h4>Learning Process</h4>
-                    <h5>PPAR</h5>
+                    <h4>Process</h4>
                     <ul>
                         <li>Preparation</li>
                         <li>Presentation</li>
@@ -53,7 +59,6 @@
                 </div>
                 <div class="col">
                     <h4>Essential Instructor Skills</h4>
-                    <h5>MAPS</h5>
                     <ul>
                         <li>Management Skills - plan, organize, lead, supervise</li>
                         <li>Assessment Skills - verify learner progress</li>
@@ -67,19 +72,19 @@
 
         <section id="design">
             <h3>Course Design and Planning</h3>
-            <h4>Levels of Planning</h4>
             <div class="row bg bg-1">
                 <div class="col">
                     <h4>Course</h4>
-                    <p>The overall goal.</p>
-                    <p>Syllabus and Lessons serve to reach this goal.</p>
-                    <p>Example: PPL 141 Course</p>
+                    <ul>
+                        <li>The overall goal.</li>
+                        <li>Syllabus and Lessons serve to reach this goal.</li>
+                        <li>Example: PPL 141 Course</li>
+                    </ul>
 
                     <div class="row bg bg-2">
                         <div class="col">
                             <h4>Syllabus</h4>
-                            <p>structured sequence of objectives that add up to the course goal</p>
-                            <p>made up of building blocks</p>
+                            <p>Structured sequence of objectives that add up to the course goal.</p>
                             <ul>
                                 <li>road map</li>
                                 <li>arranges building blocks of learning in logical order</li>
@@ -93,18 +98,19 @@
                                 <div class="col">
                                     <h4>Lesson Plans</h4>
                                     <p>Organized structure for a single instruction period.</p>
-                                    <p>Includes:</p>
                                     <ul>
-                                        <li>Objectives</li>
-                                        <li>Content</li>
-                                        <li>Completion Standards</li>
+                                        <li>objectives</li>
+                                        <li>content</li>
+                                        <li>completion standards</li>
                                     </ul>
                                 </div>
+
                                 <div class="col">
                                     <h4>Building Blocks</h4>
                                     <ul>
-                                        <li>A discrete skill or knowledge item that can be practiced individually.</li>
-                                        <li>Then combined with other building blocks to achieve larger objectives.</li>
+                                        <li>discrete skill or knowledge item that can be practiced individually</li>
+                                        <li>can be practiced individually</li>
+                                        <li>combined with other building blocks to achieve larger objectives</li>
                                     </ul>
                                 </div>
                             </div>
@@ -116,25 +122,23 @@
 
         <section id="objectives">
             <h3>Lesson Objectives and Preparation</h3>
-            <h4>Two Types of Training Objectives</h4>
-            <div class="row">
-                <div class="col">
-                    <h4>Performance Based Objectives</h4>
-                    <p>Learner is expected to perform an exact procedure to a specific standard</p>
-                    <p>Includes:</p>
-                    <ul>
-                        <li>description</li>
-                        <li>conditions</li>
-                        <li>criteria</li>
-                    </ul>
-                </div>
+            <p class="bg bg-1">Begin with Performance Based Objectives, then gradually change to Decision Based Objectives.</p>
 
-                <div class="col">
-                    <h4>Decision Based Objectives</h4>
-                    <p>As training progresses, shift to scenario-based training to develop judgement and ADM</p>
-                    <p>Higher level of learning</p>
-                </div>
-            </div>
+            <h4>Performance Based Objectives</h4>
+            <p>The learner is expected to perform an exact procedure to a specific standard.</p>
+            <ul>
+                <li>description - measurable desired outcome</li>
+                <li>conditions - rules, parameters, tools</li>
+                <li>criteria - standards measuring objective completion</li>
+            </ul>
+
+            <h4>Decision Based Objectives</h4>
+            <ul>
+                <li>higher level of learning</li>
+                <li>builds on performance based objectives (learn, then apply)</li>
+            </ul>
+
+            <h4>ACS Standards</h4>
         </section>
 
         <section id="organization">
@@ -145,14 +149,14 @@
                     <h5>Intro AMO</h5>
                     <ul>
                         <li>Attention</li>
-                        <li>Development</li>
-                        <li>Conclusion</li>
+                        <li>Motivation</li>
+                        <li>Overview</li>
                     </ul>
                 </li>
                 <li>
                     <h5>Development</h5>
-                    <p>Should have logical order</p>
                     <ul>
+                        <li>logical order</li>
                         <li>past to present</li>
                         <li>simple to complex</li>
                         <li>frequently used to infrequently used</li>
@@ -166,10 +170,74 @@
             </ul>
         </section>
 
+        <section id="delivery">
+            <h3>Training Delivery Methods</h3>
+            <div class="row">
+                <div class="col">
+                    <h5>Lecture</h5>
+                    <ul>
+                        <li>present new material to a large audience</li>
+                    </ul>
+
+                    <h5>Discussion</h5>
+                    <ul>
+                        <li>short lecture followed by discussion between learners and instructors or other learners</li>
+                    </ul>
+
+                    <h5>Guided Discussion</h5>
+                    <ul>
+                        <li>goal is to encourage participation and application of skills</li>
+                        <li>more engaging</li>
+                        <li>instructor is a facilitator</li>
+                    </ul>
+                </div>
+
+                <div class="col">
+                    <h5>Cooperative of Group Learning</h5>
+                    <ul>
+                        <li>organize learners into small groups</li>
+                        <li>clear specific objectives</li>
+                    </ul>
+
+                    <h5>Demonstration-Performance Method</h5>
+                    <ul>
+                        <li>useful for specific skills that require practice</li>
+                        <li>explanation, demonstration, learner performance, instructor supervision, evaluation</li>
+                    </ul>
+
+                    <h5>Drill and Practice Method</h5>
+                    <ul>
+                        <li>strengthen skill with practice</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="technology">
+            <h3>Technology and Instructional Aids</h3>
+
+            <h4>Electronic Learning</h4>
+            <ul>
+                <li>time flexible</li>
+                <li>cost effective</li>
+                <li>lack of personal feedback and interaction from instructor</li>
+            </ul>
+
+            <h4>Instructional Aids</h4>
+            <ul>
+                <li>simple, factual, straightforward</li>
+                <li>clarify relationships</li>
+                <li>hold learner's attention</li>
+            </ul>
+        </section>
+
         <section id="conclusion">
             <h3>Conclusion</h3>
-            <h4>Be Prepared!</h4>
-            <p>An unprepared or unkowledgable instructor makes the learner appathetic.</p>
+            <h4>Evaluation</h4>
+            <ul>
+                <li>Choose an Essential Instructor Skill. Give an example of effectively applying the skill during instruction.</li>
+                <li>Choose a Training Delivery Method. Weigh the benefits and downsides of this method.</li>
+            </ul>
         </section>
     </main>
 </body>
