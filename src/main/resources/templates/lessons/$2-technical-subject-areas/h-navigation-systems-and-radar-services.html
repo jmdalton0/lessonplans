@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{layout}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title th:text="${title}"></title>
+</head>
+
+<body>
+    <main layout:fragment="content">
+
+        <section>
+            <h2 th:text="${title}"></h2>
+            <h3>Area of Operation II.H</h3>
+
+            <div class="row">
+                <div class="col">
+                    <h4>Objective</h4>
+                    <ul>
+                        <li>The learner will understand the navigation systems and radar services and how and when to use them.</li>
+                        <li>The learner will develop skills to use these systems and services for flight.</li>
+                        <li>The learner will mitigate risk by understanding and adjusting for errors and limitations of these systems.</li>
+                    </ul>
+
+                    <h4>References</h4>
+                    <ul>
+                        <li>Pilot's Handbook of Aeronautical Knowledge</li>
+                        <li>Aeronautical Information Manual</li>
+                    </ul>
+                </div>
+
+                <div class="col">
+                    <h4>Topics</h4>
+                    <ul>
+                        <li><a href="#vor">VOR</a></li>
+                        <li><a href="#dme">DME</a></li>
+                        <li><a href="#gps">GPS</a></li>
+                        <li><a href="#radar">Radar</a></li>
+                        <li><a href="#transponder">Transponders</a></li>
+                        <li><a href="#human">Human Factors</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h3>Introduction</h3>
+            <p>video game analogy</p>
+        </section>
+
+        <section id="vor">
+            <h3>VOR</h3>
+            <h4>Very High Frequency Omnidirectional Range</h4>
+
+            <div class="row">
+                <div class="col">
+                    <h4>Use</h4>
+                    <ul>
+                        <li>reference and variable signals</li>
+                        <li>to from flag</li>
+                        <li>each tick is 2 degrees of deviation</li>
+                    </ul>
+
+                    <h4>Limitations</h4>
+                    <ul>
+                        <li>line of sight</li>
+                        <li>cone of confusion</li>
+                        <li>reverse sensing</li>
+                        <li>signal integrity - morse code id</li>
+                    </ul>
+                </div>
+
+                <div class="col">
+                    <h4>Service Volumes</h4>
+                    <a href="https://www.faa.gov/air_traffic/publications/atpubs/aim_html/chap1_section_1.html" class="far">AIM 1-1-8</a>
+
+                    <h4>Types</h4>
+                    <ul>
+                        <li>VOR</li>
+                        <li>VORDME</li>
+                        <li>VORTAC</li>
+                    </ul>
+
+                    <h4>Checks</h4>
+                    <ul>
+                        <li>VOT - 180 to, 360 from (&#177;4)</li>
+                        <li>Ground Checkpoints (&#177;4)</li>
+                        <li>Airborne Checkpoints (&#177;6)</li>
+                        <li>Dual VOR Check (&#177;4)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="dme">
+            <h3>DME</h3>
+            <h4>Distance Measuring Equipment</h4>
+
+            <div class="row">
+                <div class="col">
+                    <h4>Use</h4>
+                    <ul>
+                        <li>interrogation and reply signals</li>
+                    </ul>
+
+                    <h4>Limitations</h4>
+                    <ul>
+                        <li>line of sight</li>
+                        <li>slant range distance (1nm per 1000 agl)</li>
+                    </ul>
+                </div>
+
+                <div class="col">
+                    <h4>Service Volumes</h4>
+                    <a href="https://www.faa.gov/air_traffic/publications/atpubs/aim_html/chap1_section_1.html" class="far">AIM 1-1-8</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="gps">
+            <h3>GPS</h3>
+            <h4>Global Positioning System</h4>
+
+            <div class="row">
+                <div class="col">
+                    <h4>Segments</h4>
+                    <ul>
+                        <li>space - satellites</li>
+                        <li>control - master control, 5 monitoring stations, 3 ground antennas</li>
+                        <li>user - receiver</li>
+                    </ul>
+
+                    <h4>Limitations</h4>
+                    <ul>
+                        <li>line of sight</li>
+                        <li>expired database</li>
+                    </ul>
+                </div>
+
+                <div class="col">
+                    <h4>RAIM - Receiver Autonomous Integrity Monitoring</h4>
+                    <ul>
+                        <li>verify signal coverage along route of flight</li>
+                        <li>alert is fault is detected</li>
+                        <li>requires at least 5 satellites in view</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h3>WAAS</h3>
+            <h4>Wide Area Augmentation System</h4>
+
+            <div class="row">
+                <div class="col">
+                    <h4>Augmented GPS</h4>
+                    <ul>
+                        <li>can be used for precision approaches</li>
+                        <li>geo-stationary satellite</li>
+                    </ul>
+                </div>
+
+                <div class="col">
+                    <h4>LAAS (GBAS)</h4>
+                    <ul>
+                        <li>uses ground based components at the airport</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="radar">
+            <h3>Radar Services</h3>
+            <ul>
+                <li>flight following</li>
+                <li>safety alerts</li>
+                <li>traffic advisories</li>
+            </ul>
+        </section>
+
+        <section id="transponder">
+            <h3>Transponder</h3>
+
+            <h4>Mode A</h4>
+            <ul>
+                <li>4 digit code</li>
+                <li>position</li>
+            </ul>
+
+            <h4>Mode C</h4>
+            <ul>
+                <li>altitude</li>
+            </ul>
+
+            <h4>Mode S</h4>
+            <ul>
+                <li>more info</li>
+                <li>required for TCAS and ADSB</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>ADSB</h3>
+            <h4>Automatic Dependent Surveillance Broadcast</h4>
+            <ul>
+                <li>broadcast GPS location, altitude, ground speed</li>
+                <li>out / in</li>
+                <li>required in A, in and above B and C, above 10,000 excluding 2,500 agl</li>
+            </ul>
+        </section>
+
+        <section id="human">
+            <h3>Human Factors</h3>
+            <ul>
+                <li>Fixation</li>
+                <li>Omission</li>
+                <li>Misinterpretation</li>
+                <li>Emphasis</li>
+            </ul>
+
+            <h4>Limitations of an EFB</h4>
+        </section>
+
+        <section>
+            <h3>Conclusion</h3>
+            <h4>Evaluation</h4>
+            <ul>
+                <li>You are assigned to track a VOR (provided by instructor). Draw your plane in relation to the station. Draw the VOR instrument.</li>
+                <li>Explain the differences between each Mode of Transponder.</li>
+            </ul>
+        </section>
+    </main>
+</body>
+
+</html>

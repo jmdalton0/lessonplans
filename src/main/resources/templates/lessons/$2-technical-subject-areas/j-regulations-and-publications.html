@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{layout}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title th:text="${title}"></title>
+</head>
+
+<body>
+    <main layout:fragment="content">
+
+        <section>
+            <h2 th:text="${title}"></h2>
+            <h3>Area of Operation II.J</h3>
+
+            <div class="row">
+                <div class="col">
+                    <h4>Objective</h4>
+                    <ul>
+                        <li>The learner will understand the regulations and publications that apply to them as a pilot.</li>
+                    </ul>
+
+                    <h4>Topics</h4>
+                    <ul>
+                        <li><a href="#"></a></li>
+                    </ul>
+
+                    <h4>References</h4>
+                    <ul>
+                        <li>14 CFR</li>
+                        <li>Pilot's Handbook of Aeronautical Knowledge</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h3>Introduction</h3>
+        </section>
+
+        <section>
+            <h3>14 CFR</h3>
+            <ul>
+                <li>Part 1 - definitions</li>
+                <li>Part 61 - certification</li>
+                <li>Part 91 - general operation rules</li>
+                <li>Part 43 - maintenance</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>NTSB Part 830</h3>
+            <ul>
+                <li>accident - operation of an aircraft involving death, serious injury, or substantial damage</li>
+                <li>incident - other occurrence that affects safety</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Advisory Circular</h3>
+            <p>used for information, not regulatory</p>
+            <a href="https://thebackseatpilot.com/pages/advisory-circulars" target="_blank" class="far mt">Common AC's</a>
+        </section>
+
+        <section>
+            <h3>INFO and SAFO</h3>
+
+            <h4>Information for Operators</h4>
+            <ul>
+                <li>information to meet requirements with low urgency</li>
+                <li>announce program changes</li>
+            </ul>
+
+            <h4>Safety Alert for Operators</h4>
+            <ul>
+                <li>share safety information quickly and broadly</li>
+                <li>includes recommended action</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>PTS / ACS</h3>
+        </section>
+
+        <section id="conclusion">
+            <h3>Conclusion</h3>
+        </section>
+    </main>
+</body>
+
+</html>

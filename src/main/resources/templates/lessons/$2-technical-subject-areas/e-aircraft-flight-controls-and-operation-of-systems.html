@@ -250,7 +250,25 @@
             <h3>Engine Cooling</h3>
             <ul>
                 <li>air</li>
+                <li>oil</li>
                 <li>liquid</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>FADEC</h3>
+            <h4>Full Authority Digital Engine Control</h4>
+            <ul>
+                <li>uses speed, temp, and pressure sensors to monitor each cylinder</li>
+                <li>calculates ignition timing and fuel flow</li>
+                <li>simplifies pilot control</li>
+            </ul>
+
+            <h4>Limitations</h4>
+            <ul>
+                <li>requires electrical power</li>
+                <li>dual digital systems are installed for redundancy</li>
+                <li>backup electrical source is required</li>
             </ul>
         </section>
 
@@ -258,7 +276,16 @@
             <h3>Propeller</h3>
             <ul>
                 <li>fixed pitch</li>
+                <li>ground adjustable fixed pitch</li>
                 <li>adjustable pitch (constant speed)</li>
+            </ul>
+
+            <h4>Adjustable Pitch</h4>
+            <ul>
+                <li>maintains RPM by adjusting blade AOA</li>
+                <li>use throttle to adjust power</li>
+                <li>reduce manifold pressure before reducing RPM</li>
+                <li>increase RPM before increasing manifold pressure</li>
             </ul>
         </section>
 
@@ -322,11 +349,69 @@
         </section>
 
         <section>
-            <h3>Avionics</h3>
+            <h3>Pitot Static System</h3>
+
+            <div class="row">
+                <div class="col">
+                    <h4>Instruments</h4>
+                    <ul>
+                        <li>airspeed</li>
+                        <li>altimeter</li>
+                        <li>VSI</li>
+                    </ul>
+
+                    <h4>Analog</h4>
+                    <ul>
+                        <li>pitot tube</li>
+                        <li>static port</li>
+                    </ul>
+
+                    <h4>Digital</h4>
+                    <ul>
+                        <li>ADC</li>
+                    </ul>
+                </div>
+            </div>
         </section>
 
         <section>
-            <h3>Pitot Static System</h3>
+            <h3>Gyroscopic System</h3>
+
+            <div class="row">
+                <div class="col">
+                    <h4>Instruments</h4>
+                    <ul>
+                        <li>attitude indicator</li>
+                        <li>heading indicator</li>
+                        <li>turn coordinator</li>
+                    </ul>
+
+                    <h4>Analog</h4>
+                    <ul>
+                        <li>
+                            <h5>Gyroscope</h5>
+                            <ul>
+                                <li>rigidity in space</li>
+                                <li>precession</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h5>Power Sources</h5>
+                            <ul>
+                                <li>vacuum</li>
+                                <li>electrical</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <h4>Digital</h4>
+                    <ul>
+                        <li>AHRS</li>
+                        <li>solid-state lasers</li>
+                        <li>magnetometer</li>
+                    </ul>
+                </div>
+            </div>
         </section>
 
         <section id="icing">
@@ -336,6 +421,14 @@
                     <ul>
                         <li>Deice - removes</li>
                         <li>Anti-Ice - prevents</li>
+                    </ul>
+                </div>
+
+                <div class="col">
+                    <ul>
+                        <li>pneumatic boots</li>
+                        <li>weeping wing (alcohol)</li>
+                        <li>thermal system (bleed air or electrical coils)</li>
                     </ul>
                 </div>
             </div>

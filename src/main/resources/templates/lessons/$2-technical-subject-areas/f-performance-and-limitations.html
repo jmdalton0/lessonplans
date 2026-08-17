@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{layout}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title th:text="${title}"></title>
+</head>
+
+<body>
+    <main layout:fragment="content">
+
+        <section>
+            <h2 th:text="${title}"></h2>
+            <h3>Area of Operation II.F</h3>
+
+            <div class="row">
+                <div class="col">
+                    <h4>Objective</h4>
+                    <ul>
+                        <li>The learner will understand performance calculations for their aircraft and limitations that affect its performance.</li>
+                    </ul>
+
+                    <h4>References</h4>
+                    <ul>
+                        <li>Pilot's Handbook of Aeronautical Knowledge</li>
+                        <li>Applicable Aircraft POH or AFM</li>
+                    </ul>
+                </div>
+
+                <div class="col">
+                    <h4>Topics</h4>
+                    <ul>
+                        <li><a href="#"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h3>Introduction</h3>
+        </section>
+
+        <section id="conclusion">
+            <h3>Conclusion</h3>
+        </section>
+    </main>
+</body>
+
+</html>
