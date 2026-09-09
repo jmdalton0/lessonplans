@@ -190,7 +190,7 @@ th {
 }
 
 .mt {
-    margin-top: var(--gutter);
+    margin-top: 0.5rem;
 }
 
 .text-danger {
