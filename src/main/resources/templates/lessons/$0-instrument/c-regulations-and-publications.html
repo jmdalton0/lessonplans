@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{layout}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title th:text="${title}"></title>
+</head>
+
+<body>
+    <main layout:fragment="content">
+
+        <section>
+            <h2 th:text="${title}"></h2>
+            <h3>Area of Operation II.C</h3>
+
+            <div class="row">
+                <div class="col">
+                    <h4>Objective</h4>
+                    <ul>
+                        <li>The learner will understand the regulations and publications that are available for learning about IFR operations.</li>
+                        <li>The learner will develop skills to research, understand, and apply the content in these publications.</li>
+                        <li>The learner will mitigate risk by ensuring use of correct, reliable, and current information.</li>
+                    </ul>
+
+                    <h4>References</h4>
+                    <ul>
+                        <li>14 CFR</li>
+                        <li>Aeronautical Information Manual</li>
+                        <li>Instrument Flying Handbook</li>
+                        <li>Instrument Procedures Handbook</li>
+                        <li>Chart Supplement</li>
+                        <li>Standard En Route, Arrival, Departure, and Approach Procedure Charts</li>
+                        <li>Practical Test Standards</li>
+                    </ul>
+                </div>
+
+                <div class="col">
+                    <h4>Topics</h4>
+                    <ul>
+                        <li><a href="#fars">14 CFR</a></li>
+                        <li><a href="aim">Aeronautical Information Manual</a></li>
+                        <li><a href="handbooks">Instrument Flying and Instrument Procedures Handbooks</a></li>
+                        <li><a href="chart-supplement">Chart Supplement</a></li>
+                        <li><a href="procedures">Procedures</a></li>
+                        <li><a href="pts">Practical Test Standards</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="fars">
+            <h3>14 CFR Part 61</h3>
+
+            <div class="row">
+                <div class="col">
+                    <h4>Certification Requirements and Currency</h4>
+
+                    <h5>61.65</h5>
+                    <ul>
+                        <li>instrument rating requirements (TIME KEEP WP)</li>
+                        <li>use of FSTDs, FTDs, and ATDs</li>
+                    </ul>
+
+                    <h5>61.57</h5>
+                    <ul>
+                        <li>currency (6HITS)</li>
+                        <li>IPCs</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h3>14 CFR Part 71</h3>
+
+            <div class="row">
+                <div class="col">
+                    <h4>Airspace and Reporting Points</h4>
+
+                    <h5>Airspace</h5>
+                    <ul>
+                        <li>class A, B, C, D, E</li>
+                        <li>Air Traffic Service routes (ATS airways)</li>
+                    </ul>
+
+                    <h5>Reporting Points</h5>
+                    <ul>
+                        <li>legally includes certain reporting points</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h3>14 CFR Part 91</h3>
+
+            <div class="row">
+                <div class="col">
+                    <h4>General Operating Procedures and Requirements</h4>
+
+                    <h5>IFR Flight Planning and Filing</h5>
+                    <ul>
+                        <li>91.103 - preflight action</li>
+                        <li>91.173 - IFR clearance</li>
+                        <li>91.169 - required information and alternates</li>
+                        <li>91.167 - fuel requirements</li>
+                    </ul>
+
+                    <h5>IFR Airworthiness</h5>
+                    <ul>
+                        <li>91.171 - VOR check</li>
+                        <li>91.411 - static system inspection</li>
+                        <li>91.205 - required equipment</li>
+                    </ul>
+
+                    <h5>Instrument Procedures</h5>
+                    <ul>
+                        <li>91.173 - IFR clearance</li>
+                        <li>91.175 - takeoff and landing under IFR</li>
+                        <li>91.177 - minimum altitudes</li>
+                        <li>91.179 - cruising altitudes</li>
+                        <li>91.181 - en route course</li>
+                    </ul>
+
+                    <h5>IFR Communications</h5>
+                    <ul>
+                        <li>91.183 - communications and mandatory reporting</li>
+                        <li>91.185 - lost comms procedures</li>
+                        <li>91.187 - malfunction reports</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h3>14 CFR Part 95</h3>
+            <div class="row">
+                <div class="col">
+                    <h5>IFR Altitudes</h5>
+                    <h5>Designated Mountainous Areas</h5>
+                </div>
+            </div>
+
+            <h3>14 CFR Part 97</h3>
+            <div class="row">
+                <div class="col">
+                    <h5>Definitions</h5>
+                    <h5>TERPs</h5>
+                </div>
+            </div>
+        </section>
+
+        <section id="aim">
+            <h3>Aeronautical Information Manual</h3>
+            <p class="bg bg-2">The following is a list of SOME sections of the AIM that are applicable to and beneficial for IFR flying. It is NOT a comprehensive list.</p>
+            <ul>
+                <li>
+                    <h5>Air Navigation</h5>
+                    <ul>
+                        <li>1-1-3 VOR</li>
+                        <li>1-1-4 VOR Receiver Check</li>
+                        <li>1-1-8 NAVAID Service Volumes</li>
+                        <li>1-1-9 ILS</li>
+                    </ul>
+                </li>
+                <li>
+                    <h5>Airport Lights and Visual Aids</h5>
+                    <ul>
+                        <li>2-1-1 ALS</li>
+                        <li>2-1-3 REIL</li>
+                        <li>2-3-2 Airport Pavement Markings</li>
+                    </ul>
+                </li>
+                <li>
+                    <h5>Air Traffic Control</h5>
+                    <ul>
+                        <li>4-3-22 Practice Instrument Approaches</li>
+                    </ul>
+                </li>
+                <li>
+                    <h5>Air Traffic Procedures</h5>
+                    <ul>
+                        <li>5-2-3 IFR Clearances Off Uncontrolled Airports</li>
+                        <li>5-4-7 Instrument Approach Procedures</li>
+                        <li>5-4-21 Missed Approach</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <section id="handbooks">
+            <h3>Instrument Flying Handbook</h3>
+            <h3>Instrument Procedures Handbook</h3>
+        </section>
+
+        <section>
+            <h3>Chart Supplement</h3>
+            <ul>
+                <li></li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Conclusion</h3>
+            <h4>Evaluation</h4>
+            <ul>
+                <li>Where can you find the regulations that pertain to IFR flight. What are some of the key sections?</li>
+            </ul>
+        </section>
+    </main>
+</body>
+
+</html>
