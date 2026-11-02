@@ -37,21 +37,171 @@
                 <div class="col">
                     <h4>Topics</h4>
                     <ul>
-                        <li><a href="#topic">topic</a></li>
+                        <li><a href="#pitot">Pitot Static System</a></li>
+                        <li><a href="#gyro">Gyroscopic Instruments</a></li>
+                        <li><a href="#compass">Magnetic Compass</a></li>
                     </ul>
                 </div>
             </div>
         </section>
 
-        <section id="">
-            <h3>Aircraft Instruments</h3>
+        <section id="pitot">
+            <h3>Pitot Static System</h3>
+
+            <div class="row">
+                <div class="col">
+                    <h4>Probes</h4>
+                    <ul>
+                        <li>pitot tube</li>
+                        <li>static port</li>
+                        <li>temperature probe</li>
+                    </ul>
+
+                    <h4>Displays</h4>
+                    <ul>
+                        <li>
+                            <h5>Airspeed Indicator</h5>
+                            <ul>
+                                <li>ram air to diaphragm</li>
+                                <li>static air to casing</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h5>Altimeter</h5>
+                            <ul>
+                                <li>aneroid wafer evacuated to standard atmospheric pressure</li>
+                                <li>static air to casing</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h5>Vertical Speed Indicator (VSI)</h5>
+                            <ul>
+                                <li>static air to diaphragm</li>
+                                <li>static air to casing via calibrated leak</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <h4>Analog vs Digital</h4>
+                    <ul>
+                        <li>Air Data Computer (ADC)</li>
+                    </ul>
+                </div>
+
+                <div class="col">
+                    <h4>Failures</h4>
+
+                    <h5>Incorrect Altimeter Setting</h5>
+                    <ul>
+                        <li>high to low / hot to cold, look out below</li>
+                    </ul>
+
+                    <h5>Blockages</h5>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Pitot Tube</th>
+                                <th>Drain Hole</th>
+                                <th>Static Port</th>
+                                <th>Airspeed Indicator</th>
+                                <th>Altimeter</th>
+                                <th>VSI</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>X</td>
+                                <td></td>
+                                <td></td>
+                                <td>0</td>
+                                <td>correct</td>
+                                <td>correct</td>
+                            </tr>
+                            <tr>
+                                <td>X</td>
+                                <td>X</td>
+                                <td></td>
+                                <td>like altimeter</td>
+                                <td>correct</td>
+                                <td>correct</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td>X</td>
+                                <td>inaccurate, decrease in climb</td>
+                                <td>constant</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>X</td>
+                                <td>X</td>
+                                <td>X</td>
+                                <td>constant</td>
+                                <td>constant</td>
+                                <td>0</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h5>Alternate Static Air</h5>
+                    <ul>
+                        <li>cabin air pressure is lower than outside air pressure because of Bernoulli's Principle</li>
+                        <li>all instruments read higher</li>
+                        <li>use POH for adjustments</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="gyro">
+            <h3>Gyroscopic Instruments</h3>
+
+            <div class="row">
+                <div class="col">
+                    <h4>Gyroscopic Principles</h4>
+                    <ul>
+                        <li>rigidity in space</li>
+                        <li>precession</li>
+                    </ul>
+
+                    <h4>Instruments</h4>
+                    <ul>
+                        <li>attitude indicator</li>
+                        <li>heading indicator / horizontal situation indicator (HSI)</li>
+                        <li>turn-and-slip indicator / turn coordinator</li>
+                        <li>inclinometer</li>
+                    </ul>
+                </div>
+
+                <div class="col">
+                    <h4>Glass Cockpit</h4>
+                    <ul>
+                        <li>Attitude and Heading Reference System (AHRS)</li>
+                        <li>uses electronic gyroscopes, accelerometers, and magnetometers</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="compass">
+            <h4>Magnetic Compass</h4>
+            <ul>
+                <li>Deviation</li>
+                <li>Variation</li>
+                <li>Magnetic Dip</li>
+                <li>Oscillation</li>
+                <li>NOSE</li>
+                <li>ANDS</li>
+            </ul>
         </section>
 
         <section>
             <h3>Conclusion</h3>
             <h4>Evaluation</h4>
             <ul>
-                <li></li>
+                <li>Which instruments rely on the pitot static system?</li>
+                <li>Which instruments are considered gyroscopic instruments?</li>
             </ul>
         </section>
     </main>
